@@ -82,5 +82,10 @@ namespace SPV_Minerva_Loader
             dataGridView2.DataSource = dataSet.Tables[0];
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
