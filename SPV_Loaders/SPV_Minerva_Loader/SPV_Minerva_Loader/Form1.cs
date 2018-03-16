@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -20,34 +21,65 @@ namespace SPV_Minerva_Loader
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+
+
+            string filePath = string.Empty;
+            string fileExt = string.Empty;
+            OpenFileDialog file = new OpenFileDialog(); //open dialog to choose file  
+            if (file.ShowDialog() == System.Windows.Forms.DialogResult.OK) //if there is a file choosen by the user  
             {
-                // your code here 
-                string CSVFilePathName = @"C:\SoftwareProjects\SPV_Loaders\SPV_Minerva_Loader\SPV_Minerva_Loader\bin\Debug";
-                string[] Lines = File.ReadAllLines(CSVFilePathName);
-                string[] Fields;
-                Fields = Lines[0].Split(new char[] { ',' });
-                int Cols = Fields.GetLength(0);
-                DataTable dt = new DataTable();
-                //1st row must be column names; force lower case to ensure matching later on.
-                for (int i = 0; i < Cols; i++)
-                    dt.Columns.Add(Fields[i].ToLower(), typeof(string));
-                DataRow Row;
-                for (int i = 1; i < Lines.GetLength(0); i++)
+                filePath = file.FileName; //get the path of the file  
+                fileExt = Path.GetExtension(filePath); //get the file extension  
+                if (fileExt.CompareTo(".xls") == 0 || fileExt.CompareTo(".xlsx") == 0)
                 {
-                    Fields = Lines[i].Split(new char[] { ',' });
-                    Row = dt.NewRow();
-                    for (int f = 0; f < Cols; f++)
-                        Row[f] = Fields[f];
-                    dt.Rows.Add(Row);
+                    try
+                    {
+                        DataTable dtExcel = new DataTable();
+                        dtExcel = ReadExcel(filePath, fileExt); //read excel file  
+                        dataGridView1.Visible = true;
+                        dataGridView1.DataSource = dtExcel;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString());
+                    }
                 }
-                dataGridView1.DataSource = dt;
+                else
+                {
+                    MessageBox.Show("Please choose .xls or .xlsx file only.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error); //custom messageBox to show error  
+                }
             }
-            catch (Exception ex)
+
+
+        }
+
+
+        public DataTable ReadExcel(string fileName, string fileExt)
+        {
+            string conn = string.Empty;
+            DataTable dtexcel = new DataTable();
+            if (fileExt.CompareTo(".xls") == 0)
+                conn = @"provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + fileName + ";Extended Properties='Excel 8.0;HRD=Yes;IMEX=1';"; //for below excel 2007  
+            else
+                conn = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + fileName + ";Extended Properties='Excel 12.0;HDR=NO';"; //for above excel 2007  
+            using (OleDbConnection con = new OleDbConnection(conn))
             {
-                MessageBox.Show("Error is " + ex.ToString());
-                throw;
+                try
+                {
+                    OleDbDataAdapter oleAdpt = new OleDbDataAdapter("select * from [Sheet1$]", con); //here we read data from sheet1  
+                    oleAdpt.Fill(dtexcel); //fill excel data into dataTable  
+                }
+                catch (Exception ex)
+                { throw ex; }
             }
+            return dtexcel;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DataSet dataSet = new DataSet();
+            dataSet.ReadXml(@"C:\Users\declan.enright\Documents\7000110318_1.xml");
+            dataGridView2.DataSource = dataSet.Tables[0];
         }
     }
 }
