@@ -80,6 +80,7 @@ namespace SPV_Minerva_Loader
             DataSet dataSet = new DataSet();
             dataSet.ReadXml(@"C:\Users\declan.enright\Documents\7000110318_1.xml");
             dataGridView2.DataSource = dataSet.Tables[0];
+
         }
     }
 }
