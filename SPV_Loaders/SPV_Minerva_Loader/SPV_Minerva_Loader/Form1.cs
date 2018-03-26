@@ -84,6 +84,7 @@ namespace SPV_Minerva_Loader
             DataSet ds = new DataSet();
             ds.ReadXml(xmlFile);
             dataGridView3.DataSource = ds.Tables[0];
+
         }
     }
 }
