@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace SPV_Minerva_Loader
 {
@@ -75,17 +76,14 @@ namespace SPV_Minerva_Loader
             return dtexcel;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void button3_Click(object sender, EventArgs e)
         {
-            DataSet dataSet = new DataSet();
-            dataSet.ReadXml(@"C:\Users\declan.enright\Documents\7000110318_1.xml");
-            dataGridView2.DataSource = dataSet.Tables[0];
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            XmlReader xmlFile;
+            xmlFile = XmlReader.Create("Orders_Test.xml", new XmlReaderSettings());
+            DataSet ds = new DataSet();
+            ds.ReadXml(xmlFile);
+            dataGridView3.DataSource = ds.Tables[0];
         }
     }
 }
