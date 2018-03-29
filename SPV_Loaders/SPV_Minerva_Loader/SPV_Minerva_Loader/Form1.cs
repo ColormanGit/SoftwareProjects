@@ -115,6 +115,8 @@ namespace SPV_Minerva_Loader
                     string[] ids = result.Select(x => x.Title).ToArray();
                     dataGridView3.DataSource = ids;
 
+                    string[] ids = result.Select(x => x.Title).ToArray();
+                    dataGridView3.DataSource = ids;
 
                     //foreach (var cd in result)
                     //{
@@ -130,24 +132,5 @@ namespace SPV_Minerva_Loader
             public string Artist { get; set; }
             public string Title { get; set; }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
