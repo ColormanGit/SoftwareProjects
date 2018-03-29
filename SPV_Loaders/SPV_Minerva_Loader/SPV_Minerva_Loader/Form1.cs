@@ -51,7 +51,6 @@ namespace SPV_Minerva_Loader
         //    }
         //}
 
-
         public DataTable ReadExcel(string fileName, string fileExt)
         {
             string conn = string.Empty;
@@ -81,21 +80,48 @@ namespace SPV_Minerva_Loader
             //ds.ReadXml(xmlFile);
             //dataGridView3.DataSource = ds.Tables[0];
 
-            XDocument xDoc;
-            xDoc = XDocument.Load("cd_catalog.xml");
-            var result = from q in xDoc.Descendants("CD")
-                         select new CD
-
-                         {
-                             Title = q.Element("TITLE").Value,
-                             Artist = q.Element("ARTIST").Value
-                         };
-
-
-
-            foreach (var cd in result)
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "XML Files (*.xml)|*.xml";
+            ofd.FilterIndex = 0;
+            ofd.DefaultExt = "xml";
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show("Artist: {0}", cd.Artist.ToString());
+                if (!String.Equals(Path.GetExtension(ofd.FileName),
+                                   ".xml",
+                                   StringComparison.OrdinalIgnoreCase))
+                {
+                    // Invalid file type selected; display an error.
+                    MessageBox.Show("The type of the selected file is not supported by this application. You must select an XML file.",
+                                    "Invalid File Type",
+                                    MessageBoxButtons.OK,
+                                    MessageBoxIcon.Error);
+
+                    // Optionally, force the user to select another file.
+                    // ...
+                }
+                else
+                {
+                    XDocument xDoc;
+                    xDoc = XDocument.Load(ofd.FileName);
+                    var result = from q in xDoc.Descendants("CD")
+                                 select new CD
+
+                                 {
+                                     Title = q.Element("TITLE").Value,
+                                     Artist = q.Element("ARTIST").Value
+                                 };
+
+
+                    string[] ids = result.Select(x => x.Title).ToArray();
+                    dataGridView3.DataSource = ids;
+
+
+                    //foreach (var cd in result)
+                    //{
+                    //    //MessageBox.Show("Artist: {0}", cd.Artist.ToString());
+                    //    MessageBox.Show(ids.ToString());
+                    //}
+                }
             }
         }
 
