@@ -104,24 +104,5 @@ namespace SPV_Minerva_Loader
             public string Artist { get; set; }
             public string Title { get; set; }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
