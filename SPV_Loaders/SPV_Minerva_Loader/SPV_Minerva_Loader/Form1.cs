@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using System.Diagnostics;
 
-namespace SPV_Minerva_Loader
+
+namespace SPV_Minerva_Loader 
 {
     public partial class Form1 : Form
     {
@@ -124,30 +121,164 @@ namespace SPV_Minerva_Loader
             }
         }
 
-        public  class CD
+        public class CD
         {
             public string Artist { get; set; }
             public string Title { get; set; }
         }
 
-        private void wtcQuantitTextBox_TextChanged(object sender, EventArgs e)
+        // Turn on/off visibility for WTCs settings
+        private void wtcCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            
+            if (wtcCheckBox.Checked)
+            {
+                wtcQuantitTextBox.Visible = true;
+                wtcQuantityLabel.Visible = true;
+                wtcEnvironmentLabel.Visible = true;
+                wtcEnvironmentComboBox.Visible = true;
+            }
+            else
+            {
+                wtcQuantitTextBox.Visible = false;
+                wtcQuantityLabel.Visible = false;
+                wtcEnvironmentLabel.Visible = false;
+                wtcEnvironmentComboBox.Visible = false;
+            }
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        // Turn on/off visibility for PPT cards settings
+        private void pptCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (pptCheckBox.Checked)
+            {
+                pptQtyNumericUpDown.Visible = true;
+                pptQuantityLabel.Visible = true;
+            }
+            else
+            {
+                pptQtyNumericUpDown.Visible = false;
+                pptQuantityLabel.Visible = false;
+            }
         }
 
-        private void wtcQuantityLabel_Click(object sender, EventArgs e)
+        // Turn on/off visibility for BHN packaging details input and set the correct Region comboBox
+        private void integratorsList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (integratorsList.SelectedIndex == 1)
+            {
+                bhnPackRetailCodeLabel.Visible = true;
+                bhnPackRetailCodeTextBox.Visible = true;
 
+                bhnBoxRetailCodeLabel.Visible = true;
+                bhnBoxRetailCodeTextBox.Visible = true;
+
+                bhnPalletRetailCodeLabel.Visible = true;
+                bhnPalletRetailCodeTextBox.Visible = true;
+            }
+            else
+            {
+                bhnPackRetailCodeLabel.Visible = false;
+                bhnPackRetailCodeTextBox.Visible = false;
+
+                bhnBoxRetailCodeLabel.Visible = false;
+                bhnBoxRetailCodeTextBox.Visible = false;
+
+                bhnPalletRetailCodeLabel.Visible = false;
+                bhnPalletRetailCodeTextBox.Visible = false;
+            }
+
+            switch (integratorsList.SelectedIndex)
+            {
+                case 0:
+                    aosRegionComboBox.Visible = true;
+                    bhnRegionComboBox.Visible = false;
+                    epayRegionComboBox.Visible = false;
+                    incommRegionComboBox.Visible = false;
+                    break;
+
+                case 1:
+                    bhnRegionComboBox.Visible = true;
+                    aosRegionComboBox.Visible = false;
+                    epayRegionComboBox.Visible = false;
+                    incommRegionComboBox.Visible = false;
+                    break;
+
+                case 2:
+                    epayRegionComboBox.Visible = true;
+                    aosRegionComboBox.Visible = false;
+                    bhnRegionComboBox.Visible = false;
+                    incommRegionComboBox.Visible = false;
+                    break;
+
+                case 3:
+                    incommRegionComboBox.Visible = true;
+                    aosRegionComboBox.Visible = false;
+                    bhnRegionComboBox.Visible = false;
+                    epayRegionComboBox.Visible = false;
+                    break;
+                default:
+                    aosRegionComboBox.Visible = false;
+                    bhnRegionComboBox.Visible = false;
+                    epayRegionComboBox.Visible = false;
+                    incommRegionComboBox.Visible = false;
+                    break;
+            }
         }
 
-        private void environmentLabel_Click(object sender, EventArgs e)
+        // Turn on/off decimal places for Job Denomination
+        private void denomDecimalcheckBox_CheckedChanged(object sender, EventArgs e)
         {
+            if (denomDecimalcheckBox.Checked)
+            {
+                denominationNumericUpDown.DecimalPlaces = 2;
+            }
+            else
+            {
+                denominationNumericUpDown.DecimalPlaces = 0;
+            }
+        }
 
+        // Turn on/off decimal places for WTCs Denomination
+        private void wtcDenomDecimalcheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (wtcDenomDecimalcheckBox.Checked)
+            {
+                wtcDenomNumericUpDown.DecimalPlaces = 2;
+            }
+            else
+            {
+                wtcDenomNumericUpDown.DecimalPlaces = 0;
+            }
+        }
+        
+        // Import XML testing
+        private void importXmlButton2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = ".";
+            openFileDialog.Filter = "Xml files (*.xml)|*.xml";
+            openFileDialog.FilterIndex = 2;
+            openFileDialog.RestoreDirectory = true;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    XDocument xmlDoc;
+                    xmlDoc = XDocument.Load(openFileDialog.FileName);
+                    DataSet ds = new DataSet();
+                    ds.ReadXml(openFileDialog.FileName);
+
+                    xmlDataGridView.AutoGenerateColumns = true;
+                    xmlDataGridView.DataSource = ds; // dataset
+                    xmlDataGridView.DataMember = "Order"; // table name you need to show
+
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                }
+            }
         }
     }
 }
