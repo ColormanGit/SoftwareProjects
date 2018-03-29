@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
+using System.Xml.Linq;
 
 namespace SPV_Minerva_Loader
 {
@@ -20,39 +20,36 @@ namespace SPV_Minerva_Loader
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-
-            string filePath = string.Empty;
-            string fileExt = string.Empty;
-            OpenFileDialog file = new OpenFileDialog(); //open dialog to choose file  
-            if (file.ShowDialog() == System.Windows.Forms.DialogResult.OK) //if there is a file choosen by the user  
-            {
-                filePath = file.FileName; //get the path of the file  
-                fileExt = Path.GetExtension(filePath); //get the file extension  
-                if (fileExt.CompareTo(".xls") == 0 || fileExt.CompareTo(".xlsx") == 0)
-                {
-                    try
-                    {
-                        DataTable dtExcel = new DataTable();
-                        dtExcel = ReadExcel(filePath, fileExt); //read excel file  
-                        dataGridView1.Visible = true;
-                        dataGridView1.DataSource = dtExcel;
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message.ToString());
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Please choose .xls or .xlsx file only.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error); //custom messageBox to show error  
-                }
-            }
-
-
-        }
+        ////IMPORT EXCEL FILE
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    string filePath = string.Empty;
+        //    string fileExt = string.Empty;
+        //    OpenFileDialog file = new OpenFileDialog(); //open dialog to choose file  
+        //    if (file.ShowDialog() == System.Windows.Forms.DialogResult.OK) //if there is a file choosen by the user  
+        //    {
+        //        filePath = file.FileName; //get the path of the file  
+        //        fileExt = Path.GetExtension(filePath); //get the file extension  
+        //        if (fileExt.CompareTo(".xls") == 0 || fileExt.CompareTo(".xlsx") == 0)
+        //        {
+        //            try
+        //            {
+        //                DataTable dtExcel = new DataTable();
+        //                dtExcel = ReadExcel(filePath, fileExt); //read excel file  
+        //                dataGridView1.Visible = true;
+        //                dataGridView1.DataSource = dtExcel;
+        //            }
+        //            catch (Exception ex)
+        //            {
+        //                MessageBox.Show(ex.Message.ToString());
+        //            }
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Please choose .xls or .xlsx file only.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error); //custom messageBox to show error  
+        //        }
+        //    }
+        //}
 
 
         public DataTable ReadExcel(string fileName, string fileExt)
@@ -76,15 +73,55 @@ namespace SPV_Minerva_Loader
             return dtexcel;
         }
 
-
         private void button3_Click(object sender, EventArgs e)
         {
-            XmlReader xmlFile;
-            xmlFile = XmlReader.Create("Orders_Test.xml", new XmlReaderSettings());
-            DataSet ds = new DataSet();
-            ds.ReadXml(xmlFile);
-            dataGridView3.DataSource = ds.Tables[0];
+            //XmlReader xmlFile;
+            //xmlFile = XmlReader.Create("Orders_Test.xml", new XmlReaderSettings());
+            //DataSet ds = new DataSet();
+            //ds.ReadXml(xmlFile);
+            //dataGridView3.DataSource = ds.Tables[0];
 
+            XDocument xDoc;
+            xDoc = XDocument.Load("cd_catalog.xml");
+            var result = from q in xDoc.Descendants("CD")
+                         select new CD
+
+                         {
+                             Title = q.Element("TITLE").Value,
+                             Artist = q.Element("ARTIST").Value
+                         };
+
+
+
+            foreach (var cd in result)
+            {
+                MessageBox.Show("Artist: {0}", cd.Artist.ToString());
+            }
         }
+
+        public  class CD
+        {
+            public string Artist { get; set; }
+            public string Title { get; set; }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

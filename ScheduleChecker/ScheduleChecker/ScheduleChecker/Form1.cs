@@ -10,6 +10,7 @@ namespace ScheduleChecker
 {
     public partial class Form1 : Form
     {
+        DateTime CurrentDate = DateTime.Now;
         string ConnectionString = Convert.ToString("Dsn=tharData;uid=tharuser");
 
         public Form1()
@@ -47,6 +48,8 @@ namespace ScheduleChecker
                 dataGridView1.AllowUserToAddRows = false;
             }
 
+            CurrentDate = DateTime.Now;
+            string sqlFormattedDate = CurrentDate.ToString("yyyy-MM-dd HH:mm:ss.fff");
             string constring = "Data Source=APPSHARE01\\SQLEXPRESS01;Initial Catalog=ScheduleChecker;Persist Security Info=True;User ID=PalletCardAdmin;password=Pa!!etCard01";
             SqlConnection con = new SqlConnection(constring);
 
@@ -57,7 +60,7 @@ namespace ScheduleChecker
 
                 foreach (DataGridViewRow row in dataGridView1.Rows)
                 {
-                    using (SqlCommand cmd = new SqlCommand("INSERT INTO ScheduleLog ([JobNo], [ResourceID], [OrigDuration], [LastUpdate], [ID], [StartOp], [EndOp], [Duration], [JobCompleted], [JobCancelled], [IsAltered], [UpdateUserName], [UpdateDateTime])VALUES(@JobNo, @ResourceID, @OrigDuration, @LastUpdate, @ID, @StartOp, @EndOp, @Duration, @JobCompleted, @JobCancelled, @IsAltered, @UpdateUserName, @UpdateDateTime)", con))
+                    using (SqlCommand cmd = new SqlCommand("INSERT INTO ScheduleLog ([JobNo], [ResourceID], [OrigDuration], [LastUpdate], [ID], [StartOp], [EndOp], [Duration], [JobCompleted], [JobCancelled], [IsAltered], [UpdateUserName], [UpdateDateTime], [Timestamp1])VALUES(@JobNo, @ResourceID, @OrigDuration, @LastUpdate, @ID, @StartOp, @EndOp, @Duration, @JobCompleted, @JobCancelled, @IsAltered, @UpdateUserName, @UpdateDateTime, '" + CurrentDate + "')", con))
                     {
                         cmd.Parameters.AddWithValue("@JobNo", row.Cells["JobNo"].Value);
                         cmd.Parameters.AddWithValue("@ResourceID", row.Cells["ResourceID"].Value);
