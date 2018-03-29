@@ -72,7 +72,7 @@ namespace SPV_Minerva_Loader
             return dtexcel;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void importXmlButtonClick(object sender, EventArgs e)
         {
             //XmlReader xmlFile;
             //xmlFile = XmlReader.Create("Orders_Test.xml", new XmlReaderSettings());
@@ -113,10 +113,7 @@ namespace SPV_Minerva_Loader
 
 
                     string[] ids = result.Select(x => x.Title).ToArray();
-                    dataGridView3.DataSource = ids;
-
-                    string[] ids = result.Select(x => x.Title).ToArray();
-                    dataGridView3.DataSource = ids;
+                    xmlDataGridView.DataSource = ids;
 
                     //foreach (var cd in result)
                     //{
@@ -131,6 +128,26 @@ namespace SPV_Minerva_Loader
         {
             public string Artist { get; set; }
             public string Title { get; set; }
+        }
+
+        private void wtcQuantitTextBox_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wtcQuantityLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void environmentLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
