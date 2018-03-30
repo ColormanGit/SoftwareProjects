@@ -58,7 +58,6 @@
             this.humanReadableCheckBox = new System.Windows.Forms.CheckBox();
             this.wtcCheckBox = new System.Windows.Forms.CheckBox();
             this.wtcQuantityLabel = new System.Windows.Forms.Label();
-            this.wtcQuantitTextBox = new System.Windows.Forms.TextBox();
             this.wtcEnvironmentLabel = new System.Windows.Forms.Label();
             this.wtcEnvironmentComboBox = new System.Windows.Forms.ComboBox();
             this.countryIncommRetailerLabel = new System.Windows.Forms.Label();
@@ -92,6 +91,7 @@
             this.bhnRegionComboBox = new System.Windows.Forms.ComboBox();
             this.epayRegionComboBox = new System.Windows.Forms.ComboBox();
             this.incommRegionComboBox = new System.Windows.Forms.ComboBox();
+            this.wtcNumericUpDown = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.xmlDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.packQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.palletQtyNumericUpDown)).BeginInit();
@@ -99,6 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.denominationNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pptQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wtcDenomNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wtcNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // xmlDataGridView
@@ -399,16 +400,6 @@
             this.wtcQuantityLabel.TabIndex = 35;
             this.wtcQuantityLabel.Text = "Quantity";
             this.wtcQuantityLabel.Visible = false;
-            // 
-            // wtcQuantitTextBox
-            // 
-            this.wtcQuantitTextBox.Location = new System.Drawing.Point(298, 308);
-            this.wtcQuantitTextBox.Name = "wtcQuantitTextBox";
-            this.wtcQuantitTextBox.Size = new System.Drawing.Size(64, 20);
-            this.wtcQuantitTextBox.TabIndex = 34;
-            this.wtcQuantitTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.wtcQuantitTextBox.Visible = false;
-            this.wtcQuantitTextBox.WordWrap = false;
             // 
             // wtcEnvironmentLabel
             // 
@@ -769,11 +760,24 @@
             this.incommRegionComboBox.TabIndex = 74;
             this.incommRegionComboBox.Visible = false;
             // 
+            // wtcNumericUpDown
+            // 
+            this.wtcNumericUpDown.Location = new System.Drawing.Point(298, 309);
+            this.wtcNumericUpDown.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+            this.wtcNumericUpDown.Name = "wtcNumericUpDown";
+            this.wtcNumericUpDown.Size = new System.Drawing.Size(67, 20);
+            this.wtcNumericUpDown.TabIndex = 75;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1469, 638);
+            this.Controls.Add(this.wtcNumericUpDown);
             this.Controls.Add(this.incommRegionComboBox);
             this.Controls.Add(this.epayRegionComboBox);
             this.Controls.Add(this.bhnRegionComboBox);
@@ -807,7 +811,6 @@
             this.Controls.Add(this.wtcEnvironmentLabel);
             this.Controls.Add(this.wtcEnvironmentComboBox);
             this.Controls.Add(this.wtcQuantityLabel);
-            this.Controls.Add(this.wtcQuantitTextBox);
             this.Controls.Add(this.wtcCheckBox);
             this.Controls.Add(this.humanReadableCheckBox);
             this.Controls.Add(this.denominationLabel);
@@ -847,6 +850,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.denominationNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pptQtyNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wtcDenomNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wtcNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -883,7 +887,6 @@
         private System.Windows.Forms.CheckBox humanReadableCheckBox;
         private System.Windows.Forms.CheckBox wtcCheckBox;
         private System.Windows.Forms.Label wtcQuantityLabel;
-        private System.Windows.Forms.TextBox wtcQuantitTextBox;
         private System.Windows.Forms.Label wtcEnvironmentLabel;
         private System.Windows.Forms.ComboBox wtcEnvironmentComboBox;
         private System.Windows.Forms.Label countryIncommRetailerLabel;
@@ -917,6 +920,7 @@
         private System.Windows.Forms.ComboBox bhnRegionComboBox;
         private System.Windows.Forms.ComboBox epayRegionComboBox;
         private System.Windows.Forms.ComboBox incommRegionComboBox;
+        private System.Windows.Forms.NumericUpDown wtcNumericUpDown;
     }
 }
 

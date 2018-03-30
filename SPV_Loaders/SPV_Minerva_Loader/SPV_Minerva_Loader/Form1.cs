@@ -132,14 +132,14 @@ namespace SPV_Minerva_Loader
         {
             if (wtcCheckBox.Checked)
             {
-                wtcQuantitTextBox.Visible = true;
+                wtcNumericUpDown.Visible = true;
                 wtcQuantityLabel.Visible = true;
                 wtcEnvironmentLabel.Visible = true;
                 wtcEnvironmentComboBox.Visible = true;
             }
             else
             {
-                wtcQuantitTextBox.Visible = false;
+                wtcNumericUpDown.Visible = false;
                 wtcQuantityLabel.Visible = false;
                 wtcEnvironmentLabel.Visible = false;
                 wtcEnvironmentComboBox.Visible = false;
@@ -268,9 +268,20 @@ namespace SPV_Minerva_Loader
                     DataSet ds = new DataSet();
                     ds.ReadXml(openFileDialog.FileName);
 
+
+                    foreach (DataRow dr in ds.Tables[0].Rows)
+                    {
+                        Object[] row = dr.ItemArray;
+
+                        for (int i = 0; i < row.Length; i++)
+                        {
+                            Debug.WriteLine(row[i]);
+                        }
+                    }
+
                     xmlDataGridView.AutoGenerateColumns = true;
                     xmlDataGridView.DataSource = ds; // dataset
-                    xmlDataGridView.DataMember = "Order"; // table name you need to show
+                    xmlDataGridView.DataMember = "Field"; // table name you need to show
 
                 }
 
