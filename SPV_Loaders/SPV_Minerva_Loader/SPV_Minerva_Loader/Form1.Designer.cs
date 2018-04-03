@@ -29,48 +29,48 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loaderWindow));
-            this.integratorLabel = new System.Windows.Forms.Label();
-            this.regionLabel = new System.Windows.Forms.Label();
-            this.regionComboBox = new System.Windows.Forms.ComboBox();
-            this.jobQtyLabel = new System.Windows.Forms.Label();
-            this.currencyLabel = new System.Windows.Forms.Label();
-            this.productDescriptionLabel = new System.Windows.Forms.Label();
-            this.productDescriptionTextBox = new System.Windows.Forms.TextBox();
-            this.regionIntegratorIDLabel = new System.Windows.Forms.Label();
-            this.regionIntegratorIDTextBox = new System.Windows.Forms.TextBox();
-            this.jobTypeLabel = new System.Windows.Forms.Label();
-            this.jobTypeComboBox = new System.Windows.Forms.ComboBox();
-            this.denominationLabel = new System.Windows.Forms.Label();
-            this.humanReadableCheckBox = new System.Windows.Forms.CheckBox();
-            this.wtcCheckBox = new System.Windows.Forms.CheckBox();
-            this.wtcQuantityLabel = new System.Windows.Forms.Label();
-            this.wtcEnvironmentLabel = new System.Windows.Forms.Label();
-            this.wtcEnvironmentComboBox = new System.Windows.Forms.ComboBox();
-            this.countryIncommRetailerLabel = new System.Windows.Forms.Label();
-            this.countryIncommRetailerTextBox = new System.Windows.Forms.TextBox();
-            this.wtcDenomLabel = new System.Windows.Forms.Label();
-            this.pptQuantityLabel = new System.Windows.Forms.Label();
-            this.pptCheckBox = new System.Windows.Forms.CheckBox();
-            this.packQuantityLabel = new System.Windows.Forms.Label();
-            this.boxQuantityLabel = new System.Windows.Forms.Label();
-            this.palletQuantityLabel = new System.Windows.Forms.Label();
-            this.palletQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.currencyComboBox = new System.Windows.Forms.ComboBox();
-            this.packQuantityComboBox = new System.Windows.Forms.ComboBox();
-            this.boxQuantityComboBox = new System.Windows.Forms.ComboBox();
-            this.jobQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.denominationNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.denomDecimalCheckBox = new System.Windows.Forms.CheckBox();
-            this.pptQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.bhnBoxRetailCodeLabel = new System.Windows.Forms.Label();
-            this.bhnPalletRetailCodeLabel = new System.Windows.Forms.Label();
-            this.wtcDenomDecimalcheckBox = new System.Windows.Forms.CheckBox();
-            this.wtcDenomNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.specialInstructionsTextBox = new System.Windows.Forms.TextBox();
-            this.specialInstructionsLabel = new System.Windows.Forms.Label();
+            this.minervaIntegratorLabel = new System.Windows.Forms.Label();
+            this.minervaRegionLabel = new System.Windows.Forms.Label();
+            this.minervaRegionComboBox = new System.Windows.Forms.ComboBox();
+            this.minervaJobQtyLabel = new System.Windows.Forms.Label();
+            this.minervaCurrencyLabel = new System.Windows.Forms.Label();
+            this.minervaProductDescriptionLabel = new System.Windows.Forms.Label();
+            this.minervaProductDescriptionTextBox = new System.Windows.Forms.TextBox();
+            this.minervaRegionIntegratorIDLabel = new System.Windows.Forms.Label();
+            this.minervaRegionIntegratorIDTextBox = new System.Windows.Forms.TextBox();
+            this.minervaJobTypeLabel = new System.Windows.Forms.Label();
+            this.minervaJobTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.minervaDenominationLabel = new System.Windows.Forms.Label();
+            this.minervaHumanReadableCheckBox = new System.Windows.Forms.CheckBox();
+            this.minervaWtcCheckBox = new System.Windows.Forms.CheckBox();
+            this.minervaWtcQuantityLabel = new System.Windows.Forms.Label();
+            this.minervaWtcEnvironmentLabel = new System.Windows.Forms.Label();
+            this.minervaWtcEnvironmentComboBox = new System.Windows.Forms.ComboBox();
+            this.minervaCountryIncommRetailerLabel = new System.Windows.Forms.Label();
+            this.minervaCountryIncommRetailerTextBox = new System.Windows.Forms.TextBox();
+            this.minervaWtcDenomLabel = new System.Windows.Forms.Label();
+            this.minervaPptQuantityLabel = new System.Windows.Forms.Label();
+            this.minervaPptCheckBox = new System.Windows.Forms.CheckBox();
+            this.minervaPackQuantityLabel = new System.Windows.Forms.Label();
+            this.minervaBoxQuantityLabel = new System.Windows.Forms.Label();
+            this.minervaPalletQuantityLabel = new System.Windows.Forms.Label();
+            this.minervaPalletQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minervaCurrencyComboBox = new System.Windows.Forms.ComboBox();
+            this.minervaPackQuantityComboBox = new System.Windows.Forms.ComboBox();
+            this.minervaBoxQuantityComboBox = new System.Windows.Forms.ComboBox();
+            this.minervaJobQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minervaDenominationNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minervaDenomDecimalCheckBox = new System.Windows.Forms.CheckBox();
+            this.minervaPptQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minervaBhnBoxRetailCodeLabel = new System.Windows.Forms.Label();
+            this.minervaBhnPalletRetailCodeLabel = new System.Windows.Forms.Label();
+            this.minervaWtcDenomDecimalcheckBox = new System.Windows.Forms.CheckBox();
+            this.minervaWtcDenomNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minervaSpecialInstructionsTextBox = new System.Windows.Forms.TextBox();
+            this.minervaSpecialInstructionsLabel = new System.Windows.Forms.Label();
             this.importXmlButton2 = new System.Windows.Forms.Button();
-            this.wtcQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.bhnPackRetailCodeLabel = new System.Windows.Forms.Label();
+            this.minervaWtcQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minervaBhnPackRetailCodeLabel = new System.Windows.Forms.Label();
             this.jobNumberTextBox = new System.Windows.Forms.TextBox();
             this.dueDateTextBox = new System.Windows.Forms.TextBox();
             this.purchaseOrderLineTextBox = new System.Windows.Forms.TextBox();
@@ -109,494 +109,534 @@
             this.retailBarcodeTypeLabel = new System.Windows.Forms.Label();
             this.orderIDLabel = new System.Windows.Forms.Label();
             this.orderIDNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.saveOrderButton = new System.Windows.Forms.Button();
-            this.integratorComboCox = new System.Windows.Forms.ComboBox();
-            this.generateXmlButton = new System.Windows.Forms.Button();
-            this.bhnPackRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.bhnBoxRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.bhnPalletRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.totalOrdersTextBox = new System.Windows.Forms.TextBox();
-            this.currentOrderTextBox = new System.Windows.Forms.TextBox();
+            this.minervaSaveOrderButton = new System.Windows.Forms.Button();
+            this.minervaIntegratorComboCox = new System.Windows.Forms.ComboBox();
+            this.minervaGenerateXmlButton = new System.Windows.Forms.Button();
+            this.minervaBhnPackRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minervaBhnBoxRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minervaBhnPalletRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minervaTotalOrdersTextBox = new System.Windows.Forms.TextBox();
+            this.minervaCurrentOrderTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.totalOdersLabel = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.palletQtyNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jobQtyNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.denominationNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pptQtyNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wtcDenomNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wtcQtyNumericUpDown)).BeginInit();
+            this.minervaPanel = new System.Windows.Forms.Panel();
+            this.athenaPanelButton = new System.Windows.Forms.Button();
+            this.asasaraPanelButton = new System.Windows.Forms.Button();
+            this.minervaPanelButton = new System.Windows.Forms.Button();
+            this.athenaPanel = new System.Windows.Forms.Panel();
+            this.athenaBhnPalletRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.athenaBhnBoxRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.athenaBhnPackRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.athenaGeneratXmlButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaPalletQtyNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaJobQtyNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaDenominationNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaPptQtyNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaWtcDenomNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaWtcQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderIDNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnPackRetailCodeNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnBoxRetailCodeNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnPalletRetailCodeNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaBhnPackRetailCodeNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaBhnBoxRetailCodeNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaBhnPalletRetailCodeNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.minervaPanel.SuspendLayout();
+            this.athenaPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.athenaBhnPalletRetailCodeNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.athenaBhnBoxRetailCodeNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.athenaBhnPackRetailCodeNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             this.SuspendLayout();
             // 
-            // integratorLabel
+            // minervaIntegratorLabel
             // 
-            this.integratorLabel.AutoSize = true;
-            this.integratorLabel.Location = new System.Drawing.Point(464, 109);
-            this.integratorLabel.Name = "integratorLabel";
-            this.integratorLabel.Size = new System.Drawing.Size(52, 13);
-            this.integratorLabel.TabIndex = 5;
-            this.integratorLabel.Text = "Integrator";
+            this.minervaIntegratorLabel.AutoSize = true;
+            this.minervaIntegratorLabel.Location = new System.Drawing.Point(9, 131);
+            this.minervaIntegratorLabel.Name = "minervaIntegratorLabel";
+            this.minervaIntegratorLabel.Size = new System.Drawing.Size(52, 13);
+            this.minervaIntegratorLabel.TabIndex = 5;
+            this.minervaIntegratorLabel.Text = "Integrator";
             // 
-            // regionLabel
+            // minervaRegionLabel
             // 
-            this.regionLabel.AutoSize = true;
-            this.regionLabel.Location = new System.Drawing.Point(464, 156);
-            this.regionLabel.Name = "regionLabel";
-            this.regionLabel.Size = new System.Drawing.Size(41, 13);
-            this.regionLabel.TabIndex = 7;
-            this.regionLabel.Text = "Region";
+            this.minervaRegionLabel.AutoSize = true;
+            this.minervaRegionLabel.Location = new System.Drawing.Point(9, 178);
+            this.minervaRegionLabel.Name = "minervaRegionLabel";
+            this.minervaRegionLabel.Size = new System.Drawing.Size(41, 13);
+            this.minervaRegionLabel.TabIndex = 7;
+            this.minervaRegionLabel.Text = "Region";
             // 
-            // regionComboBox
+            // minervaRegionComboBox
             // 
-            this.regionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.regionComboBox.FormattingEnabled = true;
-            this.regionComboBox.Items.AddRange(new object[] {
+            this.minervaRegionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.minervaRegionComboBox.FormattingEnabled = true;
+            this.minervaRegionComboBox.Items.AddRange(new object[] {
             "Region",
             "List"});
-            this.regionComboBox.Location = new System.Drawing.Point(465, 170);
-            this.regionComboBox.Name = "regionComboBox";
-            this.regionComboBox.Size = new System.Drawing.Size(200, 21);
-            this.regionComboBox.TabIndex = 6;
+            this.minervaRegionComboBox.Location = new System.Drawing.Point(10, 192);
+            this.minervaRegionComboBox.Name = "minervaRegionComboBox";
+            this.minervaRegionComboBox.Size = new System.Drawing.Size(200, 21);
+            this.minervaRegionComboBox.TabIndex = 6;
             // 
-            // jobQtyLabel
+            // minervaJobQtyLabel
             // 
-            this.jobQtyLabel.AutoSize = true;
-            this.jobQtyLabel.Location = new System.Drawing.Point(464, 299);
-            this.jobQtyLabel.Name = "jobQtyLabel";
-            this.jobQtyLabel.Size = new System.Drawing.Size(66, 13);
-            this.jobQtyLabel.TabIndex = 11;
-            this.jobQtyLabel.Text = "Job Quantity";
+            this.minervaJobQtyLabel.AutoSize = true;
+            this.minervaJobQtyLabel.Location = new System.Drawing.Point(9, 321);
+            this.minervaJobQtyLabel.Name = "minervaJobQtyLabel";
+            this.minervaJobQtyLabel.Size = new System.Drawing.Size(66, 13);
+            this.minervaJobQtyLabel.TabIndex = 11;
+            this.minervaJobQtyLabel.Text = "Job Quantity";
             // 
-            // currencyLabel
+            // minervaCurrencyLabel
             // 
-            this.currencyLabel.AutoSize = true;
-            this.currencyLabel.Location = new System.Drawing.Point(464, 206);
-            this.currencyLabel.Name = "currencyLabel";
-            this.currencyLabel.Size = new System.Drawing.Size(49, 13);
-            this.currencyLabel.TabIndex = 13;
-            this.currencyLabel.Text = "Currency";
+            this.minervaCurrencyLabel.AutoSize = true;
+            this.minervaCurrencyLabel.Location = new System.Drawing.Point(9, 228);
+            this.minervaCurrencyLabel.Name = "minervaCurrencyLabel";
+            this.minervaCurrencyLabel.Size = new System.Drawing.Size(49, 13);
+            this.minervaCurrencyLabel.TabIndex = 13;
+            this.minervaCurrencyLabel.Text = "Currency";
             // 
-            // productDescriptionLabel
+            // minervaProductDescriptionLabel
             // 
-            this.productDescriptionLabel.AutoSize = true;
-            this.productDescriptionLabel.Location = new System.Drawing.Point(464, 345);
-            this.productDescriptionLabel.Name = "productDescriptionLabel";
-            this.productDescriptionLabel.Size = new System.Drawing.Size(100, 13);
-            this.productDescriptionLabel.TabIndex = 15;
-            this.productDescriptionLabel.Text = "Product Description";
+            this.minervaProductDescriptionLabel.AutoSize = true;
+            this.minervaProductDescriptionLabel.Location = new System.Drawing.Point(9, 367);
+            this.minervaProductDescriptionLabel.Name = "minervaProductDescriptionLabel";
+            this.minervaProductDescriptionLabel.Size = new System.Drawing.Size(100, 13);
+            this.minervaProductDescriptionLabel.TabIndex = 15;
+            this.minervaProductDescriptionLabel.Text = "Product Description";
             // 
-            // productDescriptionTextBox
+            // minervaProductDescriptionTextBox
             // 
-            this.productDescriptionTextBox.Location = new System.Drawing.Point(465, 359);
-            this.productDescriptionTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.productDescriptionTextBox.Name = "productDescriptionTextBox";
-            this.productDescriptionTextBox.Size = new System.Drawing.Size(200, 20);
-            this.productDescriptionTextBox.TabIndex = 14;
-            this.productDescriptionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.productDescriptionTextBox.WordWrap = false;
+            this.minervaProductDescriptionTextBox.Location = new System.Drawing.Point(10, 381);
+            this.minervaProductDescriptionTextBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaProductDescriptionTextBox.Name = "minervaProductDescriptionTextBox";
+            this.minervaProductDescriptionTextBox.Size = new System.Drawing.Size(200, 20);
+            this.minervaProductDescriptionTextBox.TabIndex = 14;
+            this.minervaProductDescriptionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.minervaProductDescriptionTextBox.WordWrap = false;
             // 
-            // regionIntegratorIDLabel
+            // minervaRegionIntegratorIDLabel
             // 
-            this.regionIntegratorIDLabel.AutoSize = true;
-            this.regionIntegratorIDLabel.Location = new System.Drawing.Point(464, 390);
-            this.regionIntegratorIDLabel.Name = "regionIntegratorIDLabel";
-            this.regionIntegratorIDLabel.Size = new System.Drawing.Size(103, 13);
-            this.regionIntegratorIDLabel.TabIndex = 19;
-            this.regionIntegratorIDLabel.Text = "Region Integrator ID";
+            this.minervaRegionIntegratorIDLabel.AutoSize = true;
+            this.minervaRegionIntegratorIDLabel.Location = new System.Drawing.Point(9, 412);
+            this.minervaRegionIntegratorIDLabel.Name = "minervaRegionIntegratorIDLabel";
+            this.minervaRegionIntegratorIDLabel.Size = new System.Drawing.Size(103, 13);
+            this.minervaRegionIntegratorIDLabel.TabIndex = 19;
+            this.minervaRegionIntegratorIDLabel.Text = "Region Integrator ID";
             // 
-            // regionIntegratorIDTextBox
+            // minervaRegionIntegratorIDTextBox
             // 
-            this.regionIntegratorIDTextBox.Location = new System.Drawing.Point(465, 404);
-            this.regionIntegratorIDTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.regionIntegratorIDTextBox.Name = "regionIntegratorIDTextBox";
-            this.regionIntegratorIDTextBox.Size = new System.Drawing.Size(200, 20);
-            this.regionIntegratorIDTextBox.TabIndex = 18;
-            this.regionIntegratorIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.regionIntegratorIDTextBox.WordWrap = false;
+            this.minervaRegionIntegratorIDTextBox.Location = new System.Drawing.Point(10, 426);
+            this.minervaRegionIntegratorIDTextBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaRegionIntegratorIDTextBox.Name = "minervaRegionIntegratorIDTextBox";
+            this.minervaRegionIntegratorIDTextBox.Size = new System.Drawing.Size(200, 20);
+            this.minervaRegionIntegratorIDTextBox.TabIndex = 18;
+            this.minervaRegionIntegratorIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.minervaRegionIntegratorIDTextBox.WordWrap = false;
             // 
-            // jobTypeLabel
+            // minervaJobTypeLabel
             // 
-            this.jobTypeLabel.AutoSize = true;
-            this.jobTypeLabel.Location = new System.Drawing.Point(464, 64);
-            this.jobTypeLabel.Name = "jobTypeLabel";
-            this.jobTypeLabel.Size = new System.Drawing.Size(51, 13);
-            this.jobTypeLabel.TabIndex = 29;
-            this.jobTypeLabel.Text = "Job Type";
+            this.minervaJobTypeLabel.AutoSize = true;
+            this.minervaJobTypeLabel.Location = new System.Drawing.Point(9, 86);
+            this.minervaJobTypeLabel.Name = "minervaJobTypeLabel";
+            this.minervaJobTypeLabel.Size = new System.Drawing.Size(51, 13);
+            this.minervaJobTypeLabel.TabIndex = 29;
+            this.minervaJobTypeLabel.Text = "Job Type";
             // 
-            // jobTypeComboBox
+            // minervaJobTypeComboBox
             // 
-            this.jobTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.jobTypeComboBox.FormattingEnabled = true;
-            this.jobTypeComboBox.Items.AddRange(new object[] {
+            this.minervaJobTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.minervaJobTypeComboBox.FormattingEnabled = true;
+            this.minervaJobTypeComboBox.Items.AddRange(new object[] {
             "Job",
             "Type",
             "List"});
-            this.jobTypeComboBox.Location = new System.Drawing.Point(465, 78);
-            this.jobTypeComboBox.Margin = new System.Windows.Forms.Padding(10);
-            this.jobTypeComboBox.Name = "jobTypeComboBox";
-            this.jobTypeComboBox.Size = new System.Drawing.Size(200, 21);
-            this.jobTypeComboBox.TabIndex = 28;
+            this.minervaJobTypeComboBox.Location = new System.Drawing.Point(10, 100);
+            this.minervaJobTypeComboBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaJobTypeComboBox.Name = "minervaJobTypeComboBox";
+            this.minervaJobTypeComboBox.Size = new System.Drawing.Size(200, 21);
+            this.minervaJobTypeComboBox.TabIndex = 28;
             // 
-            // denominationLabel
+            // minervaDenominationLabel
             // 
-            this.denominationLabel.AutoSize = true;
-            this.denominationLabel.Location = new System.Drawing.Point(464, 253);
-            this.denominationLabel.Name = "denominationLabel";
-            this.denominationLabel.Size = new System.Drawing.Size(72, 13);
-            this.denominationLabel.TabIndex = 31;
-            this.denominationLabel.Text = "Denomination";
+            this.minervaDenominationLabel.AutoSize = true;
+            this.minervaDenominationLabel.Location = new System.Drawing.Point(9, 275);
+            this.minervaDenominationLabel.Name = "minervaDenominationLabel";
+            this.minervaDenominationLabel.Size = new System.Drawing.Size(72, 13);
+            this.minervaDenominationLabel.TabIndex = 31;
+            this.minervaDenominationLabel.Text = "Denomination";
             // 
-            // humanReadableCheckBox
+            // minervaHumanReadableCheckBox
             // 
-            this.humanReadableCheckBox.AutoSize = true;
-            this.humanReadableCheckBox.Location = new System.Drawing.Point(693, 320);
-            this.humanReadableCheckBox.Name = "humanReadableCheckBox";
-            this.humanReadableCheckBox.Size = new System.Drawing.Size(136, 17);
-            this.humanReadableCheckBox.TabIndex = 32;
-            this.humanReadableCheckBox.Text = "DOD Human Readable";
-            this.humanReadableCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.humanReadableCheckBox.UseVisualStyleBackColor = true;
+            this.minervaHumanReadableCheckBox.AutoSize = true;
+            this.minervaHumanReadableCheckBox.Location = new System.Drawing.Point(238, 342);
+            this.minervaHumanReadableCheckBox.Name = "minervaHumanReadableCheckBox";
+            this.minervaHumanReadableCheckBox.Size = new System.Drawing.Size(136, 17);
+            this.minervaHumanReadableCheckBox.TabIndex = 32;
+            this.minervaHumanReadableCheckBox.Text = "DOD Human Readable";
+            this.minervaHumanReadableCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.minervaHumanReadableCheckBox.UseVisualStyleBackColor = true;
             // 
-            // wtcCheckBox
+            // minervaWtcCheckBox
             // 
-            this.wtcCheckBox.AutoSize = true;
-            this.wtcCheckBox.Location = new System.Drawing.Point(693, 406);
-            this.wtcCheckBox.Name = "wtcCheckBox";
-            this.wtcCheckBox.Size = new System.Drawing.Size(51, 17);
-            this.wtcCheckBox.TabIndex = 33;
-            this.wtcCheckBox.Text = "WTC";
-            this.wtcCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.wtcCheckBox.UseVisualStyleBackColor = true;
-            this.wtcCheckBox.CheckedChanged += new System.EventHandler(this.wtcCheckBox_CheckedChanged);
+            this.minervaWtcCheckBox.AutoSize = true;
+            this.minervaWtcCheckBox.Location = new System.Drawing.Point(238, 428);
+            this.minervaWtcCheckBox.Name = "minervaWtcCheckBox";
+            this.minervaWtcCheckBox.Size = new System.Drawing.Size(51, 17);
+            this.minervaWtcCheckBox.TabIndex = 33;
+            this.minervaWtcCheckBox.Text = "WTC";
+            this.minervaWtcCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.minervaWtcCheckBox.UseVisualStyleBackColor = true;
+            this.minervaWtcCheckBox.CheckedChanged += new System.EventHandler(this.wtcCheckBox_CheckedChanged);
             // 
-            // wtcQuantityLabel
+            // minervaWtcQuantityLabel
             // 
-            this.wtcQuantityLabel.AutoSize = true;
-            this.wtcQuantityLabel.Location = new System.Drawing.Point(750, 389);
-            this.wtcQuantityLabel.Name = "wtcQuantityLabel";
-            this.wtcQuantityLabel.Size = new System.Drawing.Size(46, 13);
-            this.wtcQuantityLabel.TabIndex = 35;
-            this.wtcQuantityLabel.Text = "Quantity";
-            this.wtcQuantityLabel.Visible = false;
+            this.minervaWtcQuantityLabel.AutoSize = true;
+            this.minervaWtcQuantityLabel.Location = new System.Drawing.Point(295, 411);
+            this.minervaWtcQuantityLabel.Name = "minervaWtcQuantityLabel";
+            this.minervaWtcQuantityLabel.Size = new System.Drawing.Size(46, 13);
+            this.minervaWtcQuantityLabel.TabIndex = 35;
+            this.minervaWtcQuantityLabel.Text = "Quantity";
+            this.minervaWtcQuantityLabel.Visible = false;
             // 
-            // wtcEnvironmentLabel
+            // minervaWtcEnvironmentLabel
             // 
-            this.wtcEnvironmentLabel.AutoSize = true;
-            this.wtcEnvironmentLabel.Location = new System.Drawing.Point(826, 389);
-            this.wtcEnvironmentLabel.Name = "wtcEnvironmentLabel";
-            this.wtcEnvironmentLabel.Size = new System.Drawing.Size(66, 13);
-            this.wtcEnvironmentLabel.TabIndex = 37;
-            this.wtcEnvironmentLabel.Text = "Environment";
-            this.wtcEnvironmentLabel.Visible = false;
+            this.minervaWtcEnvironmentLabel.AutoSize = true;
+            this.minervaWtcEnvironmentLabel.Location = new System.Drawing.Point(371, 411);
+            this.minervaWtcEnvironmentLabel.Name = "minervaWtcEnvironmentLabel";
+            this.minervaWtcEnvironmentLabel.Size = new System.Drawing.Size(66, 13);
+            this.minervaWtcEnvironmentLabel.TabIndex = 37;
+            this.minervaWtcEnvironmentLabel.Text = "Environment";
+            this.minervaWtcEnvironmentLabel.Visible = false;
             // 
-            // wtcEnvironmentComboBox
+            // minervaWtcEnvironmentComboBox
             // 
-            this.wtcEnvironmentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.wtcEnvironmentComboBox.FormattingEnabled = true;
-            this.wtcEnvironmentComboBox.Items.AddRange(new object[] {
+            this.minervaWtcEnvironmentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.minervaWtcEnvironmentComboBox.FormattingEnabled = true;
+            this.minervaWtcEnvironmentComboBox.Items.AddRange(new object[] {
             "IT2",
             "UT2"});
-            this.wtcEnvironmentComboBox.Location = new System.Drawing.Point(827, 403);
-            this.wtcEnvironmentComboBox.Margin = new System.Windows.Forms.Padding(10);
-            this.wtcEnvironmentComboBox.Name = "wtcEnvironmentComboBox";
-            this.wtcEnvironmentComboBox.Size = new System.Drawing.Size(61, 21);
-            this.wtcEnvironmentComboBox.TabIndex = 36;
-            this.wtcEnvironmentComboBox.Visible = false;
+            this.minervaWtcEnvironmentComboBox.Location = new System.Drawing.Point(372, 425);
+            this.minervaWtcEnvironmentComboBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaWtcEnvironmentComboBox.Name = "minervaWtcEnvironmentComboBox";
+            this.minervaWtcEnvironmentComboBox.Size = new System.Drawing.Size(61, 21);
+            this.minervaWtcEnvironmentComboBox.TabIndex = 36;
+            this.minervaWtcEnvironmentComboBox.Visible = false;
             // 
-            // countryIncommRetailerLabel
+            // minervaCountryIncommRetailerLabel
             // 
-            this.countryIncommRetailerLabel.AutoSize = true;
-            this.countryIncommRetailerLabel.Location = new System.Drawing.Point(464, 435);
-            this.countryIncommRetailerLabel.Name = "countryIncommRetailerLabel";
-            this.countryIncommRetailerLabel.Size = new System.Drawing.Size(130, 13);
-            this.countryIncommRetailerLabel.TabIndex = 39;
-            this.countryIncommRetailerLabel.Text = "Country / Incomm Retailer";
+            this.minervaCountryIncommRetailerLabel.AutoSize = true;
+            this.minervaCountryIncommRetailerLabel.Location = new System.Drawing.Point(9, 457);
+            this.minervaCountryIncommRetailerLabel.Name = "minervaCountryIncommRetailerLabel";
+            this.minervaCountryIncommRetailerLabel.Size = new System.Drawing.Size(130, 13);
+            this.minervaCountryIncommRetailerLabel.TabIndex = 39;
+            this.minervaCountryIncommRetailerLabel.Text = "Country / Incomm Retailer";
             // 
-            // countryIncommRetailerTextBox
+            // minervaCountryIncommRetailerTextBox
             // 
-            this.countryIncommRetailerTextBox.Location = new System.Drawing.Point(465, 449);
-            this.countryIncommRetailerTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.countryIncommRetailerTextBox.Name = "countryIncommRetailerTextBox";
-            this.countryIncommRetailerTextBox.Size = new System.Drawing.Size(200, 20);
-            this.countryIncommRetailerTextBox.TabIndex = 38;
-            this.countryIncommRetailerTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.countryIncommRetailerTextBox.WordWrap = false;
+            this.minervaCountryIncommRetailerTextBox.Location = new System.Drawing.Point(10, 471);
+            this.minervaCountryIncommRetailerTextBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaCountryIncommRetailerTextBox.Name = "minervaCountryIncommRetailerTextBox";
+            this.minervaCountryIncommRetailerTextBox.Size = new System.Drawing.Size(200, 20);
+            this.minervaCountryIncommRetailerTextBox.TabIndex = 38;
+            this.minervaCountryIncommRetailerTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.minervaCountryIncommRetailerTextBox.WordWrap = false;
             // 
-            // wtcDenomLabel
+            // minervaWtcDenomLabel
             // 
-            this.wtcDenomLabel.AutoSize = true;
-            this.wtcDenomLabel.Location = new System.Drawing.Point(690, 435);
-            this.wtcDenomLabel.Name = "wtcDenomLabel";
-            this.wtcDenomLabel.Size = new System.Drawing.Size(100, 13);
-            this.wtcDenomLabel.TabIndex = 41;
-            this.wtcDenomLabel.Text = "WTC Denomination";
-            this.wtcDenomLabel.Visible = false;
+            this.minervaWtcDenomLabel.AutoSize = true;
+            this.minervaWtcDenomLabel.Location = new System.Drawing.Point(235, 457);
+            this.minervaWtcDenomLabel.Name = "minervaWtcDenomLabel";
+            this.minervaWtcDenomLabel.Size = new System.Drawing.Size(100, 13);
+            this.minervaWtcDenomLabel.TabIndex = 41;
+            this.minervaWtcDenomLabel.Text = "WTC Denomination";
+            this.minervaWtcDenomLabel.Visible = false;
             // 
-            // pptQuantityLabel
+            // minervaPptQuantityLabel
             // 
-            this.pptQuantityLabel.AutoSize = true;
-            this.pptQuantityLabel.Location = new System.Drawing.Point(750, 345);
-            this.pptQuantityLabel.Name = "pptQuantityLabel";
-            this.pptQuantityLabel.Size = new System.Drawing.Size(46, 13);
-            this.pptQuantityLabel.TabIndex = 44;
-            this.pptQuantityLabel.Text = "Quantity";
-            this.pptQuantityLabel.Visible = false;
+            this.minervaPptQuantityLabel.AutoSize = true;
+            this.minervaPptQuantityLabel.Location = new System.Drawing.Point(295, 367);
+            this.minervaPptQuantityLabel.Name = "minervaPptQuantityLabel";
+            this.minervaPptQuantityLabel.Size = new System.Drawing.Size(46, 13);
+            this.minervaPptQuantityLabel.TabIndex = 44;
+            this.minervaPptQuantityLabel.Text = "Quantity";
+            this.minervaPptQuantityLabel.Visible = false;
             // 
-            // pptCheckBox
+            // minervaPptCheckBox
             // 
-            this.pptCheckBox.AutoSize = true;
-            this.pptCheckBox.Location = new System.Drawing.Point(693, 362);
-            this.pptCheckBox.Name = "pptCheckBox";
-            this.pptCheckBox.Size = new System.Drawing.Size(47, 17);
-            this.pptCheckBox.TabIndex = 42;
-            this.pptCheckBox.Text = "PPT";
-            this.pptCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.pptCheckBox.UseVisualStyleBackColor = true;
-            this.pptCheckBox.CheckedChanged += new System.EventHandler(this.pptCheckBox_CheckedChanged);
+            this.minervaPptCheckBox.AutoSize = true;
+            this.minervaPptCheckBox.Location = new System.Drawing.Point(238, 384);
+            this.minervaPptCheckBox.Name = "minervaPptCheckBox";
+            this.minervaPptCheckBox.Size = new System.Drawing.Size(47, 17);
+            this.minervaPptCheckBox.TabIndex = 42;
+            this.minervaPptCheckBox.Text = "PPT";
+            this.minervaPptCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.minervaPptCheckBox.UseVisualStyleBackColor = true;
+            this.minervaPptCheckBox.CheckedChanged += new System.EventHandler(this.pptCheckBox_CheckedChanged);
             // 
-            // packQuantityLabel
+            // minervaPackQuantityLabel
             // 
-            this.packQuantityLabel.AutoSize = true;
-            this.packQuantityLabel.Location = new System.Drawing.Point(690, 63);
-            this.packQuantityLabel.Name = "packQuantityLabel";
-            this.packQuantityLabel.Size = new System.Drawing.Size(74, 13);
-            this.packQuantityLabel.TabIndex = 46;
-            this.packQuantityLabel.Text = "Pack Quantity";
+            this.minervaPackQuantityLabel.AutoSize = true;
+            this.minervaPackQuantityLabel.Location = new System.Drawing.Point(235, 85);
+            this.minervaPackQuantityLabel.Name = "minervaPackQuantityLabel";
+            this.minervaPackQuantityLabel.Size = new System.Drawing.Size(74, 13);
+            this.minervaPackQuantityLabel.TabIndex = 46;
+            this.minervaPackQuantityLabel.Text = "Pack Quantity";
             // 
-            // boxQuantityLabel
+            // minervaBoxQuantityLabel
             // 
-            this.boxQuantityLabel.AutoSize = true;
-            this.boxQuantityLabel.Location = new System.Drawing.Point(690, 109);
-            this.boxQuantityLabel.Name = "boxQuantityLabel";
-            this.boxQuantityLabel.Size = new System.Drawing.Size(98, 13);
-            this.boxQuantityLabel.TabIndex = 48;
-            this.boxQuantityLabel.Text = "Box Quantity / Size";
+            this.minervaBoxQuantityLabel.AutoSize = true;
+            this.minervaBoxQuantityLabel.Location = new System.Drawing.Point(235, 131);
+            this.minervaBoxQuantityLabel.Name = "minervaBoxQuantityLabel";
+            this.minervaBoxQuantityLabel.Size = new System.Drawing.Size(98, 13);
+            this.minervaBoxQuantityLabel.TabIndex = 48;
+            this.minervaBoxQuantityLabel.Text = "Box Quantity / Size";
             // 
-            // palletQuantityLabel
+            // minervaPalletQuantityLabel
             // 
-            this.palletQuantityLabel.AutoSize = true;
-            this.palletQuantityLabel.Location = new System.Drawing.Point(690, 155);
-            this.palletQuantityLabel.Name = "palletQuantityLabel";
-            this.palletQuantityLabel.Size = new System.Drawing.Size(75, 13);
-            this.palletQuantityLabel.TabIndex = 50;
-            this.palletQuantityLabel.Text = "Pallet Quantity";
+            this.minervaPalletQuantityLabel.AutoSize = true;
+            this.minervaPalletQuantityLabel.Location = new System.Drawing.Point(235, 177);
+            this.minervaPalletQuantityLabel.Name = "minervaPalletQuantityLabel";
+            this.minervaPalletQuantityLabel.Size = new System.Drawing.Size(75, 13);
+            this.minervaPalletQuantityLabel.TabIndex = 50;
+            this.minervaPalletQuantityLabel.Text = "Pallet Quantity";
             // 
-            // palletQtyNumericUpDown
+            // minervaPalletQtyNumericUpDown
             // 
-            this.palletQtyNumericUpDown.Location = new System.Drawing.Point(691, 170);
-            this.palletQtyNumericUpDown.Maximum = new decimal(new int[] {
+            this.minervaPalletQtyNumericUpDown.Location = new System.Drawing.Point(236, 192);
+            this.minervaPalletQtyNumericUpDown.Maximum = new decimal(new int[] {
             66000,
             0,
             0,
             0});
-            this.palletQtyNumericUpDown.Name = "palletQtyNumericUpDown";
-            this.palletQtyNumericUpDown.Size = new System.Drawing.Size(200, 20);
-            this.palletQtyNumericUpDown.TabIndex = 54;
+            this.minervaPalletQtyNumericUpDown.Name = "minervaPalletQtyNumericUpDown";
+            this.minervaPalletQtyNumericUpDown.Size = new System.Drawing.Size(200, 20);
+            this.minervaPalletQtyNumericUpDown.TabIndex = 54;
             // 
-            // currencyComboBox
+            // minervaCurrencyComboBox
             // 
-            this.currencyComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.currencyComboBox.FormattingEnabled = true;
-            this.currencyComboBox.Items.AddRange(new object[] {
+            this.minervaCurrencyComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.minervaCurrencyComboBox.FormattingEnabled = true;
+            this.minervaCurrencyComboBox.Items.AddRange(new object[] {
             "EUR",
             "GBP",
             "PLN",
             "HKD"});
-            this.currencyComboBox.Location = new System.Drawing.Point(465, 220);
-            this.currencyComboBox.Margin = new System.Windows.Forms.Padding(10);
-            this.currencyComboBox.Name = "currencyComboBox";
-            this.currencyComboBox.Size = new System.Drawing.Size(200, 21);
-            this.currencyComboBox.TabIndex = 12;
+            this.minervaCurrencyComboBox.Location = new System.Drawing.Point(10, 242);
+            this.minervaCurrencyComboBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaCurrencyComboBox.Name = "minervaCurrencyComboBox";
+            this.minervaCurrencyComboBox.Size = new System.Drawing.Size(200, 21);
+            this.minervaCurrencyComboBox.TabIndex = 12;
             // 
-            // packQuantityComboBox
+            // minervaPackQuantityComboBox
             // 
-            this.packQuantityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.packQuantityComboBox.FormattingEnabled = true;
-            this.packQuantityComboBox.Items.AddRange(new object[] {
+            this.minervaPackQuantityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.minervaPackQuantityComboBox.FormattingEnabled = true;
+            this.minervaPackQuantityComboBox.Items.AddRange(new object[] {
             "10",
             "20"});
-            this.packQuantityComboBox.Location = new System.Drawing.Point(691, 78);
-            this.packQuantityComboBox.Margin = new System.Windows.Forms.Padding(10);
-            this.packQuantityComboBox.Name = "packQuantityComboBox";
-            this.packQuantityComboBox.Size = new System.Drawing.Size(200, 21);
-            this.packQuantityComboBox.TabIndex = 55;
+            this.minervaPackQuantityComboBox.Location = new System.Drawing.Point(236, 100);
+            this.minervaPackQuantityComboBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaPackQuantityComboBox.Name = "minervaPackQuantityComboBox";
+            this.minervaPackQuantityComboBox.Size = new System.Drawing.Size(200, 21);
+            this.minervaPackQuantityComboBox.TabIndex = 55;
             // 
-            // boxQuantityComboBox
+            // minervaBoxQuantityComboBox
             // 
-            this.boxQuantityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.boxQuantityComboBox.FormattingEnabled = true;
-            this.boxQuantityComboBox.Items.AddRange(new object[] {
+            this.minervaBoxQuantityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.minervaBoxQuantityComboBox.FormattingEnabled = true;
+            this.minervaBoxQuantityComboBox.Items.AddRange(new object[] {
             "100",
             "200"});
-            this.boxQuantityComboBox.Location = new System.Drawing.Point(691, 123);
-            this.boxQuantityComboBox.Name = "boxQuantityComboBox";
-            this.boxQuantityComboBox.Size = new System.Drawing.Size(200, 21);
-            this.boxQuantityComboBox.TabIndex = 56;
+            this.minervaBoxQuantityComboBox.Location = new System.Drawing.Point(236, 145);
+            this.minervaBoxQuantityComboBox.Name = "minervaBoxQuantityComboBox";
+            this.minervaBoxQuantityComboBox.Size = new System.Drawing.Size(200, 21);
+            this.minervaBoxQuantityComboBox.TabIndex = 56;
             // 
-            // jobQtyNumericUpDown
+            // minervaJobQtyNumericUpDown
             // 
-            this.jobQtyNumericUpDown.Location = new System.Drawing.Point(465, 314);
-            this.jobQtyNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
-            this.jobQtyNumericUpDown.Maximum = new decimal(new int[] {
+            this.minervaJobQtyNumericUpDown.Location = new System.Drawing.Point(10, 336);
+            this.minervaJobQtyNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaJobQtyNumericUpDown.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
-            this.jobQtyNumericUpDown.Name = "jobQtyNumericUpDown";
-            this.jobQtyNumericUpDown.Size = new System.Drawing.Size(200, 20);
-            this.jobQtyNumericUpDown.TabIndex = 57;
+            this.minervaJobQtyNumericUpDown.Name = "minervaJobQtyNumericUpDown";
+            this.minervaJobQtyNumericUpDown.Size = new System.Drawing.Size(200, 20);
+            this.minervaJobQtyNumericUpDown.TabIndex = 57;
             // 
-            // denominationNumericUpDown
+            // minervaDenominationNumericUpDown
             // 
-            this.denominationNumericUpDown.Location = new System.Drawing.Point(465, 268);
-            this.denominationNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
-            this.denominationNumericUpDown.Maximum = new decimal(new int[] {
+            this.minervaDenominationNumericUpDown.Location = new System.Drawing.Point(10, 290);
+            this.minervaDenominationNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaDenominationNumericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.denominationNumericUpDown.Name = "denominationNumericUpDown";
-            this.denominationNumericUpDown.Size = new System.Drawing.Size(108, 20);
-            this.denominationNumericUpDown.TabIndex = 58;
-            this.denominationNumericUpDown.ValueChanged += new System.EventHandler(this.denominationNumericUpDown_ValueChanged);
+            this.minervaDenominationNumericUpDown.Name = "minervaDenominationNumericUpDown";
+            this.minervaDenominationNumericUpDown.Size = new System.Drawing.Size(108, 20);
+            this.minervaDenominationNumericUpDown.TabIndex = 58;
+            this.minervaDenominationNumericUpDown.ValueChanged += new System.EventHandler(this.denominationNumericUpDown_ValueChanged);
             // 
-            // denomDecimalCheckBox
+            // minervaDenomDecimalCheckBox
             // 
-            this.denomDecimalCheckBox.AutoSize = true;
-            this.denomDecimalCheckBox.Location = new System.Drawing.Point(594, 271);
-            this.denomDecimalCheckBox.Name = "denomDecimalCheckBox";
-            this.denomDecimalCheckBox.Size = new System.Drawing.Size(70, 17);
-            this.denomDecimalCheckBox.TabIndex = 59;
-            this.denomDecimalCheckBox.Text = "Decimal?";
-            this.denomDecimalCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.denomDecimalCheckBox.UseVisualStyleBackColor = true;
-            this.denomDecimalCheckBox.CheckedChanged += new System.EventHandler(this.denomDecimalcheckBox_CheckedChanged);
+            this.minervaDenomDecimalCheckBox.AutoSize = true;
+            this.minervaDenomDecimalCheckBox.Location = new System.Drawing.Point(139, 293);
+            this.minervaDenomDecimalCheckBox.Name = "minervaDenomDecimalCheckBox";
+            this.minervaDenomDecimalCheckBox.Size = new System.Drawing.Size(70, 17);
+            this.minervaDenomDecimalCheckBox.TabIndex = 59;
+            this.minervaDenomDecimalCheckBox.Text = "Decimal?";
+            this.minervaDenomDecimalCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.minervaDenomDecimalCheckBox.UseVisualStyleBackColor = true;
+            this.minervaDenomDecimalCheckBox.CheckedChanged += new System.EventHandler(this.denomDecimalcheckBox_CheckedChanged);
             // 
-            // pptQtyNumericUpDown
+            // minervaPptQtyNumericUpDown
             // 
-            this.pptQtyNumericUpDown.Location = new System.Drawing.Point(748, 359);
-            this.pptQtyNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
-            this.pptQtyNumericUpDown.Maximum = new decimal(new int[] {
+            this.minervaPptQtyNumericUpDown.Location = new System.Drawing.Point(293, 381);
+            this.minervaPptQtyNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaPptQtyNumericUpDown.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.pptQtyNumericUpDown.Name = "pptQtyNumericUpDown";
-            this.pptQtyNumericUpDown.Size = new System.Drawing.Size(140, 20);
-            this.pptQtyNumericUpDown.TabIndex = 60;
-            this.pptQtyNumericUpDown.Visible = false;
+            this.minervaPptQtyNumericUpDown.Name = "minervaPptQtyNumericUpDown";
+            this.minervaPptQtyNumericUpDown.Size = new System.Drawing.Size(140, 20);
+            this.minervaPptQtyNumericUpDown.TabIndex = 60;
+            this.minervaPptQtyNumericUpDown.Visible = false;
             // 
-            // bhnBoxRetailCodeLabel
+            // minervaBhnBoxRetailCodeLabel
             // 
-            this.bhnBoxRetailCodeLabel.AutoSize = true;
-            this.bhnBoxRetailCodeLabel.Location = new System.Drawing.Point(916, 110);
-            this.bhnBoxRetailCodeLabel.Name = "bhnBoxRetailCodeLabel";
-            this.bhnBoxRetailCodeLabel.Size = new System.Drawing.Size(139, 13);
-            this.bhnBoxRetailCodeLabel.TabIndex = 64;
-            this.bhnBoxRetailCodeLabel.Text = "Blackhawk Box Retail Code";
-            this.bhnBoxRetailCodeLabel.Visible = false;
+            this.minervaBhnBoxRetailCodeLabel.AutoSize = true;
+            this.minervaBhnBoxRetailCodeLabel.Location = new System.Drawing.Point(461, 132);
+            this.minervaBhnBoxRetailCodeLabel.Name = "minervaBhnBoxRetailCodeLabel";
+            this.minervaBhnBoxRetailCodeLabel.Size = new System.Drawing.Size(139, 13);
+            this.minervaBhnBoxRetailCodeLabel.TabIndex = 64;
+            this.minervaBhnBoxRetailCodeLabel.Text = "Blackhawk Box Retail Code";
+            this.minervaBhnBoxRetailCodeLabel.Visible = false;
             // 
-            // bhnPalletRetailCodeLabel
+            // minervaBhnPalletRetailCodeLabel
             // 
-            this.bhnPalletRetailCodeLabel.AutoSize = true;
-            this.bhnPalletRetailCodeLabel.Location = new System.Drawing.Point(916, 157);
-            this.bhnPalletRetailCodeLabel.Name = "bhnPalletRetailCodeLabel";
-            this.bhnPalletRetailCodeLabel.Size = new System.Drawing.Size(147, 13);
-            this.bhnPalletRetailCodeLabel.TabIndex = 66;
-            this.bhnPalletRetailCodeLabel.Text = "Blackhawk Pallet Retail Code";
-            this.bhnPalletRetailCodeLabel.Visible = false;
+            this.minervaBhnPalletRetailCodeLabel.AutoSize = true;
+            this.minervaBhnPalletRetailCodeLabel.Location = new System.Drawing.Point(461, 179);
+            this.minervaBhnPalletRetailCodeLabel.Name = "minervaBhnPalletRetailCodeLabel";
+            this.minervaBhnPalletRetailCodeLabel.Size = new System.Drawing.Size(147, 13);
+            this.minervaBhnPalletRetailCodeLabel.TabIndex = 66;
+            this.minervaBhnPalletRetailCodeLabel.Text = "Blackhawk Pallet Retail Code";
+            this.minervaBhnPalletRetailCodeLabel.Visible = false;
             // 
-            // wtcDenomDecimalcheckBox
+            // minervaWtcDenomDecimalcheckBox
             // 
-            this.wtcDenomDecimalcheckBox.AutoSize = true;
-            this.wtcDenomDecimalcheckBox.Location = new System.Drawing.Point(820, 453);
-            this.wtcDenomDecimalcheckBox.Name = "wtcDenomDecimalcheckBox";
-            this.wtcDenomDecimalcheckBox.Size = new System.Drawing.Size(70, 17);
-            this.wtcDenomDecimalcheckBox.TabIndex = 68;
-            this.wtcDenomDecimalcheckBox.Text = "Decimal?";
-            this.wtcDenomDecimalcheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.wtcDenomDecimalcheckBox.UseVisualStyleBackColor = true;
-            this.wtcDenomDecimalcheckBox.Visible = false;
-            this.wtcDenomDecimalcheckBox.CheckedChanged += new System.EventHandler(this.wtcDenomDecimalcheckBox_CheckedChanged);
+            this.minervaWtcDenomDecimalcheckBox.AutoSize = true;
+            this.minervaWtcDenomDecimalcheckBox.Location = new System.Drawing.Point(365, 475);
+            this.minervaWtcDenomDecimalcheckBox.Name = "minervaWtcDenomDecimalcheckBox";
+            this.minervaWtcDenomDecimalcheckBox.Size = new System.Drawing.Size(70, 17);
+            this.minervaWtcDenomDecimalcheckBox.TabIndex = 68;
+            this.minervaWtcDenomDecimalcheckBox.Text = "Decimal?";
+            this.minervaWtcDenomDecimalcheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.minervaWtcDenomDecimalcheckBox.UseVisualStyleBackColor = true;
+            this.minervaWtcDenomDecimalcheckBox.Visible = false;
+            this.minervaWtcDenomDecimalcheckBox.CheckedChanged += new System.EventHandler(this.wtcDenomDecimalcheckBox_CheckedChanged);
             // 
-            // wtcDenomNumericUpDown
+            // minervaWtcDenomNumericUpDown
             // 
-            this.wtcDenomNumericUpDown.Location = new System.Drawing.Point(691, 450);
-            this.wtcDenomNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
-            this.wtcDenomNumericUpDown.Maximum = new decimal(new int[] {
+            this.minervaWtcDenomNumericUpDown.Location = new System.Drawing.Point(236, 472);
+            this.minervaWtcDenomNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaWtcDenomNumericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.wtcDenomNumericUpDown.Name = "wtcDenomNumericUpDown";
-            this.wtcDenomNumericUpDown.Size = new System.Drawing.Size(108, 20);
-            this.wtcDenomNumericUpDown.TabIndex = 67;
-            this.wtcDenomNumericUpDown.Visible = false;
-            this.wtcDenomNumericUpDown.ValueChanged += new System.EventHandler(this.wtcDenomNumericUpDown_ValueChanged);
+            this.minervaWtcDenomNumericUpDown.Name = "minervaWtcDenomNumericUpDown";
+            this.minervaWtcDenomNumericUpDown.Size = new System.Drawing.Size(108, 20);
+            this.minervaWtcDenomNumericUpDown.TabIndex = 67;
+            this.minervaWtcDenomNumericUpDown.Visible = false;
+            this.minervaWtcDenomNumericUpDown.ValueChanged += new System.EventHandler(this.wtcDenomNumericUpDown_ValueChanged);
             // 
-            // specialInstructionsTextBox
+            // minervaSpecialInstructionsTextBox
             // 
-            this.specialInstructionsTextBox.Location = new System.Drawing.Point(691, 220);
-            this.specialInstructionsTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.specialInstructionsTextBox.Multiline = true;
-            this.specialInstructionsTextBox.Name = "specialInstructionsTextBox";
-            this.specialInstructionsTextBox.Size = new System.Drawing.Size(200, 89);
-            this.specialInstructionsTextBox.TabIndex = 69;
-            this.specialInstructionsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.minervaSpecialInstructionsTextBox.Location = new System.Drawing.Point(236, 242);
+            this.minervaSpecialInstructionsTextBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaSpecialInstructionsTextBox.Multiline = true;
+            this.minervaSpecialInstructionsTextBox.Name = "minervaSpecialInstructionsTextBox";
+            this.minervaSpecialInstructionsTextBox.Size = new System.Drawing.Size(200, 89);
+            this.minervaSpecialInstructionsTextBox.TabIndex = 69;
+            this.minervaSpecialInstructionsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // specialInstructionsLabel
+            // minervaSpecialInstructionsLabel
             // 
-            this.specialInstructionsLabel.AutoSize = true;
-            this.specialInstructionsLabel.Location = new System.Drawing.Point(690, 206);
-            this.specialInstructionsLabel.Name = "specialInstructionsLabel";
-            this.specialInstructionsLabel.Size = new System.Drawing.Size(99, 13);
-            this.specialInstructionsLabel.TabIndex = 70;
-            this.specialInstructionsLabel.Text = "Special Instructions";
+            this.minervaSpecialInstructionsLabel.AutoSize = true;
+            this.minervaSpecialInstructionsLabel.Location = new System.Drawing.Point(235, 228);
+            this.minervaSpecialInstructionsLabel.Name = "minervaSpecialInstructionsLabel";
+            this.minervaSpecialInstructionsLabel.Size = new System.Drawing.Size(99, 13);
+            this.minervaSpecialInstructionsLabel.TabIndex = 70;
+            this.minervaSpecialInstructionsLabel.Text = "Special Instructions";
             // 
             // importXmlButton2
             // 
-            this.importXmlButton2.Location = new System.Drawing.Point(238, 28);
+            this.importXmlButton2.Location = new System.Drawing.Point(345, 32);
             this.importXmlButton2.Margin = new System.Windows.Forms.Padding(10);
             this.importXmlButton2.Name = "importXmlButton2";
-            this.importXmlButton2.Size = new System.Drawing.Size(75, 23);
+            this.importXmlButton2.Size = new System.Drawing.Size(90, 23);
             this.importXmlButton2.TabIndex = 71;
             this.importXmlButton2.Text = "Import XML";
             this.importXmlButton2.UseVisualStyleBackColor = true;
             this.importXmlButton2.Click += new System.EventHandler(this.importXmlButton_Click);
             // 
-            // wtcQtyNumericUpDown
+            // minervaWtcQtyNumericUpDown
             // 
-            this.wtcQtyNumericUpDown.Location = new System.Drawing.Point(748, 404);
-            this.wtcQtyNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
-            this.wtcQtyNumericUpDown.Maximum = new decimal(new int[] {
+            this.minervaWtcQtyNumericUpDown.Location = new System.Drawing.Point(293, 426);
+            this.minervaWtcQtyNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaWtcQtyNumericUpDown.Maximum = new decimal(new int[] {
             500,
             0,
             0,
             0});
-            this.wtcQtyNumericUpDown.Name = "wtcQtyNumericUpDown";
-            this.wtcQtyNumericUpDown.Size = new System.Drawing.Size(73, 20);
-            this.wtcQtyNumericUpDown.TabIndex = 75;
-            this.wtcQtyNumericUpDown.Visible = false;
+            this.minervaWtcQtyNumericUpDown.Name = "minervaWtcQtyNumericUpDown";
+            this.minervaWtcQtyNumericUpDown.Size = new System.Drawing.Size(73, 20);
+            this.minervaWtcQtyNumericUpDown.TabIndex = 75;
+            this.minervaWtcQtyNumericUpDown.Visible = false;
             // 
-            // bhnPackRetailCodeLabel
+            // minervaBhnPackRetailCodeLabel
             // 
-            this.bhnPackRetailCodeLabel.AutoSize = true;
-            this.bhnPackRetailCodeLabel.Location = new System.Drawing.Point(916, 63);
-            this.bhnPackRetailCodeLabel.Name = "bhnPackRetailCodeLabel";
-            this.bhnPackRetailCodeLabel.Size = new System.Drawing.Size(146, 13);
-            this.bhnPackRetailCodeLabel.TabIndex = 62;
-            this.bhnPackRetailCodeLabel.Text = "Blackhawk Pack Retail Code";
-            this.bhnPackRetailCodeLabel.Visible = false;
+            this.minervaBhnPackRetailCodeLabel.AutoSize = true;
+            this.minervaBhnPackRetailCodeLabel.Location = new System.Drawing.Point(461, 85);
+            this.minervaBhnPackRetailCodeLabel.Name = "minervaBhnPackRetailCodeLabel";
+            this.minervaBhnPackRetailCodeLabel.Size = new System.Drawing.Size(146, 13);
+            this.minervaBhnPackRetailCodeLabel.TabIndex = 62;
+            this.minervaBhnPackRetailCodeLabel.Text = "Blackhawk Pack Retail Code";
+            this.minervaBhnPackRetailCodeLabel.Visible = false;
             // 
             // jobNumberTextBox
             // 
-            this.jobNumberTextBox.Location = new System.Drawing.Point(12, 77);
+            this.jobNumberTextBox.Location = new System.Drawing.Point(9, 124);
             this.jobNumberTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.jobNumberTextBox.Name = "jobNumberTextBox";
             this.jobNumberTextBox.ReadOnly = true;
@@ -607,7 +647,7 @@
             // 
             // dueDateTextBox
             // 
-            this.dueDateTextBox.Location = new System.Drawing.Point(12, 123);
+            this.dueDateTextBox.Location = new System.Drawing.Point(9, 170);
             this.dueDateTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.dueDateTextBox.Name = "dueDateTextBox";
             this.dueDateTextBox.ReadOnly = true;
@@ -618,7 +658,7 @@
             // 
             // purchaseOrderLineTextBox
             // 
-            this.purchaseOrderLineTextBox.Location = new System.Drawing.Point(12, 219);
+            this.purchaseOrderLineTextBox.Location = new System.Drawing.Point(9, 266);
             this.purchaseOrderLineTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.purchaseOrderLineTextBox.Name = "purchaseOrderLineTextBox";
             this.purchaseOrderLineTextBox.ReadOnly = true;
@@ -629,7 +669,7 @@
             // 
             // purchaseOrderNoTextBox
             // 
-            this.purchaseOrderNoTextBox.Location = new System.Drawing.Point(12, 171);
+            this.purchaseOrderNoTextBox.Location = new System.Drawing.Point(9, 218);
             this.purchaseOrderNoTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.purchaseOrderNoTextBox.Name = "purchaseOrderNoTextBox";
             this.purchaseOrderNoTextBox.ReadOnly = true;
@@ -640,7 +680,7 @@
             // 
             // ascmOrderIDTextBox
             // 
-            this.ascmOrderIDTextBox.Location = new System.Drawing.Point(12, 405);
+            this.ascmOrderIDTextBox.Location = new System.Drawing.Point(9, 452);
             this.ascmOrderIDTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.ascmOrderIDTextBox.Name = "ascmOrderIDTextBox";
             this.ascmOrderIDTextBox.ReadOnly = true;
@@ -651,7 +691,7 @@
             // 
             // customerAccountTextBox
             // 
-            this.customerAccountTextBox.Location = new System.Drawing.Point(12, 314);
+            this.customerAccountTextBox.Location = new System.Drawing.Point(9, 361);
             this.customerAccountTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.customerAccountTextBox.Name = "customerAccountTextBox";
             this.customerAccountTextBox.ReadOnly = true;
@@ -662,7 +702,7 @@
             // 
             // salesOrderNumberTextBox
             // 
-            this.salesOrderNumberTextBox.Location = new System.Drawing.Point(12, 266);
+            this.salesOrderNumberTextBox.Location = new System.Drawing.Point(9, 313);
             this.salesOrderNumberTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.salesOrderNumberTextBox.Name = "salesOrderNumberTextBox";
             this.salesOrderNumberTextBox.ReadOnly = true;
@@ -673,7 +713,7 @@
             // 
             // buildQuantityTextBox
             // 
-            this.buildQuantityTextBox.Location = new System.Drawing.Point(12, 360);
+            this.buildQuantityTextBox.Location = new System.Drawing.Point(9, 407);
             this.buildQuantityTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.buildQuantityTextBox.Name = "buildQuantityTextBox";
             this.buildQuantityTextBox.ReadOnly = true;
@@ -684,7 +724,7 @@
             // 
             // endCustomerTextBox
             // 
-            this.endCustomerTextBox.Location = new System.Drawing.Point(12, 450);
+            this.endCustomerTextBox.Location = new System.Drawing.Point(9, 497);
             this.endCustomerTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.endCustomerTextBox.Name = "endCustomerTextBox";
             this.endCustomerTextBox.ReadOnly = true;
@@ -695,7 +735,7 @@
             // 
             // retailBarcodeTypeTextBox
             // 
-            this.retailBarcodeTypeTextBox.Location = new System.Drawing.Point(238, 450);
+            this.retailBarcodeTypeTextBox.Location = new System.Drawing.Point(235, 497);
             this.retailBarcodeTypeTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.retailBarcodeTypeTextBox.Name = "retailBarcodeTypeTextBox";
             this.retailBarcodeTypeTextBox.ReadOnly = true;
@@ -706,7 +746,7 @@
             // 
             // retailBarcodeTextBox
             // 
-            this.retailBarcodeTextBox.Location = new System.Drawing.Point(238, 404);
+            this.retailBarcodeTextBox.Location = new System.Drawing.Point(235, 451);
             this.retailBarcodeTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.retailBarcodeTextBox.Name = "retailBarcodeTextBox";
             this.retailBarcodeTextBox.ReadOnly = true;
@@ -717,7 +757,7 @@
             // 
             // partNumberTextBox
             // 
-            this.partNumberTextBox.Location = new System.Drawing.Point(238, 359);
+            this.partNumberTextBox.Location = new System.Drawing.Point(235, 406);
             this.partNumberTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.partNumberTextBox.Name = "partNumberTextBox";
             this.partNumberTextBox.ReadOnly = true;
@@ -728,7 +768,7 @@
             // 
             // integratorPartIDTextBox
             // 
-            this.integratorPartIDTextBox.Location = new System.Drawing.Point(238, 219);
+            this.integratorPartIDTextBox.Location = new System.Drawing.Point(235, 266);
             this.integratorPartIDTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.integratorPartIDTextBox.Name = "integratorPartIDTextBox";
             this.integratorPartIDTextBox.ReadOnly = true;
@@ -739,7 +779,7 @@
             // 
             // activationTypeTextBox
             // 
-            this.activationTypeTextBox.Location = new System.Drawing.Point(238, 314);
+            this.activationTypeTextBox.Location = new System.Drawing.Point(235, 361);
             this.activationTypeTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.activationTypeTextBox.Name = "activationTypeTextBox";
             this.activationTypeTextBox.ReadOnly = true;
@@ -750,7 +790,7 @@
             // 
             // integratorIDTextBox
             // 
-            this.integratorIDTextBox.Location = new System.Drawing.Point(238, 266);
+            this.integratorIDTextBox.Location = new System.Drawing.Point(235, 313);
             this.integratorIDTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.integratorIDTextBox.Name = "integratorIDTextBox";
             this.integratorIDTextBox.ReadOnly = true;
@@ -761,7 +801,7 @@
             // 
             // erpMaterialCodeTextBox
             // 
-            this.erpMaterialCodeTextBox.Location = new System.Drawing.Point(238, 170);
+            this.erpMaterialCodeTextBox.Location = new System.Drawing.Point(235, 217);
             this.erpMaterialCodeTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.erpMaterialCodeTextBox.Name = "erpMaterialCodeTextBox";
             this.erpMaterialCodeTextBox.ReadOnly = true;
@@ -772,7 +812,7 @@
             // 
             // productTypeTextBox
             // 
-            this.productTypeTextBox.Location = new System.Drawing.Point(238, 124);
+            this.productTypeTextBox.Location = new System.Drawing.Point(235, 171);
             this.productTypeTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.productTypeTextBox.Name = "productTypeTextBox";
             this.productTypeTextBox.ReadOnly = true;
@@ -783,7 +823,7 @@
             // 
             // activationSystemTextBox
             // 
-            this.activationSystemTextBox.Location = new System.Drawing.Point(238, 77);
+            this.activationSystemTextBox.Location = new System.Drawing.Point(235, 124);
             this.activationSystemTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.activationSystemTextBox.Name = "activationSystemTextBox";
             this.activationSystemTextBox.ReadOnly = true;
@@ -795,7 +835,7 @@
             // jobNumberLabel
             // 
             this.jobNumberLabel.AutoSize = true;
-            this.jobNumberLabel.Location = new System.Drawing.Point(11, 63);
+            this.jobNumberLabel.Location = new System.Drawing.Point(8, 110);
             this.jobNumberLabel.Name = "jobNumberLabel";
             this.jobNumberLabel.Size = new System.Drawing.Size(64, 13);
             this.jobNumberLabel.TabIndex = 94;
@@ -804,7 +844,7 @@
             // dueDateLabel
             // 
             this.dueDateLabel.AutoSize = true;
-            this.dueDateLabel.Location = new System.Drawing.Point(11, 109);
+            this.dueDateLabel.Location = new System.Drawing.Point(8, 156);
             this.dueDateLabel.Name = "dueDateLabel";
             this.dueDateLabel.Size = new System.Drawing.Size(53, 13);
             this.dueDateLabel.TabIndex = 95;
@@ -813,7 +853,7 @@
             // purchaseOrderNoLabel
             // 
             this.purchaseOrderNoLabel.AutoSize = true;
-            this.purchaseOrderNoLabel.Location = new System.Drawing.Point(11, 157);
+            this.purchaseOrderNoLabel.Location = new System.Drawing.Point(8, 204);
             this.purchaseOrderNoLabel.Name = "purchaseOrderNoLabel";
             this.purchaseOrderNoLabel.Size = new System.Drawing.Size(121, 13);
             this.purchaseOrderNoLabel.TabIndex = 96;
@@ -822,7 +862,7 @@
             // purchaseOrderLineLabel
             // 
             this.purchaseOrderLineLabel.AutoSize = true;
-            this.purchaseOrderLineLabel.Location = new System.Drawing.Point(11, 206);
+            this.purchaseOrderLineLabel.Location = new System.Drawing.Point(8, 253);
             this.purchaseOrderLineLabel.Name = "purchaseOrderLineLabel";
             this.purchaseOrderLineLabel.Size = new System.Drawing.Size(104, 13);
             this.purchaseOrderLineLabel.TabIndex = 97;
@@ -831,7 +871,7 @@
             // buildQuantityLabel
             // 
             this.buildQuantityLabel.AutoSize = true;
-            this.buildQuantityLabel.Location = new System.Drawing.Point(11, 345);
+            this.buildQuantityLabel.Location = new System.Drawing.Point(8, 392);
             this.buildQuantityLabel.Name = "buildQuantityLabel";
             this.buildQuantityLabel.Size = new System.Drawing.Size(72, 13);
             this.buildQuantityLabel.TabIndex = 98;
@@ -840,7 +880,7 @@
             // salesOrderNumberLabel
             // 
             this.salesOrderNumberLabel.AutoSize = true;
-            this.salesOrderNumberLabel.Location = new System.Drawing.Point(11, 251);
+            this.salesOrderNumberLabel.Location = new System.Drawing.Point(8, 298);
             this.salesOrderNumberLabel.Name = "salesOrderNumberLabel";
             this.salesOrderNumberLabel.Size = new System.Drawing.Size(102, 13);
             this.salesOrderNumberLabel.TabIndex = 99;
@@ -849,7 +889,7 @@
             // customerAccountCodeLabel
             // 
             this.customerAccountCodeLabel.AutoSize = true;
-            this.customerAccountCodeLabel.Location = new System.Drawing.Point(11, 298);
+            this.customerAccountCodeLabel.Location = new System.Drawing.Point(8, 345);
             this.customerAccountCodeLabel.Name = "customerAccountCodeLabel";
             this.customerAccountCodeLabel.Size = new System.Drawing.Size(122, 13);
             this.customerAccountCodeLabel.TabIndex = 100;
@@ -858,7 +898,7 @@
             // ascmOrderIDLabel
             // 
             this.ascmOrderIDLabel.AutoSize = true;
-            this.ascmOrderIDLabel.Location = new System.Drawing.Point(11, 391);
+            this.ascmOrderIDLabel.Location = new System.Drawing.Point(8, 438);
             this.ascmOrderIDLabel.Name = "ascmOrderIDLabel";
             this.ascmOrderIDLabel.Size = new System.Drawing.Size(80, 13);
             this.ascmOrderIDLabel.TabIndex = 101;
@@ -867,7 +907,7 @@
             // endCustomerLabel
             // 
             this.endCustomerLabel.AutoSize = true;
-            this.endCustomerLabel.Location = new System.Drawing.Point(11, 437);
+            this.endCustomerLabel.Location = new System.Drawing.Point(8, 484);
             this.endCustomerLabel.Name = "endCustomerLabel";
             this.endCustomerLabel.Size = new System.Drawing.Size(73, 13);
             this.endCustomerLabel.TabIndex = 102;
@@ -876,7 +916,7 @@
             // activationSystemLabel
             // 
             this.activationSystemLabel.AutoSize = true;
-            this.activationSystemLabel.Location = new System.Drawing.Point(237, 63);
+            this.activationSystemLabel.Location = new System.Drawing.Point(234, 110);
             this.activationSystemLabel.Name = "activationSystemLabel";
             this.activationSystemLabel.Size = new System.Drawing.Size(91, 13);
             this.activationSystemLabel.TabIndex = 94;
@@ -885,7 +925,7 @@
             // productTypeLabel
             // 
             this.productTypeLabel.AutoSize = true;
-            this.productTypeLabel.Location = new System.Drawing.Point(237, 109);
+            this.productTypeLabel.Location = new System.Drawing.Point(234, 156);
             this.productTypeLabel.Name = "productTypeLabel";
             this.productTypeLabel.Size = new System.Drawing.Size(71, 13);
             this.productTypeLabel.TabIndex = 95;
@@ -894,7 +934,7 @@
             // erpMaterialCodeLabel
             // 
             this.erpMaterialCodeLabel.AutoSize = true;
-            this.erpMaterialCodeLabel.Location = new System.Drawing.Point(237, 157);
+            this.erpMaterialCodeLabel.Location = new System.Drawing.Point(234, 204);
             this.erpMaterialCodeLabel.Name = "erpMaterialCodeLabel";
             this.erpMaterialCodeLabel.Size = new System.Drawing.Size(97, 13);
             this.erpMaterialCodeLabel.TabIndex = 96;
@@ -903,7 +943,7 @@
             // IntegratorIDlabel
             // 
             this.IntegratorIDlabel.AutoSize = true;
-            this.IntegratorIDlabel.Location = new System.Drawing.Point(237, 253);
+            this.IntegratorIDlabel.Location = new System.Drawing.Point(234, 300);
             this.IntegratorIDlabel.Name = "IntegratorIDlabel";
             this.IntegratorIDlabel.Size = new System.Drawing.Size(66, 13);
             this.IntegratorIDlabel.TabIndex = 97;
@@ -912,7 +952,7 @@
             // partNumberLabel
             // 
             this.partNumberLabel.AutoSize = true;
-            this.partNumberLabel.Location = new System.Drawing.Point(237, 345);
+            this.partNumberLabel.Location = new System.Drawing.Point(234, 392);
             this.partNumberLabel.Name = "partNumberLabel";
             this.partNumberLabel.Size = new System.Drawing.Size(66, 13);
             this.partNumberLabel.TabIndex = 98;
@@ -921,7 +961,7 @@
             // activationTypeLabel
             // 
             this.activationTypeLabel.AutoSize = true;
-            this.activationTypeLabel.Location = new System.Drawing.Point(237, 299);
+            this.activationTypeLabel.Location = new System.Drawing.Point(234, 346);
             this.activationTypeLabel.Name = "activationTypeLabel";
             this.activationTypeLabel.Size = new System.Drawing.Size(81, 13);
             this.activationTypeLabel.TabIndex = 99;
@@ -930,7 +970,7 @@
             // integratorPartIDLabel
             // 
             this.integratorPartIDLabel.AutoSize = true;
-            this.integratorPartIDLabel.Location = new System.Drawing.Point(237, 204);
+            this.integratorPartIDLabel.Location = new System.Drawing.Point(234, 251);
             this.integratorPartIDLabel.Name = "integratorPartIDLabel";
             this.integratorPartIDLabel.Size = new System.Drawing.Size(88, 13);
             this.integratorPartIDLabel.TabIndex = 100;
@@ -939,7 +979,7 @@
             // retailBarcodeLabel
             // 
             this.retailBarcodeLabel.AutoSize = true;
-            this.retailBarcodeLabel.Location = new System.Drawing.Point(237, 391);
+            this.retailBarcodeLabel.Location = new System.Drawing.Point(234, 438);
             this.retailBarcodeLabel.Name = "retailBarcodeLabel";
             this.retailBarcodeLabel.Size = new System.Drawing.Size(77, 13);
             this.retailBarcodeLabel.TabIndex = 101;
@@ -948,7 +988,7 @@
             // retailBarcodeTypeLabel
             // 
             this.retailBarcodeTypeLabel.AutoSize = true;
-            this.retailBarcodeTypeLabel.Location = new System.Drawing.Point(237, 435);
+            this.retailBarcodeTypeLabel.Location = new System.Drawing.Point(234, 482);
             this.retailBarcodeTypeLabel.Name = "retailBarcodeTypeLabel";
             this.retailBarcodeTypeLabel.Size = new System.Drawing.Size(104, 13);
             this.retailBarcodeTypeLabel.TabIndex = 102;
@@ -957,7 +997,7 @@
             // orderIDLabel
             // 
             this.orderIDLabel.AutoSize = true;
-            this.orderIDLabel.Location = new System.Drawing.Point(11, 14);
+            this.orderIDLabel.Location = new System.Drawing.Point(8, 61);
             this.orderIDLabel.Margin = new System.Windows.Forms.Padding(10);
             this.orderIDLabel.Name = "orderIDLabel";
             this.orderIDLabel.Size = new System.Drawing.Size(50, 13);
@@ -966,7 +1006,7 @@
             // 
             // orderIDNumericUpDown
             // 
-            this.orderIDNumericUpDown.Location = new System.Drawing.Point(12, 28);
+            this.orderIDNumericUpDown.Location = new System.Drawing.Point(9, 75);
             this.orderIDNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
             this.orderIDNumericUpDown.Maximum = new decimal(new int[] {
             1000,
@@ -978,110 +1018,110 @@
             this.orderIDNumericUpDown.TabIndex = 105;
             this.orderIDNumericUpDown.ValueChanged += new System.EventHandler(this.orderIDNumericUpDown_ValueChanged);
             // 
-            // saveOrderButton
+            // minervaSaveOrderButton
             // 
-            this.saveOrderButton.Location = new System.Drawing.Point(333, 28);
-            this.saveOrderButton.Margin = new System.Windows.Forms.Padding(10);
-            this.saveOrderButton.Name = "saveOrderButton";
-            this.saveOrderButton.Size = new System.Drawing.Size(105, 23);
-            this.saveOrderButton.TabIndex = 106;
-            this.saveOrderButton.Text = "Save Order Details";
-            this.saveOrderButton.UseVisualStyleBackColor = true;
-            this.saveOrderButton.Click += new System.EventHandler(this.saveButton_Click);
+            this.minervaSaveOrderButton.Location = new System.Drawing.Point(104, 49);
+            this.minervaSaveOrderButton.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaSaveOrderButton.Name = "minervaSaveOrderButton";
+            this.minervaSaveOrderButton.Size = new System.Drawing.Size(105, 23);
+            this.minervaSaveOrderButton.TabIndex = 106;
+            this.minervaSaveOrderButton.Text = "Save Order Details";
+            this.minervaSaveOrderButton.UseVisualStyleBackColor = true;
+            this.minervaSaveOrderButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // integratorComboCox
+            // minervaIntegratorComboCox
             // 
-            this.integratorComboCox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.integratorComboCox.FormattingEnabled = true;
-            this.integratorComboCox.Items.AddRange(new object[] {
+            this.minervaIntegratorComboCox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.minervaIntegratorComboCox.FormattingEnabled = true;
+            this.minervaIntegratorComboCox.Items.AddRange(new object[] {
             "AOS",
             "BlackHawk",
             "EPay",
             "Incomm"});
-            this.integratorComboCox.Location = new System.Drawing.Point(465, 123);
-            this.integratorComboCox.Margin = new System.Windows.Forms.Padding(10);
-            this.integratorComboCox.Name = "integratorComboCox";
-            this.integratorComboCox.Size = new System.Drawing.Size(200, 21);
-            this.integratorComboCox.TabIndex = 4;
-            this.integratorComboCox.SelectedIndexChanged += new System.EventHandler(this.integratorsList_SelectedIndexChanged);
+            this.minervaIntegratorComboCox.Location = new System.Drawing.Point(10, 145);
+            this.minervaIntegratorComboCox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaIntegratorComboCox.Name = "minervaIntegratorComboCox";
+            this.minervaIntegratorComboCox.Size = new System.Drawing.Size(200, 21);
+            this.minervaIntegratorComboCox.TabIndex = 4;
+            this.minervaIntegratorComboCox.SelectedIndexChanged += new System.EventHandler(this.integratorsList_SelectedIndexChanged);
             // 
-            // generateXmlButton
+            // minervaGenerateXmlButton
             // 
-            this.generateXmlButton.Location = new System.Drawing.Point(465, 28);
-            this.generateXmlButton.Margin = new System.Windows.Forms.Padding(10);
-            this.generateXmlButton.Name = "generateXmlButton";
-            this.generateXmlButton.Size = new System.Drawing.Size(86, 23);
-            this.generateXmlButton.TabIndex = 107;
-            this.generateXmlButton.Text = "Generate XML";
-            this.generateXmlButton.UseVisualStyleBackColor = true;
-            this.generateXmlButton.Click += new System.EventHandler(this.generateXmlButton_Click);
+            this.minervaGenerateXmlButton.Location = new System.Drawing.Point(10, 49);
+            this.minervaGenerateXmlButton.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaGenerateXmlButton.Name = "minervaGenerateXmlButton";
+            this.minervaGenerateXmlButton.Size = new System.Drawing.Size(87, 23);
+            this.minervaGenerateXmlButton.TabIndex = 107;
+            this.minervaGenerateXmlButton.Text = "Generate XML";
+            this.minervaGenerateXmlButton.UseVisualStyleBackColor = true;
+            this.minervaGenerateXmlButton.Click += new System.EventHandler(this.generateXmlButton_Click);
             // 
-            // bhnPackRetailCodeNumericUpDown
+            // minervaBhnPackRetailCodeNumericUpDown
             // 
-            this.bhnPackRetailCodeNumericUpDown.Location = new System.Drawing.Point(917, 79);
-            this.bhnPackRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
+            this.minervaBhnPackRetailCodeNumericUpDown.Location = new System.Drawing.Point(462, 101);
+            this.minervaBhnPackRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
-            this.bhnPackRetailCodeNumericUpDown.Name = "bhnPackRetailCodeNumericUpDown";
-            this.bhnPackRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
-            this.bhnPackRetailCodeNumericUpDown.TabIndex = 108;
-            this.bhnPackRetailCodeNumericUpDown.Visible = false;
+            this.minervaBhnPackRetailCodeNumericUpDown.Name = "minervaBhnPackRetailCodeNumericUpDown";
+            this.minervaBhnPackRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
+            this.minervaBhnPackRetailCodeNumericUpDown.TabIndex = 108;
+            this.minervaBhnPackRetailCodeNumericUpDown.Visible = false;
             // 
-            // bhnBoxRetailCodeNumericUpDown
+            // minervaBhnBoxRetailCodeNumericUpDown
             // 
-            this.bhnBoxRetailCodeNumericUpDown.Location = new System.Drawing.Point(917, 123);
-            this.bhnBoxRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
+            this.minervaBhnBoxRetailCodeNumericUpDown.Location = new System.Drawing.Point(462, 145);
+            this.minervaBhnBoxRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
-            this.bhnBoxRetailCodeNumericUpDown.Name = "bhnBoxRetailCodeNumericUpDown";
-            this.bhnBoxRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
-            this.bhnBoxRetailCodeNumericUpDown.TabIndex = 109;
-            this.bhnBoxRetailCodeNumericUpDown.Visible = false;
+            this.minervaBhnBoxRetailCodeNumericUpDown.Name = "minervaBhnBoxRetailCodeNumericUpDown";
+            this.minervaBhnBoxRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
+            this.minervaBhnBoxRetailCodeNumericUpDown.TabIndex = 109;
+            this.minervaBhnBoxRetailCodeNumericUpDown.Visible = false;
             // 
-            // bhnPalletRetailCodeNumericUpDown
+            // minervaBhnPalletRetailCodeNumericUpDown
             // 
-            this.bhnPalletRetailCodeNumericUpDown.Location = new System.Drawing.Point(917, 170);
-            this.bhnPalletRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
+            this.minervaBhnPalletRetailCodeNumericUpDown.Location = new System.Drawing.Point(462, 192);
+            this.minervaBhnPalletRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
             1410065408,
             2,
             0,
             0});
-            this.bhnPalletRetailCodeNumericUpDown.Name = "bhnPalletRetailCodeNumericUpDown";
-            this.bhnPalletRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
-            this.bhnPalletRetailCodeNumericUpDown.TabIndex = 110;
-            this.bhnPalletRetailCodeNumericUpDown.Visible = false;
+            this.minervaBhnPalletRetailCodeNumericUpDown.Name = "minervaBhnPalletRetailCodeNumericUpDown";
+            this.minervaBhnPalletRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
+            this.minervaBhnPalletRetailCodeNumericUpDown.TabIndex = 110;
+            this.minervaBhnPalletRetailCodeNumericUpDown.Visible = false;
             // 
-            // totalOrdersTextBox
+            // minervaTotalOrdersTextBox
             // 
-            this.totalOrdersTextBox.Location = new System.Drawing.Point(620, 29);
-            this.totalOrdersTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.totalOrdersTextBox.Name = "totalOrdersTextBox";
-            this.totalOrdersTextBox.ReadOnly = true;
-            this.totalOrdersTextBox.Size = new System.Drawing.Size(45, 20);
-            this.totalOrdersTextBox.TabIndex = 111;
-            this.totalOrdersTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.totalOrdersTextBox.WordWrap = false;
+            this.minervaTotalOrdersTextBox.Location = new System.Drawing.Point(393, 77);
+            this.minervaTotalOrdersTextBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaTotalOrdersTextBox.Name = "minervaTotalOrdersTextBox";
+            this.minervaTotalOrdersTextBox.ReadOnly = true;
+            this.minervaTotalOrdersTextBox.Size = new System.Drawing.Size(45, 20);
+            this.minervaTotalOrdersTextBox.TabIndex = 111;
+            this.minervaTotalOrdersTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.minervaTotalOrdersTextBox.WordWrap = false;
             // 
-            // currentOrderTextBox
+            // minervaCurrentOrderTextBox
             // 
-            this.currentOrderTextBox.Location = new System.Drawing.Point(558, 29);
-            this.currentOrderTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.currentOrderTextBox.Name = "currentOrderTextBox";
-            this.currentOrderTextBox.ReadOnly = true;
-            this.currentOrderTextBox.Size = new System.Drawing.Size(45, 20);
-            this.currentOrderTextBox.TabIndex = 112;
-            this.currentOrderTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.currentOrderTextBox.WordWrap = false;
+            this.minervaCurrentOrderTextBox.Location = new System.Drawing.Point(331, 77);
+            this.minervaCurrentOrderTextBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaCurrentOrderTextBox.Name = "minervaCurrentOrderTextBox";
+            this.minervaCurrentOrderTextBox.ReadOnly = true;
+            this.minervaCurrentOrderTextBox.Size = new System.Drawing.Size(45, 20);
+            this.minervaCurrentOrderTextBox.TabIndex = 112;
+            this.minervaCurrentOrderTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.minervaCurrentOrderTextBox.WordWrap = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(605, 31);
+            this.label1.Location = new System.Drawing.Point(378, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(13, 20);
             this.label1.TabIndex = 113;
@@ -1090,21 +1130,11 @@
             // totalOdersLabel
             // 
             this.totalOdersLabel.AutoSize = true;
-            this.totalOdersLabel.Location = new System.Drawing.Point(559, 14);
+            this.totalOdersLabel.Location = new System.Drawing.Point(246, 79);
             this.totalOdersLabel.Name = "totalOdersLabel";
             this.totalOdersLabel.Size = new System.Drawing.Size(65, 13);
             this.totalOdersLabel.TabIndex = 114;
             this.totalOdersLabel.Text = "Total Orders";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Impact", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(685, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(404, 48);
-            this.label2.TabIndex = 115;
-            this.label2.Text = "COLORMAN LOADER v1.0";
             // 
             // pictureBox1
             // 
@@ -1112,30 +1142,467 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(910, 220);
+            this.pictureBox1.Location = new System.Drawing.Point(455, 242);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Padding = new System.Windows.Forms.Padding(5);
             this.pictureBox1.Size = new System.Drawing.Size(215, 197);
             this.pictureBox1.TabIndex = 116;
             this.pictureBox1.TabStop = false;
             // 
+            // minervaPanel
+            // 
+            this.minervaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.minervaPanel.Controls.Add(this.pictureBox1);
+            this.minervaPanel.Controls.Add(this.minervaBhnPalletRetailCodeNumericUpDown);
+            this.minervaPanel.Controls.Add(this.minervaBhnBoxRetailCodeNumericUpDown);
+            this.minervaPanel.Controls.Add(this.minervaBhnPackRetailCodeNumericUpDown);
+            this.minervaPanel.Controls.Add(this.minervaGenerateXmlButton);
+            this.minervaPanel.Controls.Add(this.minervaWtcQtyNumericUpDown);
+            this.minervaPanel.Controls.Add(this.minervaSpecialInstructionsLabel);
+            this.minervaPanel.Controls.Add(this.minervaSpecialInstructionsTextBox);
+            this.minervaPanel.Controls.Add(this.minervaSaveOrderButton);
+            this.minervaPanel.Controls.Add(this.minervaWtcDenomDecimalcheckBox);
+            this.minervaPanel.Controls.Add(this.minervaWtcDenomNumericUpDown);
+            this.minervaPanel.Controls.Add(this.minervaBhnPalletRetailCodeLabel);
+            this.minervaPanel.Controls.Add(this.minervaBhnBoxRetailCodeLabel);
+            this.minervaPanel.Controls.Add(this.minervaBhnPackRetailCodeLabel);
+            this.minervaPanel.Controls.Add(this.minervaPptQtyNumericUpDown);
+            this.minervaPanel.Controls.Add(this.minervaDenomDecimalCheckBox);
+            this.minervaPanel.Controls.Add(this.minervaDenominationNumericUpDown);
+            this.minervaPanel.Controls.Add(this.minervaJobQtyNumericUpDown);
+            this.minervaPanel.Controls.Add(this.minervaBoxQuantityComboBox);
+            this.minervaPanel.Controls.Add(this.minervaPackQuantityComboBox);
+            this.minervaPanel.Controls.Add(this.minervaPalletQtyNumericUpDown);
+            this.minervaPanel.Controls.Add(this.minervaPalletQuantityLabel);
+            this.minervaPanel.Controls.Add(this.minervaBoxQuantityLabel);
+            this.minervaPanel.Controls.Add(this.minervaPackQuantityLabel);
+            this.minervaPanel.Controls.Add(this.minervaPptQuantityLabel);
+            this.minervaPanel.Controls.Add(this.minervaPptCheckBox);
+            this.minervaPanel.Controls.Add(this.minervaWtcDenomLabel);
+            this.minervaPanel.Controls.Add(this.minervaCountryIncommRetailerLabel);
+            this.minervaPanel.Controls.Add(this.minervaCountryIncommRetailerTextBox);
+            this.minervaPanel.Controls.Add(this.minervaWtcEnvironmentLabel);
+            this.minervaPanel.Controls.Add(this.minervaWtcEnvironmentComboBox);
+            this.minervaPanel.Controls.Add(this.minervaWtcQuantityLabel);
+            this.minervaPanel.Controls.Add(this.minervaWtcCheckBox);
+            this.minervaPanel.Controls.Add(this.minervaHumanReadableCheckBox);
+            this.minervaPanel.Controls.Add(this.minervaDenominationLabel);
+            this.minervaPanel.Controls.Add(this.minervaJobTypeLabel);
+            this.minervaPanel.Controls.Add(this.minervaJobTypeComboBox);
+            this.minervaPanel.Controls.Add(this.minervaRegionIntegratorIDLabel);
+            this.minervaPanel.Controls.Add(this.minervaRegionIntegratorIDTextBox);
+            this.minervaPanel.Controls.Add(this.minervaProductDescriptionLabel);
+            this.minervaPanel.Controls.Add(this.minervaProductDescriptionTextBox);
+            this.minervaPanel.Controls.Add(this.minervaCurrencyLabel);
+            this.minervaPanel.Controls.Add(this.minervaCurrencyComboBox);
+            this.minervaPanel.Controls.Add(this.minervaJobQtyLabel);
+            this.minervaPanel.Controls.Add(this.minervaRegionLabel);
+            this.minervaPanel.Controls.Add(this.minervaRegionComboBox);
+            this.minervaPanel.Controls.Add(this.minervaIntegratorLabel);
+            this.minervaPanel.Controls.Add(this.minervaIntegratorComboCox);
+            this.minervaPanel.Location = new System.Drawing.Point(449, 24);
+            this.minervaPanel.Name = "minervaPanel";
+            this.minervaPanel.Size = new System.Drawing.Size(683, 505);
+            this.minervaPanel.TabIndex = 117;
+            // 
+            // athenaPanelButton
+            // 
+            this.athenaPanelButton.Location = new System.Drawing.Point(9, 32);
+            this.athenaPanelButton.Margin = new System.Windows.Forms.Padding(10);
+            this.athenaPanelButton.Name = "athenaPanelButton";
+            this.athenaPanelButton.Size = new System.Drawing.Size(79, 23);
+            this.athenaPanelButton.TabIndex = 120;
+            this.athenaPanelButton.Text = "Athena";
+            this.athenaPanelButton.UseVisualStyleBackColor = true;
+            // 
+            // asasaraPanelButton
+            // 
+            this.asasaraPanelButton.Location = new System.Drawing.Point(130, 32);
+            this.asasaraPanelButton.Margin = new System.Windows.Forms.Padding(10);
+            this.asasaraPanelButton.Name = "asasaraPanelButton";
+            this.asasaraPanelButton.Size = new System.Drawing.Size(79, 23);
+            this.asasaraPanelButton.TabIndex = 121;
+            this.asasaraPanelButton.Text = "Asasara";
+            this.asasaraPanelButton.UseVisualStyleBackColor = true;
+            // 
+            // minervaPanelButton
+            // 
+            this.minervaPanelButton.Location = new System.Drawing.Point(235, 32);
+            this.minervaPanelButton.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaPanelButton.Name = "minervaPanelButton";
+            this.minervaPanelButton.Size = new System.Drawing.Size(80, 23);
+            this.minervaPanelButton.TabIndex = 122;
+            this.minervaPanelButton.Text = "Minerva";
+            this.minervaPanelButton.UseVisualStyleBackColor = true;
+            // 
+            // athenaPanel
+            // 
+            this.athenaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.athenaPanel.Controls.Add(this.athenaBhnPalletRetailCodeNumericUpDown);
+            this.athenaPanel.Controls.Add(this.athenaBhnBoxRetailCodeNumericUpDown);
+            this.athenaPanel.Controls.Add(this.athenaBhnPackRetailCodeNumericUpDown);
+            this.athenaPanel.Controls.Add(this.athenaGeneratXmlButton);
+            this.athenaPanel.Controls.Add(this.label2);
+            this.athenaPanel.Controls.Add(this.textBox1);
+            this.athenaPanel.Controls.Add(this.button2);
+            this.athenaPanel.Controls.Add(this.label3);
+            this.athenaPanel.Controls.Add(this.label4);
+            this.athenaPanel.Controls.Add(this.label5);
+            this.athenaPanel.Controls.Add(this.checkBox2);
+            this.athenaPanel.Controls.Add(this.numericUpDown7);
+            this.athenaPanel.Controls.Add(this.numericUpDown8);
+            this.athenaPanel.Controls.Add(this.label11);
+            this.athenaPanel.Controls.Add(this.textBox2);
+            this.athenaPanel.Controls.Add(this.label14);
+            this.athenaPanel.Controls.Add(this.label15);
+            this.athenaPanel.Controls.Add(this.comboBox4);
+            this.athenaPanel.Controls.Add(this.label16);
+            this.athenaPanel.Controls.Add(this.textBox3);
+            this.athenaPanel.Controls.Add(this.label17);
+            this.athenaPanel.Controls.Add(this.textBox4);
+            this.athenaPanel.Controls.Add(this.label18);
+            this.athenaPanel.Controls.Add(this.comboBox5);
+            this.athenaPanel.Controls.Add(this.label19);
+            this.athenaPanel.Controls.Add(this.label20);
+            this.athenaPanel.Controls.Add(this.comboBox6);
+            this.athenaPanel.Controls.Add(this.label21);
+            this.athenaPanel.Controls.Add(this.comboBox7);
+            this.athenaPanel.Location = new System.Drawing.Point(448, 5);
+            this.athenaPanel.Name = "athenaPanel";
+            this.athenaPanel.Size = new System.Drawing.Size(683, 524);
+            this.athenaPanel.TabIndex = 118;
+            // 
+            // athenaBhnPalletRetailCodeNumericUpDown
+            // 
+            this.athenaBhnPalletRetailCodeNumericUpDown.Location = new System.Drawing.Point(479, 121);
+            this.athenaBhnPalletRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
+            this.athenaBhnPalletRetailCodeNumericUpDown.Name = "athenaBhnPalletRetailCodeNumericUpDown";
+            this.athenaBhnPalletRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
+            this.athenaBhnPalletRetailCodeNumericUpDown.TabIndex = 110;
+            this.athenaBhnPalletRetailCodeNumericUpDown.Visible = false;
+            // 
+            // athenaBhnBoxRetailCodeNumericUpDown
+            // 
+            this.athenaBhnBoxRetailCodeNumericUpDown.Location = new System.Drawing.Point(479, 74);
+            this.athenaBhnBoxRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
+            this.athenaBhnBoxRetailCodeNumericUpDown.Name = "athenaBhnBoxRetailCodeNumericUpDown";
+            this.athenaBhnBoxRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
+            this.athenaBhnBoxRetailCodeNumericUpDown.TabIndex = 109;
+            this.athenaBhnBoxRetailCodeNumericUpDown.Visible = false;
+            // 
+            // athenaBhnPackRetailCodeNumericUpDown
+            // 
+            this.athenaBhnPackRetailCodeNumericUpDown.Location = new System.Drawing.Point(479, 30);
+            this.athenaBhnPackRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
+            1410065408,
+            2,
+            0,
+            0});
+            this.athenaBhnPackRetailCodeNumericUpDown.Name = "athenaBhnPackRetailCodeNumericUpDown";
+            this.athenaBhnPackRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
+            this.athenaBhnPackRetailCodeNumericUpDown.TabIndex = 108;
+            this.athenaBhnPackRetailCodeNumericUpDown.Visible = false;
+            // 
+            // athenaGeneratXmlButton
+            // 
+            this.athenaGeneratXmlButton.Location = new System.Drawing.Point(479, 487);
+            this.athenaGeneratXmlButton.Margin = new System.Windows.Forms.Padding(10);
+            this.athenaGeneratXmlButton.Name = "athenaGeneratXmlButton";
+            this.athenaGeneratXmlButton.Size = new System.Drawing.Size(87, 23);
+            this.athenaGeneratXmlButton.TabIndex = 107;
+            this.athenaGeneratXmlButton.Text = "Generate XML";
+            this.athenaGeneratXmlButton.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 430);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 13);
+            this.label2.TabIndex = 70;
+            this.label2.Text = "Special Instructions";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 446);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(10);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 66);
+            this.textBox1.TabIndex = 69;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(574, 487);
+            this.button2.Margin = new System.Windows.Forms.Padding(10);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 23);
+            this.button2.TabIndex = 106;
+            this.button2.Text = "Save Order Details";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(478, 108);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(147, 13);
+            this.label3.TabIndex = 66;
+            this.label3.Text = "Blackhawk Pallet Retail Code";
+            this.label3.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(478, 61);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(139, 13);
+            this.label4.TabIndex = 64;
+            this.label4.Text = "Blackhawk Box Retail Code";
+            this.label4.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(478, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(146, 13);
+            this.label5.TabIndex = 62;
+            this.label5.Text = "Blackhawk Pack Retail Code";
+            this.label5.Visible = false;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(142, 217);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(70, 17);
+            this.checkBox2.TabIndex = 59;
+            this.checkBox2.Text = "Decimal?";
+            this.checkBox2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // numericUpDown7
+            // 
+            this.numericUpDown7.Location = new System.Drawing.Point(13, 214);
+            this.numericUpDown7.Margin = new System.Windows.Forms.Padding(10);
+            this.numericUpDown7.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericUpDown7.Name = "numericUpDown7";
+            this.numericUpDown7.Size = new System.Drawing.Size(108, 20);
+            this.numericUpDown7.TabIndex = 58;
+            // 
+            // numericUpDown8
+            // 
+            this.numericUpDown8.Location = new System.Drawing.Point(13, 261);
+            this.numericUpDown8.Margin = new System.Windows.Forms.Padding(10);
+            this.numericUpDown8.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.numericUpDown8.Name = "numericUpDown8";
+            this.numericUpDown8.Size = new System.Drawing.Size(200, 20);
+            this.numericUpDown8.TabIndex = 57;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(12, 386);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(130, 13);
+            this.label11.TabIndex = 39;
+            this.label11.Text = "Country / Incomm Retailer";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(13, 400);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(10);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 20);
+            this.textBox2.TabIndex = 38;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox2.WordWrap = false;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 199);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(72, 13);
+            this.label14.TabIndex = 31;
+            this.label14.Text = "Denomination";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(12, 13);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(51, 13);
+            this.label15.TabIndex = 29;
+            this.label15.Text = "Job Type";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "Job",
+            "Type",
+            "List"});
+            this.comboBox4.Location = new System.Drawing.Point(13, 27);
+            this.comboBox4.Margin = new System.Windows.Forms.Padding(10);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(200, 21);
+            this.comboBox4.TabIndex = 28;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(12, 342);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(103, 13);
+            this.label16.TabIndex = 19;
+            this.label16.Text = "Region Integrator ID";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(13, 356);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(10);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(200, 20);
+            this.textBox3.TabIndex = 18;
+            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox3.WordWrap = false;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(12, 294);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(100, 13);
+            this.label17.TabIndex = 15;
+            this.label17.Text = "Product Description";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(13, 308);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(10);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(200, 20);
+            this.textBox4.TabIndex = 14;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox4.WordWrap = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(12, 152);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(49, 13);
+            this.label18.TabIndex = 13;
+            this.label18.Text = "Currency";
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "EUR",
+            "GBP",
+            "PLN",
+            "HKD"});
+            this.comboBox5.Location = new System.Drawing.Point(13, 166);
+            this.comboBox5.Margin = new System.Windows.Forms.Padding(10);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(200, 21);
+            this.comboBox5.TabIndex = 12;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(12, 246);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(66, 13);
+            this.label19.TabIndex = 11;
+            this.label19.Text = "Job Quantity";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(12, 104);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(41, 13);
+            this.label20.TabIndex = 7;
+            this.label20.Text = "Region";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(12, 57);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(52, 13);
+            this.label21.TabIndex = 5;
+            this.label21.Text = "Integrator";
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "AOS",
+            "BlackHawk",
+            "EPay",
+            "Incomm"});
+            this.comboBox7.Location = new System.Drawing.Point(13, 71);
+            this.comboBox7.Margin = new System.Windows.Forms.Padding(10);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(200, 21);
+            this.comboBox7.TabIndex = 4;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "Region",
+            "List"});
+            this.comboBox6.Location = new System.Drawing.Point(13, 118);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(200, 21);
+            this.comboBox6.TabIndex = 6;
+            // 
             // loaderWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1137, 482);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(1137, 534);
+            this.Controls.Add(this.minervaPanelButton);
             this.Controls.Add(this.totalOdersLabel);
+            this.Controls.Add(this.asasaraPanelButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.currentOrderTextBox);
-            this.Controls.Add(this.totalOrdersTextBox);
-            this.Controls.Add(this.bhnPalletRetailCodeNumericUpDown);
-            this.Controls.Add(this.bhnBoxRetailCodeNumericUpDown);
-            this.Controls.Add(this.bhnPackRetailCodeNumericUpDown);
-            this.Controls.Add(this.generateXmlButton);
-            this.Controls.Add(this.saveOrderButton);
+            this.Controls.Add(this.athenaPanelButton);
+            this.Controls.Add(this.minervaCurrentOrderTextBox);
+            this.Controls.Add(this.minervaTotalOrdersTextBox);
+            this.Controls.Add(this.athenaPanel);
+            this.Controls.Add(this.minervaPanel);
             this.Controls.Add(this.orderIDNumericUpDown);
             this.Controls.Add(this.orderIDLabel);
             this.Controls.Add(this.retailBarcodeTypeLabel);
@@ -1174,113 +1641,80 @@
             this.Controls.Add(this.purchaseOrderNoTextBox);
             this.Controls.Add(this.dueDateTextBox);
             this.Controls.Add(this.jobNumberTextBox);
-            this.Controls.Add(this.wtcQtyNumericUpDown);
             this.Controls.Add(this.importXmlButton2);
-            this.Controls.Add(this.specialInstructionsLabel);
-            this.Controls.Add(this.specialInstructionsTextBox);
-            this.Controls.Add(this.wtcDenomDecimalcheckBox);
-            this.Controls.Add(this.wtcDenomNumericUpDown);
-            this.Controls.Add(this.bhnPalletRetailCodeLabel);
-            this.Controls.Add(this.bhnBoxRetailCodeLabel);
-            this.Controls.Add(this.bhnPackRetailCodeLabel);
-            this.Controls.Add(this.pptQtyNumericUpDown);
-            this.Controls.Add(this.denomDecimalCheckBox);
-            this.Controls.Add(this.denominationNumericUpDown);
-            this.Controls.Add(this.jobQtyNumericUpDown);
-            this.Controls.Add(this.boxQuantityComboBox);
-            this.Controls.Add(this.packQuantityComboBox);
-            this.Controls.Add(this.palletQtyNumericUpDown);
-            this.Controls.Add(this.palletQuantityLabel);
-            this.Controls.Add(this.boxQuantityLabel);
-            this.Controls.Add(this.packQuantityLabel);
-            this.Controls.Add(this.pptQuantityLabel);
-            this.Controls.Add(this.pptCheckBox);
-            this.Controls.Add(this.wtcDenomLabel);
-            this.Controls.Add(this.countryIncommRetailerLabel);
-            this.Controls.Add(this.countryIncommRetailerTextBox);
-            this.Controls.Add(this.wtcEnvironmentLabel);
-            this.Controls.Add(this.wtcEnvironmentComboBox);
-            this.Controls.Add(this.wtcQuantityLabel);
-            this.Controls.Add(this.wtcCheckBox);
-            this.Controls.Add(this.humanReadableCheckBox);
-            this.Controls.Add(this.denominationLabel);
-            this.Controls.Add(this.jobTypeLabel);
-            this.Controls.Add(this.jobTypeComboBox);
-            this.Controls.Add(this.regionIntegratorIDLabel);
-            this.Controls.Add(this.regionIntegratorIDTextBox);
-            this.Controls.Add(this.productDescriptionLabel);
-            this.Controls.Add(this.productDescriptionTextBox);
-            this.Controls.Add(this.currencyLabel);
-            this.Controls.Add(this.currencyComboBox);
-            this.Controls.Add(this.jobQtyLabel);
-            this.Controls.Add(this.regionLabel);
-            this.Controls.Add(this.regionComboBox);
-            this.Controls.Add(this.integratorLabel);
-            this.Controls.Add(this.integratorComboCox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "loaderWindow";
             this.Padding = new System.Windows.Forms.Padding(2);
             this.Text = "Loader v1.0";
-            ((System.ComponentModel.ISupportInitialize)(this.palletQtyNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jobQtyNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.denominationNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pptQtyNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wtcDenomNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wtcQtyNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaPalletQtyNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaJobQtyNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaDenominationNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaPptQtyNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaWtcDenomNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaWtcQtyNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderIDNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnPackRetailCodeNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnBoxRetailCodeNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnPalletRetailCodeNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaBhnPackRetailCodeNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaBhnBoxRetailCodeNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.minervaBhnPalletRetailCodeNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.minervaPanel.ResumeLayout(false);
+            this.minervaPanel.PerformLayout();
+            this.athenaPanel.ResumeLayout(false);
+            this.athenaPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.athenaBhnPalletRetailCodeNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.athenaBhnBoxRetailCodeNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.athenaBhnPackRetailCodeNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label integratorLabel;
-        private System.Windows.Forms.Label regionLabel;
-        private System.Windows.Forms.ComboBox regionComboBox;
-        private System.Windows.Forms.Label jobQtyLabel;
-        private System.Windows.Forms.Label currencyLabel;
-        private System.Windows.Forms.Label productDescriptionLabel;
-        private System.Windows.Forms.TextBox productDescriptionTextBox;
-        private System.Windows.Forms.Label regionIntegratorIDLabel;
-        private System.Windows.Forms.TextBox regionIntegratorIDTextBox;
-        private System.Windows.Forms.Label jobTypeLabel;
-        private System.Windows.Forms.ComboBox jobTypeComboBox;
-        private System.Windows.Forms.Label denominationLabel;
-        private System.Windows.Forms.CheckBox humanReadableCheckBox;
-        private System.Windows.Forms.CheckBox wtcCheckBox;
-        private System.Windows.Forms.Label wtcQuantityLabel;
-        private System.Windows.Forms.Label wtcEnvironmentLabel;
-        private System.Windows.Forms.ComboBox wtcEnvironmentComboBox;
-        private System.Windows.Forms.Label countryIncommRetailerLabel;
-        private System.Windows.Forms.TextBox countryIncommRetailerTextBox;
-        private System.Windows.Forms.Label wtcDenomLabel;
-        private System.Windows.Forms.Label pptQuantityLabel;
-        private System.Windows.Forms.CheckBox pptCheckBox;
-        private System.Windows.Forms.Label packQuantityLabel;
-        private System.Windows.Forms.Label boxQuantityLabel;
-        private System.Windows.Forms.Label palletQuantityLabel;
-        private System.Windows.Forms.NumericUpDown palletQtyNumericUpDown;
-        private System.Windows.Forms.ComboBox currencyComboBox;
-        private System.Windows.Forms.ComboBox packQuantityComboBox;
-        private System.Windows.Forms.ComboBox boxQuantityComboBox;
-        private System.Windows.Forms.NumericUpDown jobQtyNumericUpDown;
-        private System.Windows.Forms.NumericUpDown denominationNumericUpDown;
-        private System.Windows.Forms.CheckBox denomDecimalCheckBox;
-        private System.Windows.Forms.NumericUpDown pptQtyNumericUpDown;
-        private System.Windows.Forms.Label bhnBoxRetailCodeLabel;
-        private System.Windows.Forms.Label bhnPalletRetailCodeLabel;
-        private System.Windows.Forms.CheckBox wtcDenomDecimalcheckBox;
-        private System.Windows.Forms.NumericUpDown wtcDenomNumericUpDown;
-        private System.Windows.Forms.TextBox specialInstructionsTextBox;
-        private System.Windows.Forms.Label specialInstructionsLabel;
+        private System.Windows.Forms.Label minervaIntegratorLabel;
+        private System.Windows.Forms.Label minervaRegionLabel;
+        private System.Windows.Forms.ComboBox minervaRegionComboBox;
+        private System.Windows.Forms.Label minervaJobQtyLabel;
+        private System.Windows.Forms.Label minervaCurrencyLabel;
+        private System.Windows.Forms.Label minervaProductDescriptionLabel;
+        private System.Windows.Forms.TextBox minervaProductDescriptionTextBox;
+        private System.Windows.Forms.Label minervaRegionIntegratorIDLabel;
+        private System.Windows.Forms.TextBox minervaRegionIntegratorIDTextBox;
+        private System.Windows.Forms.Label minervaJobTypeLabel;
+        private System.Windows.Forms.ComboBox minervaJobTypeComboBox;
+        private System.Windows.Forms.Label minervaDenominationLabel;
+        private System.Windows.Forms.CheckBox minervaHumanReadableCheckBox;
+        private System.Windows.Forms.CheckBox minervaWtcCheckBox;
+        private System.Windows.Forms.Label minervaWtcQuantityLabel;
+        private System.Windows.Forms.Label minervaWtcEnvironmentLabel;
+        private System.Windows.Forms.ComboBox minervaWtcEnvironmentComboBox;
+        private System.Windows.Forms.Label minervaCountryIncommRetailerLabel;
+        private System.Windows.Forms.TextBox minervaCountryIncommRetailerTextBox;
+        private System.Windows.Forms.Label minervaWtcDenomLabel;
+        private System.Windows.Forms.Label minervaPptQuantityLabel;
+        private System.Windows.Forms.CheckBox minervaPptCheckBox;
+        private System.Windows.Forms.Label minervaPackQuantityLabel;
+        private System.Windows.Forms.Label minervaBoxQuantityLabel;
+        private System.Windows.Forms.Label minervaPalletQuantityLabel;
+        private System.Windows.Forms.NumericUpDown minervaPalletQtyNumericUpDown;
+        private System.Windows.Forms.ComboBox minervaCurrencyComboBox;
+        private System.Windows.Forms.ComboBox minervaPackQuantityComboBox;
+        private System.Windows.Forms.ComboBox minervaBoxQuantityComboBox;
+        private System.Windows.Forms.NumericUpDown minervaJobQtyNumericUpDown;
+        private System.Windows.Forms.NumericUpDown minervaDenominationNumericUpDown;
+        private System.Windows.Forms.CheckBox minervaDenomDecimalCheckBox;
+        private System.Windows.Forms.NumericUpDown minervaPptQtyNumericUpDown;
+        private System.Windows.Forms.Label minervaBhnBoxRetailCodeLabel;
+        private System.Windows.Forms.Label minervaBhnPalletRetailCodeLabel;
+        private System.Windows.Forms.CheckBox minervaWtcDenomDecimalcheckBox;
+        private System.Windows.Forms.NumericUpDown minervaWtcDenomNumericUpDown;
+        private System.Windows.Forms.TextBox minervaSpecialInstructionsTextBox;
+        private System.Windows.Forms.Label minervaSpecialInstructionsLabel;
         private System.Windows.Forms.Button importXmlButton2;
-        private System.Windows.Forms.NumericUpDown wtcQtyNumericUpDown;
-        private System.Windows.Forms.Label bhnPackRetailCodeLabel;
+        private System.Windows.Forms.NumericUpDown minervaWtcQtyNumericUpDown;
+        private System.Windows.Forms.Label minervaBhnPackRetailCodeLabel;
         private System.Windows.Forms.TextBox jobNumberTextBox;
         private System.Windows.Forms.TextBox dueDateTextBox;
         private System.Windows.Forms.TextBox purchaseOrderLineTextBox;
@@ -1319,18 +1753,51 @@
         private System.Windows.Forms.Label retailBarcodeTypeLabel;
         private System.Windows.Forms.Label orderIDLabel;
         private System.Windows.Forms.NumericUpDown orderIDNumericUpDown;
-        private System.Windows.Forms.Button saveOrderButton;
-        private System.Windows.Forms.ComboBox integratorComboCox;
-        private System.Windows.Forms.Button generateXmlButton;
-        private System.Windows.Forms.NumericUpDown bhnPackRetailCodeNumericUpDown;
-        private System.Windows.Forms.NumericUpDown bhnBoxRetailCodeNumericUpDown;
-        private System.Windows.Forms.NumericUpDown bhnPalletRetailCodeNumericUpDown;
-        private System.Windows.Forms.TextBox totalOrdersTextBox;
-        private System.Windows.Forms.TextBox currentOrderTextBox;
+        private System.Windows.Forms.Button minervaSaveOrderButton;
+        private System.Windows.Forms.ComboBox minervaIntegratorComboCox;
+        private System.Windows.Forms.Button minervaGenerateXmlButton;
+        private System.Windows.Forms.NumericUpDown minervaBhnPackRetailCodeNumericUpDown;
+        private System.Windows.Forms.NumericUpDown minervaBhnBoxRetailCodeNumericUpDown;
+        private System.Windows.Forms.NumericUpDown minervaBhnPalletRetailCodeNumericUpDown;
+        private System.Windows.Forms.TextBox minervaTotalOrdersTextBox;
+        private System.Windows.Forms.TextBox minervaCurrentOrderTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label totalOdersLabel;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel minervaPanel;
+        private System.Windows.Forms.Button athenaPanelButton;
+        private System.Windows.Forms.Button asasaraPanelButton;
+        private System.Windows.Forms.Button minervaPanelButton;
+        private System.Windows.Forms.Panel athenaPanel;
+        private System.Windows.Forms.NumericUpDown athenaBhnPalletRetailCodeNumericUpDown;
+        private System.Windows.Forms.NumericUpDown athenaBhnBoxRetailCodeNumericUpDown;
+        private System.Windows.Forms.NumericUpDown athenaBhnPackRetailCodeNumericUpDown;
+        private System.Windows.Forms.Button athenaGeneratXmlButton;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox6;
     }
 }
 

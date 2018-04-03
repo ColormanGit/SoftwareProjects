@@ -21,95 +21,95 @@ namespace SPV_Minerva_Loader
         // Turn on/off visibility for WTCs settings
         private void wtcCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (wtcCheckBox.Checked)
+            if (minervaWtcCheckBox.Checked)
             {
-                wtcQtyNumericUpDown.Visible = true;
-                wtcQuantityLabel.Visible = true;
-                wtcEnvironmentLabel.Visible = true;
-                wtcEnvironmentComboBox.Visible = true;
-                wtcDenomDecimalcheckBox.Visible = true;
-                wtcDenomLabel.Visible = true;
-                wtcDenomNumericUpDown.Visible = true;
+                minervaWtcQtyNumericUpDown.Visible = true;
+                minervaWtcQuantityLabel.Visible = true;
+                minervaWtcEnvironmentLabel.Visible = true;
+                minervaWtcEnvironmentComboBox.Visible = true;
+                minervaWtcDenomDecimalcheckBox.Visible = true;
+                minervaWtcDenomLabel.Visible = true;
+                minervaWtcDenomNumericUpDown.Visible = true;
             }
             else
             {
-                wtcQtyNumericUpDown.Visible = false;
-                wtcQuantityLabel.Visible = false;
-                wtcEnvironmentLabel.Visible = false;
-                wtcEnvironmentComboBox.Visible = false;
-                wtcDenomDecimalcheckBox.Visible = false;
-                wtcDenomLabel.Visible = false;
-                wtcDenomNumericUpDown.Visible = false;
+                minervaWtcQtyNumericUpDown.Visible = false;
+                minervaWtcQuantityLabel.Visible = false;
+                minervaWtcEnvironmentLabel.Visible = false;
+                minervaWtcEnvironmentComboBox.Visible = false;
+                minervaWtcDenomDecimalcheckBox.Visible = false;
+                minervaWtcDenomLabel.Visible = false;
+                minervaWtcDenomNumericUpDown.Visible = false;
             }
         }
         
         // Turn on/off visibility for PPT cards settings
         private void pptCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (pptCheckBox.Checked)
+            if (minervaPptCheckBox.Checked)
             {
-                pptQtyNumericUpDown.Visible = true;
-                pptQuantityLabel.Visible = true;
+                minervaPptQtyNumericUpDown.Visible = true;
+                minervaPptQuantityLabel.Visible = true;
             }
             else
             {
-                pptQtyNumericUpDown.Visible = false;
-                pptQuantityLabel.Visible = false;
+                minervaPptQtyNumericUpDown.Visible = false;
+                minervaPptQuantityLabel.Visible = false;
             }
         }
 
         // Turn on/off visibility for BHN packaging details input
         private void integratorsList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (integratorComboCox.SelectedIndex == 1)
+            if (minervaIntegratorComboCox.SelectedIndex == 1)
             {
-                bhnPackRetailCodeLabel.Visible = true;
-                bhnPackRetailCodeNumericUpDown.Visible = true;
+                minervaBhnPackRetailCodeLabel.Visible = true;
+                minervaBhnPackRetailCodeNumericUpDown.Visible = true;
 
-                bhnBoxRetailCodeLabel.Visible = true;
-                bhnBoxRetailCodeNumericUpDown.Visible = true;
+                minervaBhnBoxRetailCodeLabel.Visible = true;
+                minervaBhnBoxRetailCodeNumericUpDown.Visible = true;
 
-                bhnPalletRetailCodeLabel.Visible = true;
-                bhnPalletRetailCodeNumericUpDown.Visible = true;
+                minervaBhnPalletRetailCodeLabel.Visible = true;
+                minervaBhnPalletRetailCodeNumericUpDown.Visible = true;
             }
             else
             {
-                bhnPackRetailCodeLabel.Visible = false;
-                bhnPackRetailCodeNumericUpDown.Visible = false;
+                minervaBhnPackRetailCodeLabel.Visible = false;
+                minervaBhnPackRetailCodeNumericUpDown.Visible = false;
 
-                bhnBoxRetailCodeLabel.Visible = false;
-                bhnBoxRetailCodeNumericUpDown.Visible = false;
+                minervaBhnBoxRetailCodeLabel.Visible = false;
+                minervaBhnBoxRetailCodeNumericUpDown.Visible = false;
 
-                bhnPalletRetailCodeLabel.Visible = false;
-                bhnPalletRetailCodeNumericUpDown.Visible = false;
+                minervaBhnPalletRetailCodeLabel.Visible = false;
+                minervaBhnPalletRetailCodeNumericUpDown.Visible = false;
             }
         }
 
         // Turn on/off decimal places for Job Denomination
         private void denomDecimalcheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (denomDecimalCheckBox.Checked)
+            if (minervaDenomDecimalCheckBox.Checked)
             {
-                denominationNumericUpDown.DecimalPlaces = 2;
-                wtcDenomNumericUpDown.DecimalPlaces = 2;
-                wtcDenomDecimalcheckBox.Checked = true;                
+                minervaDenominationNumericUpDown.DecimalPlaces = 2;
+                minervaWtcDenomNumericUpDown.DecimalPlaces = 2;
+                minervaWtcDenomDecimalcheckBox.Checked = true;                
             }
             else
             {
-                denominationNumericUpDown.DecimalPlaces = 0;
-                wtcDenomNumericUpDown.DecimalPlaces = 0;
-                wtcDenomDecimalcheckBox.Checked = false;
+                minervaDenominationNumericUpDown.DecimalPlaces = 0;
+                minervaWtcDenomNumericUpDown.DecimalPlaces = 0;
+                minervaWtcDenomDecimalcheckBox.Checked = false;
             }
         }
 
         // Turn on/off decimal places for WTC Denomination
         private void wtcDenomDecimalcheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (wtcDenomDecimalcheckBox.Checked)
+            if (minervaWtcDenomDecimalcheckBox.Checked)
             {
-                denominationNumericUpDown.DecimalPlaces = 2;
-                wtcDenomNumericUpDown.DecimalPlaces = 2;
-                denomDecimalCheckBox.Checked = true;
+                minervaDenominationNumericUpDown.DecimalPlaces = 2;
+                minervaWtcDenomNumericUpDown.DecimalPlaces = 2;
+                minervaDenomDecimalCheckBox.Checked = true;
 
                 if (ordersArray != null)
                 {
@@ -118,9 +118,9 @@ namespace SPV_Minerva_Loader
             }
             else
             {
-                denominationNumericUpDown.DecimalPlaces = 0;
-                wtcDenomNumericUpDown.DecimalPlaces = 0;
-                denomDecimalCheckBox.Checked = false;
+                minervaDenominationNumericUpDown.DecimalPlaces = 0;
+                minervaWtcDenomNumericUpDown.DecimalPlaces = 0;
+                minervaDenomDecimalCheckBox.Checked = false;
 
                 if (ordersArray != null)
                 {
@@ -133,13 +133,13 @@ namespace SPV_Minerva_Loader
         // Update denomination field
         private void denominationNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            wtcDenomNumericUpDown.Value = denominationNumericUpDown.Value;
+            minervaWtcDenomNumericUpDown.Value = minervaDenominationNumericUpDown.Value;
         }
 
         // Update WTC denomionation field
         private void wtcDenomNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-           denominationNumericUpDown.Value = wtcDenomNumericUpDown.Value;
+           minervaDenominationNumericUpDown.Value = minervaWtcDenomNumericUpDown.Value;
         }
 
         // Import XML
@@ -199,8 +199,8 @@ namespace SPV_Minerva_Loader
                 fillGuiWithAutoInput(0, ordersArray);
                 fillGuiWithManualInput(0, ordersArray);
                 updateManualInputData(0, ordersArray);
-                totalOrdersTextBox.Text = orderIDNumericUpDown.Maximum + "";
-                currentOrderTextBox.Text = orderIDNumericUpDown.Value + "";
+                minervaTotalOrdersTextBox.Text = orderIDNumericUpDown.Maximum + "";
+                minervaCurrentOrderTextBox.Text = orderIDNumericUpDown.Value + "";
             }
         }
 
@@ -211,7 +211,7 @@ namespace SPV_Minerva_Loader
             {
                 fillGuiWithAutoInput((int)orderIDNumericUpDown.Value - 1, ordersArray);
                 fillGuiWithManualInput((int)orderIDNumericUpDown.Value - 1, ordersArray);
-                currentOrderTextBox.Text = orderIDNumericUpDown.Value + "";
+                minervaCurrentOrderTextBox.Text = orderIDNumericUpDown.Value + "";
             }
         }
 
@@ -245,277 +245,277 @@ namespace SPV_Minerva_Loader
         {
             if (orders[index].jobType == null || orders[index].jobType == "Not Selected")
             {
-                jobTypeComboBox.ResetText();
-                jobTypeComboBox.SelectedIndex = -1;
+                minervaJobTypeComboBox.ResetText();
+                minervaJobTypeComboBox.SelectedIndex = -1;
             }
             else
             {
-                jobTypeComboBox.SelectedItem = orders[index].jobType;
+                minervaJobTypeComboBox.SelectedItem = orders[index].jobType;
             }
 
             if (orders[index].integrator == null || orders[index].integrator == "Not Selected")
             {
-                integratorComboCox.ResetText();
-                integratorComboCox.SelectedIndex = -1;
+                minervaIntegratorComboCox.ResetText();
+                minervaIntegratorComboCox.SelectedIndex = -1;
             }
             else
             {
-                integratorComboCox.SelectedItem = orders[index].integrator;
+                minervaIntegratorComboCox.SelectedItem = orders[index].integrator;
             }
 
             if (orders[index].region == null || orders[index].region == "Not Selected")
             {
-                regionComboBox.ResetText();
-                regionComboBox.SelectedIndex = -1;
+                minervaRegionComboBox.ResetText();
+                minervaRegionComboBox.SelectedIndex = -1;
             }
             else
             {
-                regionComboBox.SelectedItem = orders[index].region;
+                minervaRegionComboBox.SelectedItem = orders[index].region;
             }
             
             if (orders[index].currency == null || orders[index].currency == "Not Selected")
             {
-                currencyComboBox.ResetText();
-                currencyComboBox.SelectedIndex = -1;
+                minervaCurrencyComboBox.ResetText();
+                minervaCurrencyComboBox.SelectedIndex = -1;
             }
             else
             {
-                currencyComboBox.SelectedItem = orders[index].currency;
+                minervaCurrencyComboBox.SelectedItem = orders[index].currency;
             }
 
             if (orders[index].productDescription == null || orders[index].productDescription == "Not Selected")
             {
-                productDescriptionTextBox.Clear();
+                minervaProductDescriptionTextBox.Clear();
             }
             else
             {
-                productDescriptionTextBox.Text = orders[index].productDescription;
+                minervaProductDescriptionTextBox.Text = orders[index].productDescription;
             }
 
             if (orders[index].regionIntegratorID == null || orders[index].regionIntegratorID == "Not Selected")
             {
-                regionIntegratorIDTextBox.Clear();
+                minervaRegionIntegratorIDTextBox.Clear();
             }
             else
             {
-                regionIntegratorIDTextBox.Text = orders[index].regionIntegratorID;
+                minervaRegionIntegratorIDTextBox.Text = orders[index].regionIntegratorID;
             }
 
             if (orders[index].countryIncommRetailer == null || orders[index].countryIncommRetailer == "Not Selected")
             {
-                countryIncommRetailerTextBox.Clear();
+                minervaCountryIncommRetailerTextBox.Clear();
             }
             else
             {
-                countryIncommRetailerTextBox.Text = orders[index].countryIncommRetailer;
+                minervaCountryIncommRetailerTextBox.Text = orders[index].countryIncommRetailer;
             }
 
             if (orders[index].packQuantity == null || orders[index].packQuantity == "Not Selected")
             {
-                packQuantityComboBox.ResetText();
-                packQuantityComboBox.SelectedIndex = -1;
+                minervaPackQuantityComboBox.ResetText();
+                minervaPackQuantityComboBox.SelectedIndex = -1;
             }
             else
             {
-                packQuantityComboBox.SelectedItem = orders[index].packQuantity;
+                minervaPackQuantityComboBox.SelectedItem = orders[index].packQuantity;
             }
 
             if (orders[index].boxQuantitySize == null || orders[index].boxQuantitySize == "Not Selected")
             {
-                boxQuantityComboBox.ResetText();
-                boxQuantityComboBox.SelectedIndex = -1;
+                minervaBoxQuantityComboBox.ResetText();
+                minervaBoxQuantityComboBox.SelectedIndex = -1;
             }
             else
             {
-                boxQuantityComboBox.SelectedItem = orders[index].boxQuantitySize;
+                minervaBoxQuantityComboBox.SelectedItem = orders[index].boxQuantitySize;
             }
 
             if (orders[index].specialInstructions == null || orders[index].specialInstructions == "Not Selected")
             {
-                specialInstructionsTextBox.Clear();
+                minervaSpecialInstructionsTextBox.Clear();
             }
             else
             {
-                specialInstructionsTextBox.Text = orders[index].specialInstructions;
+                minervaSpecialInstructionsTextBox.Text = orders[index].specialInstructions;
             }
 
             if (orders[index].isDecimal)
             {
-                denomDecimalCheckBox.Checked = true;
+                minervaDenomDecimalCheckBox.Checked = true;
             }
             else
             {
-                denomDecimalCheckBox.Checked = false;
+                minervaDenomDecimalCheckBox.Checked = false;
             }
 
             if (orders[index].hasPPT)
             {
-                pptCheckBox.Checked = true;
+                minervaPptCheckBox.Checked = true;
             }
             else
             {
-                pptCheckBox.Checked = false;
+                minervaPptCheckBox.Checked = false;
             }
 
             if (orders[index].hasWTC)
             {
-                wtcCheckBox.Checked = true;
+                minervaWtcCheckBox.Checked = true;
             }
             else
             {
-                wtcCheckBox.Checked = false;
+                minervaWtcCheckBox.Checked = false;
             }
 
-            if (pptCheckBox.Checked)
+            if (minervaPptCheckBox.Checked)
             {
                 if (orders[index].pptQuanity != null)
                 {
-                    pptQtyNumericUpDown.Value = Int32.Parse(orders[index].pptQuanity);
+                    minervaPptQtyNumericUpDown.Value = Int32.Parse(orders[index].pptQuanity);
                 }
                 else
                 {
-                    pptQtyNumericUpDown.Value = 0;
+                    minervaPptQtyNumericUpDown.Value = 0;
                 }
             }
             else
             {
-                pptQtyNumericUpDown.Value = 0;
+                minervaPptQtyNumericUpDown.Value = 0;
             }
 
-            if (wtcCheckBox.Checked)
+            if (minervaWtcCheckBox.Checked)
             {
                 if (orders[index].wtcQuantity != null)
                 {
-                    wtcQtyNumericUpDown.Value = Int32.Parse(orders[index].wtcQuantity);
+                    minervaWtcQtyNumericUpDown.Value = Int32.Parse(orders[index].wtcQuantity);
                 }
                 else
                 {
-                    wtcQtyNumericUpDown.Value = 0;
+                    minervaWtcQtyNumericUpDown.Value = 0;
                 }
 
 
                 if (orders[index].wtcDenomination != null)
                 {
-                    wtcDenomNumericUpDown.Value = Int32.Parse(orders[index].wtcDenomination);
+                    minervaWtcDenomNumericUpDown.Value = Int32.Parse(orders[index].wtcDenomination);
                 }
                 else
                 {
-                    wtcDenomNumericUpDown.Value = 16;
+                    minervaWtcDenomNumericUpDown.Value = 16;
                 }
             }
             else
             {
-                wtcQtyNumericUpDown.Value = 0;
-                wtcDenomNumericUpDown.Value = 0;
+                minervaWtcQtyNumericUpDown.Value = 0;
+                minervaWtcDenomNumericUpDown.Value = 0;
             }
 
-            humanReadableCheckBox.Checked = orders[index].dodHumanReadable.Equals("True") ? true : false;
+            minervaHumanReadableCheckBox.Checked = orders[index].dodHumanReadable.Equals("True") ? true : false;
 
             if (orders[index].denomination != null)
             {
-                denominationNumericUpDown.Value = Int32.Parse(orders[index].denomination);
+                minervaDenominationNumericUpDown.Value = Int32.Parse(orders[index].denomination);
             }
             else
             {
-                denominationNumericUpDown.Value = 0;
+                minervaDenominationNumericUpDown.Value = 0;
             }
 
             if (orders[index].jobQuantity != null)
             {
-                jobQtyNumericUpDown.Value = Int32.Parse(orders[index].jobQuantity);
+                minervaJobQtyNumericUpDown.Value = Int32.Parse(orders[index].jobQuantity);
             }
             else
             {
-                jobQtyNumericUpDown.Value = 0;
+                minervaJobQtyNumericUpDown.Value = 0;
             }
 
             if (orders[index].palletQuantity != null)
             {
-                palletQtyNumericUpDown.Value = Int32.Parse(orders[index].palletQuantity);
+                minervaPalletQtyNumericUpDown.Value = Int32.Parse(orders[index].palletQuantity);
             }
             else
             {
-                palletQtyNumericUpDown.Value = 0;
+                minervaPalletQtyNumericUpDown.Value = 0;
             }
 
             if (orders[index].bhnPackRetailCode != null)
             {
-                bhnPackRetailCodeNumericUpDown.Value = Int32.Parse(orders[index].bhnPackRetailCode);
+                minervaBhnPackRetailCodeNumericUpDown.Value = Int32.Parse(orders[index].bhnPackRetailCode);
             }
             else
             {
-                bhnPackRetailCodeNumericUpDown.Value = 0;
+                minervaBhnPackRetailCodeNumericUpDown.Value = 0;
             }
 
             if (orders[index].bhnBoxRetailCode != null)
             {
-                bhnBoxRetailCodeNumericUpDown.Value = Int32.Parse(orders[index].bhnBoxRetailCode);
+                minervaBhnBoxRetailCodeNumericUpDown.Value = Int32.Parse(orders[index].bhnBoxRetailCode);
             }
             else
             {
-                bhnBoxRetailCodeNumericUpDown.Value = 0;
+                minervaBhnBoxRetailCodeNumericUpDown.Value = 0;
             }
 
             if (orders[index].bhnPalletRetailCode != null)
             {
-                bhnPalletRetailCodeNumericUpDown.Value = Int32.Parse(orders[index].bhnPalletRetailCode);
+                minervaBhnPalletRetailCodeNumericUpDown.Value = Int32.Parse(orders[index].bhnPalletRetailCode);
             }
             else
             {
-                bhnPalletRetailCodeNumericUpDown.Value = 0;
+                minervaBhnPalletRetailCodeNumericUpDown.Value = 0;
             }
         }
 
         // Update manual input in the Order object
         private void updateManualInputData(int index, Order[] orders) {
-            if (jobTypeComboBox.SelectedItem != null)
+            if (minervaJobTypeComboBox.SelectedItem != null)
             {
-                orders[index].jobType = jobTypeComboBox.SelectedItem.ToString();
+                orders[index].jobType = minervaJobTypeComboBox.SelectedItem.ToString();
             }
             else
             {
                 orders[index].jobType = "Not Selected";
             }
 
-            if (integratorComboCox.SelectedItem != null)
+            if (minervaIntegratorComboCox.SelectedItem != null)
             {
-                orders[index].integrator = integratorComboCox.SelectedItem.ToString();
+                orders[index].integrator = minervaIntegratorComboCox.SelectedItem.ToString();
             }
             else
             {
                 orders[index].integrator = "Not Selected";
             }
 
-            if (regionComboBox.SelectedItem != null)
+            if (minervaRegionComboBox.SelectedItem != null)
             {
-                orders[index].region = regionComboBox.SelectedItem.ToString();
+                orders[index].region = minervaRegionComboBox.SelectedItem.ToString();
             }
             else
             {
                 orders[index].region = "Not Selected";
             }
 
-            if (currencyComboBox.SelectedItem != null)
+            if (minervaCurrencyComboBox.SelectedItem != null)
             {
-                orders[index].currency = currencyComboBox.SelectedItem.ToString();
+                orders[index].currency = minervaCurrencyComboBox.SelectedItem.ToString();
             }
             else
             {
                 orders[index].currency = "Not Selected";
             }
             
-            if (packQuantityComboBox.SelectedItem != null)
+            if (minervaPackQuantityComboBox.SelectedItem != null)
             {
-                orders[index].packQuantity = packQuantityComboBox.SelectedItem.ToString();
+                orders[index].packQuantity = minervaPackQuantityComboBox.SelectedItem.ToString();
             }
             else
             {
                 orders[index].packQuantity = "Not Selected";
             }
 
-            if (boxQuantityComboBox.SelectedItem != null)
+            if (minervaBoxQuantityComboBox.SelectedItem != null)
             {
-                orders[index].boxQuantitySize = boxQuantityComboBox.SelectedItem.ToString();
+                orders[index].boxQuantitySize = minervaBoxQuantityComboBox.SelectedItem.ToString();
             }
             else
             {
@@ -524,7 +524,7 @@ namespace SPV_Minerva_Loader
 
             if (orders[index].productDescription != null)
             {
-                orders[index].productDescription = productDescriptionTextBox.Text;
+                orders[index].productDescription = minervaProductDescriptionTextBox.Text;
             }
             else
             {
@@ -533,7 +533,7 @@ namespace SPV_Minerva_Loader
 
             if (orders[index].regionIntegratorID != null)
             {
-                orders[index].regionIntegratorID = regionIntegratorIDTextBox.Text;
+                orders[index].regionIntegratorID = minervaRegionIntegratorIDTextBox.Text;
             }
             else
             {
@@ -542,7 +542,7 @@ namespace SPV_Minerva_Loader
 
             if (orders[index].countryIncommRetailer != null)
             {
-                orders[index].countryIncommRetailer = countryIncommRetailerTextBox.Text;
+                orders[index].countryIncommRetailer = minervaCountryIncommRetailerTextBox.Text;
             }
             else
             {
@@ -551,30 +551,30 @@ namespace SPV_Minerva_Loader
 
             if (orders[index].specialInstructions != null)
             {
-                orders[index].specialInstructions = specialInstructionsTextBox.Text;
+                orders[index].specialInstructions = minervaSpecialInstructionsTextBox.Text;
             }
             else
             {
                 orders[index].specialInstructions = "Not Selected";
             }
 
-            if (denominationNumericUpDown.Value == 0)
+            if (minervaDenominationNumericUpDown.Value == 0)
             {
                 if (orders[index].isDecimal)
                 {
-                    orders[index].denomination = denominationNumericUpDown.Value + ".00";
+                    orders[index].denomination = minervaDenominationNumericUpDown.Value + ".00";
                 }
                 else
                 {
-                    orders[index].denomination = denominationNumericUpDown.Value + "";
+                    orders[index].denomination = minervaDenominationNumericUpDown.Value + "";
                 }
             }
             else
             {
-                orders[index].denomination = denominationNumericUpDown.Value + "";
+                orders[index].denomination = minervaDenominationNumericUpDown.Value + "";
             }
 
-            if (denomDecimalCheckBox.Checked)
+            if (minervaDenomDecimalCheckBox.Checked)
             {
                 orders[index].isDecimal = true;
             }
@@ -583,7 +583,7 @@ namespace SPV_Minerva_Loader
                 orders[index].isDecimal = false;
             }
 
-            if (pptCheckBox.Checked)
+            if (minervaPptCheckBox.Checked)
             {
                 orders[index].hasPPT = true;
             }
@@ -592,7 +592,7 @@ namespace SPV_Minerva_Loader
                 orders[index].hasPPT = false;
             }
 
-            if (wtcCheckBox.Checked)
+            if (minervaWtcCheckBox.Checked)
             {
                 orders[index].hasWTC = true;
             }
@@ -601,15 +601,15 @@ namespace SPV_Minerva_Loader
                 orders[index].hasWTC = false;
             }
 
-            orders[index].dodHumanReadable = humanReadableCheckBox.Checked ? true : false;
-            orders[index].jobQuantity = jobQtyNumericUpDown.Value + "";
-            orders[index].palletQuantity = palletQtyNumericUpDown.Value + "";
-            orders[index].pptQuanity = pptQtyNumericUpDown.Value + "";
-            orders[index].wtcQuantity = wtcQtyNumericUpDown.Value + "";
-            orders[index].wtcDenomination = wtcDenomNumericUpDown.Value + "";
-            orders[index].bhnPackRetailCode = bhnPackRetailCodeNumericUpDown.Value + "";
-            orders[index].bhnBoxRetailCode = bhnBoxRetailCodeNumericUpDown.Value + "";
-            orders[index].bhnPalletRetailCode = bhnPalletRetailCodeNumericUpDown.Value + "";
+            orders[index].dodHumanReadable = minervaHumanReadableCheckBox.Checked ? true : false;
+            orders[index].jobQuantity = minervaJobQtyNumericUpDown.Value + "";
+            orders[index].palletQuantity = minervaPalletQtyNumericUpDown.Value + "";
+            orders[index].pptQuanity = minervaPptQtyNumericUpDown.Value + "";
+            orders[index].wtcQuantity = minervaWtcQtyNumericUpDown.Value + "";
+            orders[index].wtcDenomination = minervaWtcDenomNumericUpDown.Value + "";
+            orders[index].bhnPackRetailCode = minervaBhnPackRetailCodeNumericUpDown.Value + "";
+            orders[index].bhnBoxRetailCode = minervaBhnBoxRetailCodeNumericUpDown.Value + "";
+            orders[index].bhnPalletRetailCode = minervaBhnPalletRetailCodeNumericUpDown.Value + "";
         }
 
         // Save manual input in order object button
@@ -634,7 +634,6 @@ namespace SPV_Minerva_Loader
             }
             catch (Exception ex)
             {
-                //Handle Exception Code
             }
             finally
             {
