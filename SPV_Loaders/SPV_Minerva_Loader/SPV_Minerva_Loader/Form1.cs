@@ -270,7 +270,7 @@ namespace SPV_Minerva_Loader
 
                     xmlDataGridView.AutoGenerateColumns = true;
                     xmlDataGridView.DataSource = ds; // dataset
-                    xmlDataGridView.DataMember = "Order"; // table name you need to show
+                    xmlDataGridView.DataMember = "Field"; // table name you need to show
 
                 }
 
