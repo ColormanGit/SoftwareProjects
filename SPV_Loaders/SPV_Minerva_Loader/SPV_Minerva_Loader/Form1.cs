@@ -10,6 +10,7 @@ namespace SPV_Minerva_Loader
 {
     public partial class loaderWindow : Form
     {
+
         private Order[] ordersArray;
 
         public loaderWindow()
@@ -200,7 +201,7 @@ namespace SPV_Minerva_Loader
                 fillGuiWithManualInput(0, ordersArray);
                 updateManualInputData(0, ordersArray);
                 minervaTotalOrdersTextBox.Text = orderIDNumericUpDown.Maximum + "";
-                minervaCurrentOrderTextBox.Text = orderIDNumericUpDown.Value + "";
+                currentOrderTextBox.Text = orderIDNumericUpDown.Value + "";
             }
         }
 
@@ -211,7 +212,7 @@ namespace SPV_Minerva_Loader
             {
                 fillGuiWithAutoInput((int)orderIDNumericUpDown.Value - 1, ordersArray);
                 fillGuiWithManualInput((int)orderIDNumericUpDown.Value - 1, ordersArray);
-                minervaCurrentOrderTextBox.Text = orderIDNumericUpDown.Value + "";
+                currentOrderTextBox.Text = orderIDNumericUpDown.Value + "";
             }
         }
 
