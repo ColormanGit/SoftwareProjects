@@ -21,11 +21,11 @@ public class Order
 
     // Auto input fields
     public string orderID { get; set; }
-    public string jobNumber { get; set; }
+    public string pecasJobNumber { get; set; }
     public string dueDate { get; set; }
     public string purchaseOrderNumber { get; set; }
     public string purchaseOrderLine { get; set; }
-    public string salesOrderNumber { get; set; }
+    public string pecasOrderNumber { get; set; }
     public string customerAccountCode { get; set; }
     public string buildQuantity { get; set; }
     public string ascmOrderID { get; set; }
@@ -68,11 +68,11 @@ public class Order
         autoInputArray = new string[19];
 
         orderID = orderIDNumber;
-        jobNumber = inputFromFile[0].ToString();
+        pecasJobNumber = inputFromFile[0].ToString();
         dueDate = inputFromFile[1].ToString();
         purchaseOrderNumber = inputFromFile[2].ToString();
         purchaseOrderLine = inputFromFile[3].ToString();
-        salesOrderNumber = inputFromFile[4].ToString();
+        pecasOrderNumber = inputFromFile[4].ToString();
         customerAccountCode = inputFromFile[5].ToString();
         buildQuantity = inputFromFile[6].ToString();
         ascmOrderID = inputFromFile[7].ToString();
@@ -88,11 +88,11 @@ public class Order
         retailBarcodeType = inputFromFile[17].ToString();
 
         autoInputArray[0] = orderID;
-        autoInputArray[1] = jobNumber;
+        autoInputArray[1] = pecasJobNumber;
         autoInputArray[2] = dueDate;
         autoInputArray[3] = purchaseOrderNumber;
         autoInputArray[4] = purchaseOrderLine;
-        autoInputArray[5] = salesOrderNumber;
+        autoInputArray[5] = pecasOrderNumber;
         autoInputArray[6] = customerAccountCode;
         autoInputArray[7] = buildQuantity;
         autoInputArray[8] = ascmOrderID;
@@ -112,11 +112,11 @@ public class Order
     public override string ToString()
     {
         return orderID + " " 
-            + jobNumber + " " 
+            + pecasJobNumber + " " 
             + dueDate + " "
             + purchaseOrderNumber + " " 
             + purchaseOrderLine + " " 
-            + salesOrderNumber + " " 
+            + pecasOrderNumber + " " 
             + customerAccountCode + " "
             + buildQuantity + " " 
             + ascmOrderID + " "
