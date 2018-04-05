@@ -1171,8 +1171,8 @@
             // 
             // minervaPanel
             // 
-            this.minervaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.minervaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.minervaPanel.Controls.Add(this.pictureBox1);
             this.minervaPanel.Controls.Add(this.minervaBhnPalletRetailCodeNumericUpDown);
@@ -1260,8 +1260,8 @@
             // 
             // athenaPanel
             // 
-            this.athenaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.athenaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.athenaPanel.Controls.Add(this.athenaLabelTemplateLabel);
             this.athenaPanel.Controls.Add(this.athenaLabelTemplateComboBox);
