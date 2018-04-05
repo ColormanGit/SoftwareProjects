@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SPV_Minerva_Loader
+namespace SPV_Athena_Loader
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace SPV_Minerva_Loader
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MinervaForm());
+            Application.Run(new AthenaForm());
         }
     }
 }

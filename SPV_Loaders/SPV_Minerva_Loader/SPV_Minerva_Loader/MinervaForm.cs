@@ -8,12 +8,12 @@ using System.Xml.Serialization;
 
 namespace SPV_Minerva_Loader 
 {
-    public partial class loaderWindow : Form
+    public partial class MinervaForm : Form
     {
 
-        private Order[] ordersArray;
+        private MinervaJob[] ordersArray;
 
-        public loaderWindow()
+        public MinervaForm()
         {
             InitializeComponent();
             orderIDNumericUpDown.Minimum = 1;
@@ -168,7 +168,7 @@ namespace SPV_Minerva_Loader
                     xmlReader = XmlReader.Create(xmlPath); // Create XmlReader with XML file path
                     xmlDoc = XDocument.Load(xmlReader); // Load XML file
 
-                    ordersArray = new Order[xmlDoc.Root.Elements().ElementAt(0).Elements().Count()];
+                    ordersArray = new MinervaJob[xmlDoc.Root.Elements().ElementAt(0).Elements().Count()];
 
                     // Create orders from XML file
                     for (int i = 0; i < xmlDoc.Root.Elements().ElementAt(0).Elements().Count(); i++)
@@ -188,7 +188,7 @@ namespace SPV_Minerva_Loader
                         }
                         orderIDNumericUpDown.Maximum = xmlDoc.Root.Elements().ElementAt(0).Elements().Count();
                         // Create new order and place it in array of orders
-                        ordersArray[i] = new Order((i + 1) + "", values);
+                        ordersArray[i] = new MinervaJob((i + 1) + "", values);
                     }
                 }
                 catch (Exception ex)
@@ -205,7 +205,7 @@ namespace SPV_Minerva_Loader
             }
         }
 
-        // Change Active Order
+        // Change Active MinervaJob
         private void orderIDNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
             if (ordersArray != null)
@@ -217,7 +217,7 @@ namespace SPV_Minerva_Loader
         }
 
         // Populate GUI fields with input from a file
-        private void fillGuiWithAutoInput(int index, Order[] orders) {
+        private void fillGuiWithAutoInput(int index, MinervaJob[] orders) {
 
             orderIDNumericUpDown.Value = Int32.Parse(orders[index].autoInputArray[0]);
             jobNumberTextBox.Text = orders[index].autoInputArray[1];
@@ -242,7 +242,7 @@ namespace SPV_Minerva_Loader
         }
 
         // Populate GUI fields with manual input if it's not absent
-        private void fillGuiWithManualInput(int index, Order[] orders)
+        private void fillGuiWithManualInput(int index, MinervaJob[] orders)
         {
             if (orders[index].jobType == null || orders[index].jobType == "Not Selected")
             {
@@ -467,8 +467,8 @@ namespace SPV_Minerva_Loader
             }
         }
 
-        // Update manual input in the Order object
-        private void updateManualInputData(int index, Order[] orders) {
+        // Update manual input in the MinervaJob object
+        private void updateManualInputData(int index, MinervaJob[] orders) {
             if (minervaJobTypeComboBox.SelectedItem != null)
             {
                 orders[index].jobType = minervaJobTypeComboBox.SelectedItem.ToString();
@@ -622,7 +622,7 @@ namespace SPV_Minerva_Loader
             }
         }
 
-        // Generate XML string fron an Order Object Array
+        // Generate XML string fron an MinervaJob Object Array
         public static string getXMLFromObject(object[] o)
         {
             StringWriter sw = new StringWriter();
