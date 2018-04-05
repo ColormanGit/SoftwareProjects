@@ -67,8 +67,8 @@
             this.retailBarcodeLabel = new System.Windows.Forms.Label();
             this.retailBarcodeTypeLabel = new System.Windows.Forms.Label();
             this.orderIDLabel = new System.Windows.Forms.Label();
-            this.orderIDNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.minervaTotalOrdersTextBox = new System.Windows.Forms.TextBox();
+            this.jobIDNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.minervaTotaljobsTextBox = new System.Windows.Forms.TextBox();
             this.currentOrderTextBox = new System.Windows.Forms.TextBox();
             this.totalOrdersSlash = new System.Windows.Forms.Label();
             this.totalOdersLabel = new System.Windows.Forms.Label();
@@ -123,7 +123,7 @@
             this.minervaBhnPalletRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.minervaPanel = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.orderIDNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobIDNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minervaPalletQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minervaJobQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minervaDenominationNumericUpDown)).BeginInit();
@@ -518,31 +518,31 @@
             this.orderIDLabel.TabIndex = 104;
             this.orderIDLabel.Text = "MinervaJob No";
             // 
-            // orderIDNumericUpDown
+            // jobIDNumericUpDown
             // 
-            this.orderIDNumericUpDown.Location = new System.Drawing.Point(9, 75);
-            this.orderIDNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
-            this.orderIDNumericUpDown.Maximum = new decimal(new int[] {
+            this.jobIDNumericUpDown.Location = new System.Drawing.Point(9, 75);
+            this.jobIDNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
+            this.jobIDNumericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.orderIDNumericUpDown.Name = "orderIDNumericUpDown";
-            this.orderIDNumericUpDown.Size = new System.Drawing.Size(200, 20);
-            this.orderIDNumericUpDown.TabIndex = 105;
-            this.orderIDNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.orderIDNumericUpDown.ValueChanged += new System.EventHandler(this.orderIDNumericUpDown_ValueChanged);
+            this.jobIDNumericUpDown.Name = "jobIDNumericUpDown";
+            this.jobIDNumericUpDown.Size = new System.Drawing.Size(200, 20);
+            this.jobIDNumericUpDown.TabIndex = 105;
+            this.jobIDNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jobIDNumericUpDown.ValueChanged += new System.EventHandler(this.jobIDNumericUpDown_ValueChanged);
             // 
-            // minervaTotalOrdersTextBox
+            // minervaTotaljobsTextBox
             // 
-            this.minervaTotalOrdersTextBox.Location = new System.Drawing.Point(379, 77);
-            this.minervaTotalOrdersTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.minervaTotalOrdersTextBox.Name = "minervaTotalOrdersTextBox";
-            this.minervaTotalOrdersTextBox.ReadOnly = true;
-            this.minervaTotalOrdersTextBox.Size = new System.Drawing.Size(50, 20);
-            this.minervaTotalOrdersTextBox.TabIndex = 111;
-            this.minervaTotalOrdersTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.minervaTotalOrdersTextBox.WordWrap = false;
+            this.minervaTotaljobsTextBox.Location = new System.Drawing.Point(379, 77);
+            this.minervaTotaljobsTextBox.Margin = new System.Windows.Forms.Padding(10);
+            this.minervaTotaljobsTextBox.Name = "minervaTotaljobsTextBox";
+            this.minervaTotaljobsTextBox.ReadOnly = true;
+            this.minervaTotaljobsTextBox.Size = new System.Drawing.Size(50, 20);
+            this.minervaTotaljobsTextBox.TabIndex = 111;
+            this.minervaTotaljobsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.minervaTotaljobsTextBox.WordWrap = false;
             // 
             // currentOrderTextBox
             // 
@@ -1203,9 +1203,9 @@
             this.Controls.Add(this.ocrCodeTextBox);
             this.Controls.Add(this.totalOrdersSlash);
             this.Controls.Add(this.currentOrderTextBox);
-            this.Controls.Add(this.minervaTotalOrdersTextBox);
+            this.Controls.Add(this.minervaTotaljobsTextBox);
             this.Controls.Add(this.minervaPanel);
-            this.Controls.Add(this.orderIDNumericUpDown);
+            this.Controls.Add(this.jobIDNumericUpDown);
             this.Controls.Add(this.orderIDLabel);
             this.Controls.Add(this.retailBarcodeTypeLabel);
             this.Controls.Add(this.endCustomerLabel);
@@ -1249,7 +1249,7 @@
             this.Name = "MinervaForm";
             this.Padding = new System.Windows.Forms.Padding(2);
             this.Text = "Minerva Loader v1.0";
-            ((System.ComponentModel.ISupportInitialize)(this.orderIDNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobIDNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minervaPalletQtyNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minervaJobQtyNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.minervaDenominationNumericUpDown)).EndInit();
@@ -1306,8 +1306,8 @@
         private System.Windows.Forms.Label retailBarcodeLabel;
         private System.Windows.Forms.Label retailBarcodeTypeLabel;
         private System.Windows.Forms.Label orderIDLabel;
-        private System.Windows.Forms.NumericUpDown orderIDNumericUpDown;
-        private System.Windows.Forms.TextBox minervaTotalOrdersTextBox;
+        private System.Windows.Forms.NumericUpDown jobIDNumericUpDown;
+        private System.Windows.Forms.TextBox minervaTotaljobsTextBox;
         private System.Windows.Forms.TextBox currentOrderTextBox;
         private System.Windows.Forms.Label totalOrdersSlash;
         private System.Windows.Forms.Label totalOdersLabel;
