@@ -1,10 +1,10 @@
 ﻿using System;
 
-public class Order
+public class MinervaJob
 {
-    public Order() { }
+    public MinervaJob() { }
 
-    public Order(string orderID, Object[] inputFromFile)
+    public MinervaJob(string orderID, Object[] inputFromFile)
     {
         this.hasPPT = false;
         this.hasWTC = false;
@@ -14,7 +14,7 @@ public class Order
 
     [System.Xml.Serialization.XmlIgnore] public string[] autoInputArray { get; set; }
 
-    // Order Properties
+    // MinervaJob Properties
     public bool hasPPT { get; set; }
     public bool hasWTC { get; set; }
     public bool isDecimal { get; set; }
