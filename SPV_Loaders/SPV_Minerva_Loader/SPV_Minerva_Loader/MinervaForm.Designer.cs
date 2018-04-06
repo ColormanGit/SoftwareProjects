@@ -1190,7 +1190,6 @@
             this.minervaPanel.Name = "minervaPanel";
             this.minervaPanel.Size = new System.Drawing.Size(683, 524);
             this.minervaPanel.TabIndex = 117;
-            this.minervaPanel.Visible = false;
             // 
             // MinervaForm
             // 
