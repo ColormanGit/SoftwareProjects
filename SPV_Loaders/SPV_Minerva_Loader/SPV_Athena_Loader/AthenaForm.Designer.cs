@@ -89,7 +89,7 @@
             this.totalJobsLabel = new System.Windows.Forms.Label();
             this.currentJobTextBox = new System.Windows.Forms.TextBox();
             this.totalJobsTextBox = new System.Windows.Forms.TextBox();
-            this.orderIDNumericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.jobIDNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.orderIDLabel = new System.Windows.Forms.Label();
             this.retailBarcodeTypeLabel = new System.Windows.Forms.Label();
             this.endCustomerLabel = new System.Windows.Forms.Label();
@@ -137,7 +137,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.packQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.denominationNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobQtyNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.orderIDNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobIDNumericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // athenaPanel
@@ -845,19 +845,19 @@
             this.totalJobsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.totalJobsTextBox.WordWrap = false;
             // 
-            // orderIDNumericUpDown
+            // jobIDNumericUpDown
             // 
-            this.orderIDNumericUpDown.Location = new System.Drawing.Point(12, 78);
-            this.orderIDNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
-            this.orderIDNumericUpDown.Maximum = new decimal(new int[] {
+            this.jobIDNumericUpDown.Location = new System.Drawing.Point(12, 78);
+            this.jobIDNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
+            this.jobIDNumericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.orderIDNumericUpDown.Name = "orderIDNumericUpDown";
-            this.orderIDNumericUpDown.Size = new System.Drawing.Size(200, 20);
-            this.orderIDNumericUpDown.TabIndex = 163;
-            this.orderIDNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jobIDNumericUpDown.Name = "jobIDNumericUpDown";
+            this.jobIDNumericUpDown.Size = new System.Drawing.Size(200, 20);
+            this.jobIDNumericUpDown.TabIndex = 163;
+            this.jobIDNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // orderIDLabel
             // 
@@ -1258,7 +1258,7 @@
             this.Controls.Add(this.totalJobsSlash);
             this.Controls.Add(this.currentJobTextBox);
             this.Controls.Add(this.totalJobsTextBox);
-            this.Controls.Add(this.orderIDNumericUpDown);
+            this.Controls.Add(this.jobIDNumericUpDown);
             this.Controls.Add(this.orderIDLabel);
             this.Controls.Add(this.retailBarcodeTypeLabel);
             this.Controls.Add(this.endCustomerLabel);
@@ -1310,7 +1310,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.packQtyNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.denominationNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobQtyNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.orderIDNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobIDNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1379,7 +1379,7 @@
         private System.Windows.Forms.Label totalJobsLabel;
         private System.Windows.Forms.TextBox currentJobTextBox;
         private System.Windows.Forms.TextBox totalJobsTextBox;
-        private System.Windows.Forms.NumericUpDown orderIDNumericUpDown;
+        private System.Windows.Forms.NumericUpDown jobIDNumericUpDown;
         private System.Windows.Forms.Label orderIDLabel;
         private System.Windows.Forms.Label retailBarcodeTypeLabel;
         private System.Windows.Forms.Label endCustomerLabel;
