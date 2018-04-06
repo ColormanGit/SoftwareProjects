@@ -6,8 +6,6 @@ public class AthenaJob
 
     public AthenaJob(string orderID, Object[] inputFromFile)
     {
-        this.hasPPT = false;
-        this.hasWTC = false;
         this.isDecimal = false;
         initiateAutoInputArray(orderID, inputFromFile);
     }
@@ -15,12 +13,10 @@ public class AthenaJob
     [System.Xml.Serialization.XmlIgnore] public string[] autoInputArray { get; set; }
 
     // AthenaJob Properties
-    public bool hasPPT { get; set; }
-    public bool hasWTC { get; set; }
     public bool isDecimal { get; set; }
 
     // Auto input fields
-    public string orderID { get; set; }
+    [System.Xml.Serialization.XmlIgnore] public string orderID { get; set; }
     public string pecasJobNumber { get; set; }
     public string dueDate { get; set; }
     public string purchaseOrderNumber { get; set; }
@@ -41,26 +37,34 @@ public class AthenaJob
     public string retailBarcodeType { get; set; }
 
     // Manual input fields
+    public string client { get; set; }
+    public string contractType { get; set; }
+    public string artworkPartNumber { get; set; }
+    public string jobQty { get; set; }
+    public string packQty { get; set; }
+    public string boxQty { get; set; }
+    public string palletQty { get; set; }
     public string jobType { get; set; }
-    public string integrator { get; set; }
-    public string region { get; set; }
-    public string currency { get; set; }
+    public string activationTypeID { get; set; }
     public string denomination { get; set; }
-    public string jobQuantity { get; set; }
-    public string productDescription { get; set; }
-    public string regionIntegratorID { get; set; }
-    public string countryIncommRetailer { get; set; }
-    public string packQuantity { get; set; }
-    public string boxQuantitySize { get; set; }
-    public string palletQuantity { get; set; }
-    public string specialInstructions { get; set; }
-    public bool dodHumanReadable { get; set; }
-    public string pptQuanity { get; set; }
-    public string wtcQuantity { get; set; }
-    public string wtcDenomination { get; set; }
-    public string bhnPackRetailCode { get; set; }
-    public string bhnBoxRetailCode { get; set; }
-    public string bhnPalletRetailCode { get; set; }
+    public string denominationCurrency { get; set; }
+    public string faiStart { get; set; }
+    public string faiEnd { get; set; }
+    public string intelJobType { get; set; }
+    public string country { get; set; }
+    public string alternativePartNumber { get; set; }
+    public string packagingGTIN { get; set; }
+    public string incommProductDescription { get; set; }
+
+    public string bomFileName { get; set; }
+    public string bomComment1 { get; set; }
+    public string bomComment2 { get; set; }
+    public string bomComment3 { get; set; }
+    public string bomComment4 { get; set; }
+    public string bomComment5 { get; set; }
+    public string pkpn { get; set; }
+
+
 
     // Create and initiate and array for auto input
     private void initiateAutoInputArray(string orderIDNumber, Object[] inputFromFile)

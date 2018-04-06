@@ -11,12 +11,12 @@ namespace SPV_Minerva_Loader
     public partial class MinervaForm : Form
     {
 
-        private MinervaJob[] ordersArray;
+        private MinervaJob[] jobsArray;
 
         public MinervaForm()
         {
             InitializeComponent();
-            orderIDNumericUpDown.Minimum = 1;
+            jobIDNumericUpDown.Minimum = 1;
         }
 
         // Turn on/off visibility for WTCs settings
@@ -112,9 +112,9 @@ namespace SPV_Minerva_Loader
                 minervaWtcDenomNumericUpDown.DecimalPlaces = 2;
                 minervaDenomDecimalCheckBox.Checked = true;
 
-                if (ordersArray != null)
+                if (jobsArray != null)
                 {
-                    ordersArray[(int)orderIDNumericUpDown.Value - 1].isDecimal = true;
+                    jobsArray[(int)jobIDNumericUpDown.Value - 1].isDecimal = true;
                 }
             }
             else
@@ -123,9 +123,9 @@ namespace SPV_Minerva_Loader
                 minervaWtcDenomNumericUpDown.DecimalPlaces = 0;
                 minervaDenomDecimalCheckBox.Checked = false;
 
-                if (ordersArray != null)
+                if (jobsArray != null)
                 {
-                    ordersArray[(int)orderIDNumericUpDown.Value - 1].isDecimal = false;
+                    jobsArray[(int)jobIDNumericUpDown.Value - 1].isDecimal = false;
                 }
             }
 
@@ -146,7 +146,6 @@ namespace SPV_Minerva_Loader
         // Import XML
         private void importXmlButton_Click(object sender, EventArgs e)
         {
-            orderIDNumericUpDown.Minimum = 1;
             // Create OpenFile Dialog object to allow the user select XML file
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.InitialDirectory = ".";
@@ -168,14 +167,17 @@ namespace SPV_Minerva_Loader
                     xmlReader = XmlReader.Create(xmlPath); // Create XmlReader with XML file path
                     xmlDoc = XDocument.Load(xmlReader); // Load XML file
 
-                    ordersArray = new MinervaJob[xmlDoc.Root.Elements().ElementAt(0).Elements().Count()];
+                    jobsArray = new MinervaJob[xmlDoc.Root.Elements().ElementAt(0).Elements().Count()];
+
+                    int numOfJobs = xmlDoc.Root.Elements().ElementAt(0).Elements().Count();
+                    int numOfFieldsInJob = xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(0).Elements().Count();
 
                     // Create orders from XML file
-                    for (int i = 0; i < xmlDoc.Root.Elements().ElementAt(0).Elements().Count(); i++)
+                    for (int i = 0; i < numOfJobs; i++)
                     {
                         // Create and fill string array with values from XML file
                         string[] values = new string[xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(0).Elements().Count()];
-                        for (int j = 0; j < xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(0).Elements().Count(); j++)
+                        for (int j = 0; j < numOfFieldsInJob; j++)
                         {
                             if (xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(i).Elements().ElementAt(j).Elements().ElementAt(0).Value == "")
                             {
@@ -186,9 +188,9 @@ namespace SPV_Minerva_Loader
                                 values[j] = xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(i).Elements().ElementAt(j).Elements().ElementAt(0).Value;
                             }
                         }
-                        orderIDNumericUpDown.Maximum = xmlDoc.Root.Elements().ElementAt(0).Elements().Count();
+                        jobIDNumericUpDown.Maximum = xmlDoc.Root.Elements().ElementAt(0).Elements().Count();
                         // Create new order and place it in array of orders
-                        ordersArray[i] = new MinervaJob((i + 1) + "", values);
+                        jobsArray[i] = new MinervaJob((i + 1) + "", values);
                     }
                 }
                 catch (Exception ex)
@@ -197,150 +199,150 @@ namespace SPV_Minerva_Loader
                 }
 
                 // Initiate GUI and order elements for first order
-                fillGuiWithAutoInput(0, ordersArray);
-                fillGuiWithManualInput(0, ordersArray);
-                updateManualInputData(0, ordersArray);
-                minervaTotalOrdersTextBox.Text = orderIDNumericUpDown.Maximum + "";
-                currentOrderTextBox.Text = orderIDNumericUpDown.Value + "";
+                fillGuiWithAutoInput(0, jobsArray);
+                fillGuiWithManualInput(0, jobsArray);
+                updateManualInputData(0, jobsArray);
+                minervaTotaljobsTextBox.Text = jobIDNumericUpDown.Maximum + "";
+                currentOrderTextBox.Text = jobIDNumericUpDown.Value + "";
             }
         }
 
         // Change Active MinervaJob
-        private void orderIDNumericUpDown_ValueChanged(object sender, EventArgs e)
+        private void jobIDNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            if (ordersArray != null)
+            if (jobsArray != null)
             {
-                fillGuiWithAutoInput((int)orderIDNumericUpDown.Value - 1, ordersArray);
-                fillGuiWithManualInput((int)orderIDNumericUpDown.Value - 1, ordersArray);
-                currentOrderTextBox.Text = orderIDNumericUpDown.Value + "";
+                fillGuiWithAutoInput((int)jobIDNumericUpDown.Value - 1, jobsArray);
+                fillGuiWithManualInput((int)jobIDNumericUpDown.Value - 1, jobsArray);
+                currentOrderTextBox.Text = jobIDNumericUpDown.Value + "";
             }
         }
 
         // Populate GUI fields with input from a file
-        private void fillGuiWithAutoInput(int index, MinervaJob[] orders) {
+        private void fillGuiWithAutoInput(int index, MinervaJob[] jobs) {
 
-            orderIDNumericUpDown.Value = Int32.Parse(orders[index].autoInputArray[0]);
-            jobNumberTextBox.Text = orders[index].autoInputArray[1];
-            dueDateTextBox.Text = orders[index].autoInputArray[2];
-            purchaseOrderNoTextBox.Text = orders[index].autoInputArray[3];
-            purchaseOrderLineTextBox.Text = orders[index].autoInputArray[4];
-            salesOrderNumberTextBox.Text = orders[index].autoInputArray[5];
-            customerAccountTextBox.Text = orders[index].autoInputArray[6];
-            buildQuantityTextBox.Text = orders[index].autoInputArray[7];
-            ascmOrderIDTextBox.Text = orders[index].autoInputArray[8];
-            endCustomerTextBox.Text = orders[index].autoInputArray[9];
-            activationSystemTextBox.Text = orders[index].autoInputArray[10];
-            productTypeTextBox.Text = orders[index].autoInputArray[11];
-            erpMaterialCodeTextBox.Text = orders[index].autoInputArray[12];
-            integratorPartIDTextBox.Text = orders[index].autoInputArray[13];
-            integratorIDTextBox.Text = orders[index].autoInputArray[14];
-            activationTypeTextBox.Text = orders[index].autoInputArray[15];
-            partNumberTextBox.Text = orders[index].autoInputArray[16];
-            retailBarcodeTextBox.Text = orders[index].autoInputArray[17];
-            retailBarcodeTypeTextBox.Text = orders[index].autoInputArray[18];
+            jobIDNumericUpDown.Value = Int32.Parse(jobs[index].autoInputArray[0]);
+            jobNumberTextBox.Text = jobs[index].autoInputArray[1];
+            dueDateTextBox.Text = jobs[index].autoInputArray[2];
+            purchaseOrderNoTextBox.Text = jobs[index].autoInputArray[3];
+            purchaseOrderLineTextBox.Text = jobs[index].autoInputArray[4];
+            salesOrderNumberTextBox.Text = jobs[index].autoInputArray[5];
+            customerAccountTextBox.Text = jobs[index].autoInputArray[6];
+            buildQuantityTextBox.Text = jobs[index].autoInputArray[7];
+            ascmOrderIDTextBox.Text = jobs[index].autoInputArray[8];
+            endCustomerTextBox.Text = jobs[index].autoInputArray[9];
+            activationSystemTextBox.Text = jobs[index].autoInputArray[10];
+            productTypeTextBox.Text = jobs[index].autoInputArray[11];
+            erpMaterialCodeTextBox.Text = jobs[index].autoInputArray[12];
+            integratorPartIDTextBox.Text = jobs[index].autoInputArray[13];
+            integratorIDTextBox.Text = jobs[index].autoInputArray[14];
+            activationTypeTextBox.Text = jobs[index].autoInputArray[15];
+            partNumberTextBox.Text = jobs[index].autoInputArray[16];
+            retailBarcodeTextBox.Text = jobs[index].autoInputArray[17];
+            retailBarcodeTypeTextBox.Text = jobs[index].autoInputArray[18];
 
         }
 
         // Populate GUI fields with manual input if it's not absent
-        private void fillGuiWithManualInput(int index, MinervaJob[] orders)
+        private void fillGuiWithManualInput(int index, MinervaJob[] jobs)
         {
-            if (orders[index].jobType == null || orders[index].jobType == "Not Selected")
+            if (jobs[index].jobType == null || jobs[index].jobType == "N/A")
             {
                 minervaJobTypeComboBox.ResetText();
                 minervaJobTypeComboBox.SelectedIndex = -1;
             }
             else
             {
-                minervaJobTypeComboBox.SelectedItem = orders[index].jobType;
+                minervaJobTypeComboBox.SelectedItem = jobs[index].jobType;
             }
 
-            if (orders[index].integrator == null || orders[index].integrator == "Not Selected")
+            if (jobs[index].integrator == null || jobs[index].integrator == "N/A")
             {
                 minervaIntegratorComboCox.ResetText();
                 minervaIntegratorComboCox.SelectedIndex = -1;
             }
             else
             {
-                minervaIntegratorComboCox.SelectedItem = orders[index].integrator;
+                minervaIntegratorComboCox.SelectedItem = jobs[index].integrator;
             }
 
-            if (orders[index].region == null || orders[index].region == "Not Selected")
+            if (jobs[index].region == null || jobs[index].region == "N/A")
             {
                 minervaRegionComboBox.ResetText();
                 minervaRegionComboBox.SelectedIndex = -1;
             }
             else
             {
-                minervaRegionComboBox.SelectedItem = orders[index].region;
+                minervaRegionComboBox.SelectedItem = jobs[index].region;
             }
             
-            if (orders[index].currency == null || orders[index].currency == "Not Selected")
+            if (jobs[index].currency == null || jobs[index].currency == "N/A")
             {
                 minervaCurrencyComboBox.ResetText();
                 minervaCurrencyComboBox.SelectedIndex = -1;
             }
             else
             {
-                minervaCurrencyComboBox.SelectedItem = orders[index].currency;
+                minervaCurrencyComboBox.SelectedItem = jobs[index].currency;
             }
 
-            if (orders[index].productDescription == null || orders[index].productDescription == "Not Selected")
+            if (jobs[index].productDescription == null || jobs[index].productDescription == "N/A")
             {
                 minervaProductDescriptionTextBox.Clear();
             }
             else
             {
-                minervaProductDescriptionTextBox.Text = orders[index].productDescription;
+                minervaProductDescriptionTextBox.Text = jobs[index].productDescription;
             }
 
-            if (orders[index].regionIntegratorID == null || orders[index].regionIntegratorID == "Not Selected")
+            if (jobs[index].regionIntegratorID == null || jobs[index].regionIntegratorID == "N/A")
             {
                 minervaRegionIntegratorIDTextBox.Clear();
             }
             else
             {
-                minervaRegionIntegratorIDTextBox.Text = orders[index].regionIntegratorID;
+                minervaRegionIntegratorIDTextBox.Text = jobs[index].regionIntegratorID;
             }
 
-            if (orders[index].countryIncommRetailer == null || orders[index].countryIncommRetailer == "Not Selected")
+            if (jobs[index].countryIncommRetailer == null || jobs[index].countryIncommRetailer == "N/A")
             {
                 minervaCountryIncommRetailerTextBox.Clear();
             }
             else
             {
-                minervaCountryIncommRetailerTextBox.Text = orders[index].countryIncommRetailer;
+                minervaCountryIncommRetailerTextBox.Text = jobs[index].countryIncommRetailer;
             }
 
-            if (orders[index].packQuantity == null || orders[index].packQuantity == "Not Selected")
+            if (jobs[index].packQuantity == null || jobs[index].packQuantity == "N/A")
             {
                 minervaPackQuantityComboBox.ResetText();
                 minervaPackQuantityComboBox.SelectedIndex = -1;
             }
             else
             {
-                minervaPackQuantityComboBox.SelectedItem = orders[index].packQuantity;
+                minervaPackQuantityComboBox.SelectedItem = jobs[index].packQuantity;
             }
 
-            if (orders[index].boxQuantitySize == null || orders[index].boxQuantitySize == "Not Selected")
+            if (jobs[index].boxQuantitySize == null || jobs[index].boxQuantitySize == "N/A")
             {
                 minervaBoxQuantityComboBox.ResetText();
                 minervaBoxQuantityComboBox.SelectedIndex = -1;
             }
             else
             {
-                minervaBoxQuantityComboBox.SelectedItem = orders[index].boxQuantitySize;
+                minervaBoxQuantityComboBox.SelectedItem = jobs[index].boxQuantitySize;
             }
 
-            if (orders[index].specialInstructions == null || orders[index].specialInstructions == "Not Selected")
+            if (jobs[index].specialInstructions == null || jobs[index].specialInstructions == "N/A")
             {
                 minervaSpecialInstructionsTextBox.Clear();
             }
             else
             {
-                minervaSpecialInstructionsTextBox.Text = orders[index].specialInstructions;
+                minervaSpecialInstructionsTextBox.Text = jobs[index].specialInstructions;
             }
 
-            if (orders[index].isDecimal)
+            if (jobs[index].isDecimal)
             {
                 minervaDenomDecimalCheckBox.Checked = true;
             }
@@ -349,7 +351,7 @@ namespace SPV_Minerva_Loader
                 minervaDenomDecimalCheckBox.Checked = false;
             }
 
-            if (orders[index].hasPPT)
+            if (jobs[index].hasPPT)
             {
                 minervaPptCheckBox.Checked = true;
             }
@@ -358,7 +360,7 @@ namespace SPV_Minerva_Loader
                 minervaPptCheckBox.Checked = false;
             }
 
-            if (orders[index].hasWTC)
+            if (jobs[index].hasWTC)
             {
                 minervaWtcCheckBox.Checked = true;
             }
@@ -369,9 +371,9 @@ namespace SPV_Minerva_Loader
 
             if (minervaPptCheckBox.Checked)
             {
-                if (orders[index].pptQuanity != null)
+                if (jobs[index].pptQuanity != null)
                 {
-                    minervaPptQtyNumericUpDown.Value = Int32.Parse(orders[index].pptQuanity);
+                    minervaPptQtyNumericUpDown.Value = Int32.Parse(jobs[index].pptQuanity);
                 }
                 else
                 {
@@ -385,9 +387,9 @@ namespace SPV_Minerva_Loader
 
             if (minervaWtcCheckBox.Checked)
             {
-                if (orders[index].wtcQuantity != null)
+                if (jobs[index].wtcQuantity != null)
                 {
-                    minervaWtcQtyNumericUpDown.Value = Int32.Parse(orders[index].wtcQuantity);
+                    minervaWtcQtyNumericUpDown.Value = Int32.Parse(jobs[index].wtcQuantity);
                 }
                 else
                 {
@@ -395,9 +397,9 @@ namespace SPV_Minerva_Loader
                 }
 
 
-                if (orders[index].wtcDenomination != null)
+                if (jobs[index].wtcDenomination != null)
                 {
-                    minervaWtcDenomNumericUpDown.Value = Int32.Parse(orders[index].wtcDenomination);
+                    minervaWtcDenomNumericUpDown.Value = Int32.Parse(jobs[index].wtcDenomination);
                 }
                 else
                 {
@@ -410,56 +412,56 @@ namespace SPV_Minerva_Loader
                 minervaWtcDenomNumericUpDown.Value = 0;
             }
 
-            minervaHumanReadableCheckBox.Checked = orders[index].dodHumanReadable.Equals("True") ? true : false;
+            minervaHumanReadableCheckBox.Checked = jobs[index].dodHumanReadable.Equals("True") ? true : false;
 
-            if (orders[index].denomination != null)
+            if (jobs[index].denomination != null)
             {
-                minervaDenominationNumericUpDown.Value = Int32.Parse(orders[index].denomination);
+                minervaDenominationNumericUpDown.Value = Int32.Parse(jobs[index].denomination);
             }
             else
             {
                 minervaDenominationNumericUpDown.Value = 0;
             }
 
-            if (orders[index].jobQuantity != null)
+            if (jobs[index].jobQuantity != null)
             {
-                minervaJobQtyNumericUpDown.Value = Int32.Parse(orders[index].jobQuantity);
+                minervaJobQtyNumericUpDown.Value = Int32.Parse(jobs[index].jobQuantity);
             }
             else
             {
                 minervaJobQtyNumericUpDown.Value = 0;
             }
 
-            if (orders[index].palletQuantity != null)
+            if (jobs[index].palletQuantity != null)
             {
-                minervaPalletQtyNumericUpDown.Value = Int32.Parse(orders[index].palletQuantity);
+                minervaPalletQtyNumericUpDown.Value = Int32.Parse(jobs[index].palletQuantity);
             }
             else
             {
                 minervaPalletQtyNumericUpDown.Value = 0;
             }
 
-            if (orders[index].bhnPackRetailCode != null)
+            if (jobs[index].bhnPackRetailCode != null)
             {
-                minervaBhnPackRetailCodeNumericUpDown.Value = Int32.Parse(orders[index].bhnPackRetailCode);
+                minervaBhnPackRetailCodeNumericUpDown.Value = Int32.Parse(jobs[index].bhnPackRetailCode);
             }
             else
             {
                 minervaBhnPackRetailCodeNumericUpDown.Value = 0;
             }
 
-            if (orders[index].bhnBoxRetailCode != null)
+            if (jobs[index].bhnBoxRetailCode != null)
             {
-                minervaBhnBoxRetailCodeNumericUpDown.Value = Int32.Parse(orders[index].bhnBoxRetailCode);
+                minervaBhnBoxRetailCodeNumericUpDown.Value = Int32.Parse(jobs[index].bhnBoxRetailCode);
             }
             else
             {
                 minervaBhnBoxRetailCodeNumericUpDown.Value = 0;
             }
 
-            if (orders[index].bhnPalletRetailCode != null)
+            if (jobs[index].bhnPalletRetailCode != null)
             {
-                minervaBhnPalletRetailCodeNumericUpDown.Value = Int32.Parse(orders[index].bhnPalletRetailCode);
+                minervaBhnPalletRetailCodeNumericUpDown.Value = Int32.Parse(jobs[index].bhnPalletRetailCode);
             }
             else
             {
@@ -468,157 +470,157 @@ namespace SPV_Minerva_Loader
         }
 
         // Update manual input in the MinervaJob object
-        private void updateManualInputData(int index, MinervaJob[] orders) {
+        private void updateManualInputData(int index, MinervaJob[] jobs) {
             if (minervaJobTypeComboBox.SelectedItem != null)
             {
-                orders[index].jobType = minervaJobTypeComboBox.SelectedItem.ToString();
+                jobs[index].jobType = minervaJobTypeComboBox.SelectedItem.ToString();
             }
             else
             {
-                orders[index].jobType = "Not Selected";
+                jobs[index].jobType = "N/A";
             }
 
             if (minervaIntegratorComboCox.SelectedItem != null)
             {
-                orders[index].integrator = minervaIntegratorComboCox.SelectedItem.ToString();
+                jobs[index].integrator = minervaIntegratorComboCox.SelectedItem.ToString();
             }
             else
             {
-                orders[index].integrator = "Not Selected";
+                jobs[index].integrator = "N/A";
             }
 
             if (minervaRegionComboBox.SelectedItem != null)
             {
-                orders[index].region = minervaRegionComboBox.SelectedItem.ToString();
+                jobs[index].region = minervaRegionComboBox.SelectedItem.ToString();
             }
             else
             {
-                orders[index].region = "Not Selected";
+                jobs[index].region = "N/A";
             }
 
             if (minervaCurrencyComboBox.SelectedItem != null)
             {
-                orders[index].currency = minervaCurrencyComboBox.SelectedItem.ToString();
+                jobs[index].currency = minervaCurrencyComboBox.SelectedItem.ToString();
             }
             else
             {
-                orders[index].currency = "Not Selected";
+                jobs[index].currency = "N/A";
             }
             
             if (minervaPackQuantityComboBox.SelectedItem != null)
             {
-                orders[index].packQuantity = minervaPackQuantityComboBox.SelectedItem.ToString();
+                jobs[index].packQuantity = minervaPackQuantityComboBox.SelectedItem.ToString();
             }
             else
             {
-                orders[index].packQuantity = "Not Selected";
+                jobs[index].packQuantity = "N/A";
             }
 
             if (minervaBoxQuantityComboBox.SelectedItem != null)
             {
-                orders[index].boxQuantitySize = minervaBoxQuantityComboBox.SelectedItem.ToString();
+                jobs[index].boxQuantitySize = minervaBoxQuantityComboBox.SelectedItem.ToString();
             }
             else
             {
-                orders[index].boxQuantitySize =  "Not Selected";
+                jobs[index].boxQuantitySize =  "N/A";
             }
 
-            if (orders[index].productDescription != null)
+            if (jobs[index].productDescription != null)
             {
-                orders[index].productDescription = minervaProductDescriptionTextBox.Text;
+                jobs[index].productDescription = minervaProductDescriptionTextBox.Text;
             }
             else
             {
-                orders[index].productDescription = "Not Selected";
+                jobs[index].productDescription = "N/A";
             }
 
-            if (orders[index].regionIntegratorID != null)
+            if (jobs[index].regionIntegratorID != null)
             {
-                orders[index].regionIntegratorID = minervaRegionIntegratorIDTextBox.Text;
+                jobs[index].regionIntegratorID = minervaRegionIntegratorIDTextBox.Text;
             }
             else
             {
-                orders[index].regionIntegratorID = "Not Selected";
+                jobs[index].regionIntegratorID = "N/A";
             }
 
-            if (orders[index].countryIncommRetailer != null)
+            if (jobs[index].countryIncommRetailer != null)
             {
-                orders[index].countryIncommRetailer = minervaCountryIncommRetailerTextBox.Text;
+                jobs[index].countryIncommRetailer = minervaCountryIncommRetailerTextBox.Text;
             }
             else
             {
-                orders[index].countryIncommRetailer = "Not Selected";
+                jobs[index].countryIncommRetailer = "N/A";
             }
 
-            if (orders[index].specialInstructions != null)
+            if (jobs[index].specialInstructions != null)
             {
-                orders[index].specialInstructions = minervaSpecialInstructionsTextBox.Text;
+                jobs[index].specialInstructions = minervaSpecialInstructionsTextBox.Text;
             }
             else
             {
-                orders[index].specialInstructions = "Not Selected";
+                jobs[index].specialInstructions = "N/A";
             }
 
             if (minervaDenominationNumericUpDown.Value == 0)
             {
-                if (orders[index].isDecimal)
+                if (jobs[index].isDecimal)
                 {
-                    orders[index].denomination = minervaDenominationNumericUpDown.Value + ".00";
+                    jobs[index].denomination = minervaDenominationNumericUpDown.Value + ".00";
                 }
                 else
                 {
-                    orders[index].denomination = minervaDenominationNumericUpDown.Value + "";
+                    jobs[index].denomination = minervaDenominationNumericUpDown.Value + "";
                 }
             }
             else
             {
-                orders[index].denomination = minervaDenominationNumericUpDown.Value + "";
+                jobs[index].denomination = minervaDenominationNumericUpDown.Value + "";
             }
 
             if (minervaDenomDecimalCheckBox.Checked)
             {
-                orders[index].isDecimal = true;
+                jobs[index].isDecimal = true;
             }
             else
             {
-                orders[index].isDecimal = false;
+                jobs[index].isDecimal = false;
             }
 
             if (minervaPptCheckBox.Checked)
             {
-                orders[index].hasPPT = true;
+                jobs[index].hasPPT = true;
             }
             else
             {
-                orders[index].hasPPT = false;
+                jobs[index].hasPPT = false;
             }
 
             if (minervaWtcCheckBox.Checked)
             {
-                orders[index].hasWTC = true;
+                jobs[index].hasWTC = true;
             }
             else
             {
-                orders[index].hasWTC = false;
+                jobs[index].hasWTC = false;
             }
 
-            orders[index].dodHumanReadable = minervaHumanReadableCheckBox.Checked ? true : false;
-            orders[index].jobQuantity = minervaJobQtyNumericUpDown.Value + "";
-            orders[index].palletQuantity = minervaPalletQtyNumericUpDown.Value + "";
-            orders[index].pptQuanity = minervaPptQtyNumericUpDown.Value + "";
-            orders[index].wtcQuantity = minervaWtcQtyNumericUpDown.Value + "";
-            orders[index].wtcDenomination = minervaWtcDenomNumericUpDown.Value + "";
-            orders[index].bhnPackRetailCode = minervaBhnPackRetailCodeNumericUpDown.Value + "";
-            orders[index].bhnBoxRetailCode = minervaBhnBoxRetailCodeNumericUpDown.Value + "";
-            orders[index].bhnPalletRetailCode = minervaBhnPalletRetailCodeNumericUpDown.Value + "";
+            jobs[index].dodHumanReadable = minervaHumanReadableCheckBox.Checked ? true : false;
+            jobs[index].jobQuantity = minervaJobQtyNumericUpDown.Value + "";
+            jobs[index].palletQuantity = minervaPalletQtyNumericUpDown.Value + "";
+            jobs[index].pptQuanity = minervaPptQtyNumericUpDown.Value + "";
+            jobs[index].wtcQuantity = minervaWtcQtyNumericUpDown.Value + "";
+            jobs[index].wtcDenomination = minervaWtcDenomNumericUpDown.Value + "";
+            jobs[index].bhnPackRetailCode = minervaBhnPackRetailCodeNumericUpDown.Value + "";
+            jobs[index].bhnBoxRetailCode = minervaBhnBoxRetailCodeNumericUpDown.Value + "";
+            jobs[index].bhnPalletRetailCode = minervaBhnPalletRetailCodeNumericUpDown.Value + "";
         }
 
         // Save manual input in order object button
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if (ordersArray != null)
+            if (jobsArray != null)
             {
-                updateManualInputData((int)orderIDNumericUpDown.Value - 1, ordersArray);
+                updateManualInputData((int)jobIDNumericUpDown.Value - 1, jobsArray);
             }
         }
 
@@ -650,9 +652,9 @@ namespace SPV_Minerva_Loader
         //  Generate XML File
         private void generateXmlButton_Click(object sender, EventArgs e)
         {
-            if (ordersArray != null)
+            if (jobsArray != null)
             {
-                string xml = getXMLFromObject(ordersArray);
+                string xml = getXMLFromObject(jobsArray);
                 xml = xml.Replace("ArrayOfOrder", "ListOfOrders");
                 XmlDocument doc = new XmlDocument();
                 doc.LoadXml(xml);

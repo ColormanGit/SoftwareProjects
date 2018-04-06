@@ -43,8 +43,6 @@
             this.bomFileNameTextBox = new System.Windows.Forms.TextBox();
             this.pkpnLabel = new System.Windows.Forms.Label();
             this.pkpnTextBox = new System.Windows.Forms.TextBox();
-            this.athenaSpecificationLabel = new System.Windows.Forms.Label();
-            this.athenaSpecificationTextBox = new System.Windows.Forms.TextBox();
             this.athenaActivationTypeIdLabel = new System.Windows.Forms.Label();
             this.athenaActivationTypeIdTextBox = new System.Windows.Forms.TextBox();
             this.incommProductDescriptionNabel = new System.Windows.Forms.Label();
@@ -55,12 +53,8 @@
             this.faiEndLabel = new System.Windows.Forms.Label();
             this.faiStartNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.faiStartLabel = new System.Windows.Forms.Label();
-            this.labelTemplateLabel = new System.Windows.Forms.Label();
-            this.azTemplateLabel = new System.Windows.Forms.Label();
             this.jobTypeLabel = new System.Windows.Forms.Label();
-            this.azTemplateComboBox = new System.Windows.Forms.ComboBox();
             this.jobTypeComboBox = new System.Windows.Forms.ComboBox();
-            this.labelTemplateComboBox = new System.Windows.Forms.ComboBox();
             this.palletQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.palletQtyLabel = new System.Windows.Forms.Label();
             this.boxQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -71,16 +65,10 @@
             this.skuDescriptionTextBox = new System.Windows.Forms.TextBox();
             this.artworkPartNumberSkuLabel = new System.Windows.Forms.Label();
             this.artworkPartNumberSkuTextBox = new System.Windows.Forms.TextBox();
-            this.bhnPalletRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.bhnBoxRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.bhnPackRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.generateXmlButton = new System.Windows.Forms.Button();
             this.jobCommentsLabel = new System.Windows.Forms.Label();
             this.jobCommentsTextBox = new System.Windows.Forms.TextBox();
             this.jobDetailsButton = new System.Windows.Forms.Button();
-            this.bhnPalletRetailCodeLabel = new System.Windows.Forms.Label();
-            this.bhnBoxRetailCodeLabel = new System.Windows.Forms.Label();
-            this.bhnPackRetailCodeLabel = new System.Windows.Forms.Label();
             this.decimalCheckBox = new System.Windows.Forms.CheckBox();
             this.denominationNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.jobQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -147,9 +135,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.palletQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.packQtyNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnPalletRetailCodeNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnBoxRetailCodeNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnPackRetailCodeNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.denominationNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderIDNumericUpDown)).BeginInit();
@@ -174,8 +159,6 @@
             this.athenaPanel.Controls.Add(this.bomFileNameTextBox);
             this.athenaPanel.Controls.Add(this.pkpnLabel);
             this.athenaPanel.Controls.Add(this.pkpnTextBox);
-            this.athenaPanel.Controls.Add(this.athenaSpecificationLabel);
-            this.athenaPanel.Controls.Add(this.athenaSpecificationTextBox);
             this.athenaPanel.Controls.Add(this.athenaActivationTypeIdLabel);
             this.athenaPanel.Controls.Add(this.athenaActivationTypeIdTextBox);
             this.athenaPanel.Controls.Add(this.incommProductDescriptionNabel);
@@ -186,12 +169,8 @@
             this.athenaPanel.Controls.Add(this.faiEndLabel);
             this.athenaPanel.Controls.Add(this.faiStartNumericUpDown);
             this.athenaPanel.Controls.Add(this.faiStartLabel);
-            this.athenaPanel.Controls.Add(this.labelTemplateLabel);
-            this.athenaPanel.Controls.Add(this.azTemplateLabel);
             this.athenaPanel.Controls.Add(this.jobTypeLabel);
-            this.athenaPanel.Controls.Add(this.azTemplateComboBox);
             this.athenaPanel.Controls.Add(this.jobTypeComboBox);
-            this.athenaPanel.Controls.Add(this.labelTemplateComboBox);
             this.athenaPanel.Controls.Add(this.palletQtyNumericUpDown);
             this.athenaPanel.Controls.Add(this.palletQtyLabel);
             this.athenaPanel.Controls.Add(this.boxQtyNumericUpDown);
@@ -202,16 +181,10 @@
             this.athenaPanel.Controls.Add(this.skuDescriptionTextBox);
             this.athenaPanel.Controls.Add(this.artworkPartNumberSkuLabel);
             this.athenaPanel.Controls.Add(this.artworkPartNumberSkuTextBox);
-            this.athenaPanel.Controls.Add(this.bhnPalletRetailCodeNumericUpDown);
-            this.athenaPanel.Controls.Add(this.bhnBoxRetailCodeNumericUpDown);
-            this.athenaPanel.Controls.Add(this.bhnPackRetailCodeNumericUpDown);
             this.athenaPanel.Controls.Add(this.generateXmlButton);
             this.athenaPanel.Controls.Add(this.jobCommentsLabel);
             this.athenaPanel.Controls.Add(this.jobCommentsTextBox);
             this.athenaPanel.Controls.Add(this.jobDetailsButton);
-            this.athenaPanel.Controls.Add(this.bhnPalletRetailCodeLabel);
-            this.athenaPanel.Controls.Add(this.bhnBoxRetailCodeLabel);
-            this.athenaPanel.Controls.Add(this.bhnPackRetailCodeLabel);
             this.athenaPanel.Controls.Add(this.decimalCheckBox);
             this.athenaPanel.Controls.Add(this.denominationNumericUpDown);
             this.athenaPanel.Controls.Add(this.jobQtyNumericUpDown);
@@ -367,29 +340,10 @@
             this.pkpnTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.pkpnTextBox.WordWrap = false;
             // 
-            // athenaSpecificationLabel
-            // 
-            this.athenaSpecificationLabel.AutoSize = true;
-            this.athenaSpecificationLabel.Location = new System.Drawing.Point(242, 198);
-            this.athenaSpecificationLabel.Name = "athenaSpecificationLabel";
-            this.athenaSpecificationLabel.Size = new System.Drawing.Size(68, 13);
-            this.athenaSpecificationLabel.TabIndex = 138;
-            this.athenaSpecificationLabel.Text = "Specification";
-            // 
-            // athenaSpecificationTextBox
-            // 
-            this.athenaSpecificationTextBox.Location = new System.Drawing.Point(244, 213);
-            this.athenaSpecificationTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.athenaSpecificationTextBox.Name = "athenaSpecificationTextBox";
-            this.athenaSpecificationTextBox.Size = new System.Drawing.Size(200, 20);
-            this.athenaSpecificationTextBox.TabIndex = 137;
-            this.athenaSpecificationTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.athenaSpecificationTextBox.WordWrap = false;
-            // 
             // athenaActivationTypeIdLabel
             // 
             this.athenaActivationTypeIdLabel.AutoSize = true;
-            this.athenaActivationTypeIdLabel.Location = new System.Drawing.Point(23, 480);
+            this.athenaActivationTypeIdLabel.Location = new System.Drawing.Point(23, 389);
             this.athenaActivationTypeIdLabel.Name = "athenaActivationTypeIdLabel";
             this.athenaActivationTypeIdLabel.Size = new System.Drawing.Size(95, 13);
             this.athenaActivationTypeIdLabel.TabIndex = 136;
@@ -397,7 +351,7 @@
             // 
             // athenaActivationTypeIdTextBox
             // 
-            this.athenaActivationTypeIdTextBox.Location = new System.Drawing.Point(24, 493);
+            this.athenaActivationTypeIdTextBox.Location = new System.Drawing.Point(24, 401);
             this.athenaActivationTypeIdTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.athenaActivationTypeIdTextBox.Name = "athenaActivationTypeIdTextBox";
             this.athenaActivationTypeIdTextBox.Size = new System.Drawing.Size(200, 20);
@@ -408,7 +362,7 @@
             // incommProductDescriptionNabel
             // 
             this.incommProductDescriptionNabel.AutoSize = true;
-            this.incommProductDescriptionNabel.Location = new System.Drawing.Point(463, 479);
+            this.incommProductDescriptionNabel.Location = new System.Drawing.Point(244, 382);
             this.incommProductDescriptionNabel.Name = "incommProductDescriptionNabel";
             this.incommProductDescriptionNabel.Size = new System.Drawing.Size(140, 13);
             this.incommProductDescriptionNabel.TabIndex = 134;
@@ -417,7 +371,7 @@
             // 
             // incommProductDescriptionTextBox
             // 
-            this.incommProductDescriptionTextBox.Location = new System.Drawing.Point(463, 493);
+            this.incommProductDescriptionTextBox.Location = new System.Drawing.Point(245, 396);
             this.incommProductDescriptionTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.incommProductDescriptionTextBox.Name = "incommProductDescriptionTextBox";
             this.incommProductDescriptionTextBox.Size = new System.Drawing.Size(200, 20);
@@ -429,7 +383,7 @@
             // incommPackagingGtinLabel
             // 
             this.incommPackagingGtinLabel.AutoSize = true;
-            this.incommPackagingGtinLabel.Location = new System.Drawing.Point(463, 433);
+            this.incommPackagingGtinLabel.Location = new System.Drawing.Point(244, 336);
             this.incommPackagingGtinLabel.Name = "incommPackagingGtinLabel";
             this.incommPackagingGtinLabel.Size = new System.Drawing.Size(127, 13);
             this.incommPackagingGtinLabel.TabIndex = 132;
@@ -438,7 +392,7 @@
             // 
             // incommPackagingGtinTextBox
             // 
-            this.incommPackagingGtinTextBox.Location = new System.Drawing.Point(463, 447);
+            this.incommPackagingGtinTextBox.Location = new System.Drawing.Point(245, 350);
             this.incommPackagingGtinTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.incommPackagingGtinTextBox.Name = "incommPackagingGtinTextBox";
             this.incommPackagingGtinTextBox.Size = new System.Drawing.Size(200, 20);
@@ -449,7 +403,7 @@
             // 
             // faiEndNumericUpDown
             // 
-            this.faiEndNumericUpDown.Location = new System.Drawing.Point(349, 305);
+            this.faiEndNumericUpDown.Location = new System.Drawing.Point(130, 491);
             this.faiEndNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
             this.faiEndNumericUpDown.Maximum = new decimal(new int[] {
             1000,
@@ -464,7 +418,7 @@
             // faiEndLabel
             // 
             this.faiEndLabel.AutoSize = true;
-            this.faiEndLabel.Location = new System.Drawing.Point(346, 291);
+            this.faiEndLabel.Location = new System.Drawing.Point(127, 477);
             this.faiEndLabel.Name = "faiEndLabel";
             this.faiEndLabel.Size = new System.Drawing.Size(80, 13);
             this.faiEndLabel.TabIndex = 129;
@@ -473,7 +427,7 @@
             // faiStartNumericUpDown
             // 
             this.faiStartNumericUpDown.CausesValidation = false;
-            this.faiStartNumericUpDown.Location = new System.Drawing.Point(244, 305);
+            this.faiStartNumericUpDown.Location = new System.Drawing.Point(25, 491);
             this.faiStartNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
             this.faiStartNumericUpDown.Maximum = new decimal(new int[] {
             1000,
@@ -488,29 +442,11 @@
             // faiStartLabel
             // 
             this.faiStartLabel.AutoSize = true;
-            this.faiStartLabel.Location = new System.Drawing.Point(243, 291);
+            this.faiStartLabel.Location = new System.Drawing.Point(23, 477);
             this.faiStartLabel.Name = "faiStartLabel";
             this.faiStartLabel.Size = new System.Drawing.Size(83, 13);
             this.faiStartLabel.TabIndex = 127;
             this.faiStartLabel.Text = "First Article Start";
-            // 
-            // labelTemplateLabel
-            // 
-            this.labelTemplateLabel.AutoSize = true;
-            this.labelTemplateLabel.Location = new System.Drawing.Point(22, 432);
-            this.labelTemplateLabel.Name = "labelTemplateLabel";
-            this.labelTemplateLabel.Size = new System.Drawing.Size(80, 13);
-            this.labelTemplateLabel.TabIndex = 126;
-            this.labelTemplateLabel.Text = "Label Template";
-            // 
-            // azTemplateLabel
-            // 
-            this.azTemplateLabel.AutoSize = true;
-            this.azTemplateLabel.Location = new System.Drawing.Point(23, 387);
-            this.azTemplateLabel.Name = "azTemplateLabel";
-            this.azTemplateLabel.Size = new System.Drawing.Size(68, 13);
-            this.azTemplateLabel.TabIndex = 124;
-            this.azTemplateLabel.Text = "AZ Template";
             // 
             // jobTypeLabel
             // 
@@ -521,51 +457,30 @@
             this.jobTypeLabel.TabIndex = 122;
             this.jobTypeLabel.Text = "Job Type";
             // 
-            // azTemplateComboBox
-            // 
-            this.azTemplateComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.azTemplateComboBox.FormattingEnabled = true;
-            this.azTemplateComboBox.Items.AddRange(new object[] {
-            "Job",
-            "Type",
-            "List"});
-            this.azTemplateComboBox.Location = new System.Drawing.Point(24, 400);
-            this.azTemplateComboBox.Margin = new System.Windows.Forms.Padding(10);
-            this.azTemplateComboBox.Name = "azTemplateComboBox";
-            this.azTemplateComboBox.Size = new System.Drawing.Size(200, 21);
-            this.azTemplateComboBox.TabIndex = 123;
-            // 
             // jobTypeComboBox
             // 
             this.jobTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.jobTypeComboBox.FormattingEnabled = true;
             this.jobTypeComboBox.Items.AddRange(new object[] {
-            "Job",
-            "Type",
-            "List"});
-            this.jobTypeComboBox.Location = new System.Drawing.Point(24, 353);
+            "Envirocard - 1 Code",
+            "Envirocard - 2 Codes",
+            "Envirocard - QR Code",
+            "Microsoft -M6 POSA AZ1",
+            "Microsoft  Office POSA AZ1",
+            "Intel Security - eCard",
+            "Intel Security - M6",
+            "Intel Security - NFR",
+            "Intel POSA Bi-Fold",
+            "Intel Bi-Fold"});
+            this.jobTypeComboBox.Location = new System.Drawing.Point(24, 355);
             this.jobTypeComboBox.Margin = new System.Windows.Forms.Padding(10);
             this.jobTypeComboBox.Name = "jobTypeComboBox";
             this.jobTypeComboBox.Size = new System.Drawing.Size(200, 21);
             this.jobTypeComboBox.TabIndex = 121;
             // 
-            // labelTemplateComboBox
-            // 
-            this.labelTemplateComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.labelTemplateComboBox.FormattingEnabled = true;
-            this.labelTemplateComboBox.Items.AddRange(new object[] {
-            "Job",
-            "Type",
-            "List"});
-            this.labelTemplateComboBox.Location = new System.Drawing.Point(24, 446);
-            this.labelTemplateComboBox.Margin = new System.Windows.Forms.Padding(10);
-            this.labelTemplateComboBox.Name = "labelTemplateComboBox";
-            this.labelTemplateComboBox.Size = new System.Drawing.Size(200, 21);
-            this.labelTemplateComboBox.TabIndex = 125;
-            // 
             // palletQtyNumericUpDown
             // 
-            this.palletQtyNumericUpDown.Location = new System.Drawing.Point(135, 308);
+            this.palletQtyNumericUpDown.Location = new System.Drawing.Point(135, 307);
             this.palletQtyNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
             this.palletQtyNumericUpDown.Maximum = new decimal(new int[] {
             100000000,
@@ -588,7 +503,7 @@
             // 
             // boxQtyNumericUpDown
             // 
-            this.boxQtyNumericUpDown.Location = new System.Drawing.Point(80, 308);
+            this.boxQtyNumericUpDown.Location = new System.Drawing.Point(80, 307);
             this.boxQtyNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
             this.boxQtyNumericUpDown.Maximum = new decimal(new int[] {
             100000000,
@@ -611,7 +526,7 @@
             // 
             // packQtyNumericUpDown
             // 
-            this.packQtyNumericUpDown.Location = new System.Drawing.Point(24, 308);
+            this.packQtyNumericUpDown.Location = new System.Drawing.Point(24, 307);
             this.packQtyNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
             this.packQtyNumericUpDown.Maximum = new decimal(new int[] {
             100000000,
@@ -643,7 +558,7 @@
             // 
             // skuDescriptionTextBox
             // 
-            this.skuDescriptionTextBox.Location = new System.Drawing.Point(24, 213);
+            this.skuDescriptionTextBox.Location = new System.Drawing.Point(24, 212);
             this.skuDescriptionTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.skuDescriptionTextBox.Name = "skuDescriptionTextBox";
             this.skuDescriptionTextBox.Size = new System.Drawing.Size(200, 20);
@@ -670,48 +585,6 @@
             this.artworkPartNumberSkuTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.artworkPartNumberSkuTextBox.WordWrap = false;
             // 
-            // bhnPalletRetailCodeNumericUpDown
-            // 
-            this.bhnPalletRetailCodeNumericUpDown.Location = new System.Drawing.Point(244, 493);
-            this.bhnPalletRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
-            1410065408,
-            2,
-            0,
-            0});
-            this.bhnPalletRetailCodeNumericUpDown.Name = "bhnPalletRetailCodeNumericUpDown";
-            this.bhnPalletRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
-            this.bhnPalletRetailCodeNumericUpDown.TabIndex = 110;
-            this.bhnPalletRetailCodeNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.bhnPalletRetailCodeNumericUpDown.Visible = false;
-            // 
-            // bhnBoxRetailCodeNumericUpDown
-            // 
-            this.bhnBoxRetailCodeNumericUpDown.Location = new System.Drawing.Point(244, 446);
-            this.bhnBoxRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
-            1410065408,
-            2,
-            0,
-            0});
-            this.bhnBoxRetailCodeNumericUpDown.Name = "bhnBoxRetailCodeNumericUpDown";
-            this.bhnBoxRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
-            this.bhnBoxRetailCodeNumericUpDown.TabIndex = 109;
-            this.bhnBoxRetailCodeNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.bhnBoxRetailCodeNumericUpDown.Visible = false;
-            // 
-            // bhnPackRetailCodeNumericUpDown
-            // 
-            this.bhnPackRetailCodeNumericUpDown.Location = new System.Drawing.Point(463, 402);
-            this.bhnPackRetailCodeNumericUpDown.Maximum = new decimal(new int[] {
-            1410065408,
-            2,
-            0,
-            0});
-            this.bhnPackRetailCodeNumericUpDown.Name = "bhnPackRetailCodeNumericUpDown";
-            this.bhnPackRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
-            this.bhnPackRetailCodeNumericUpDown.TabIndex = 108;
-            this.bhnPackRetailCodeNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.bhnPackRetailCodeNumericUpDown.Visible = false;
-            // 
             // generateXmlButton
             // 
             this.generateXmlButton.Location = new System.Drawing.Point(24, 25);
@@ -725,7 +598,7 @@
             // jobCommentsLabel
             // 
             this.jobCommentsLabel.AutoSize = true;
-            this.jobCommentsLabel.Location = new System.Drawing.Point(243, 54);
+            this.jobCommentsLabel.Location = new System.Drawing.Point(244, 96);
             this.jobCommentsLabel.Name = "jobCommentsLabel";
             this.jobCommentsLabel.Size = new System.Drawing.Size(179, 13);
             this.jobCommentsLabel.TabIndex = 70;
@@ -733,7 +606,7 @@
             // 
             // jobCommentsTextBox
             // 
-            this.jobCommentsTextBox.Location = new System.Drawing.Point(244, 70);
+            this.jobCommentsTextBox.Location = new System.Drawing.Point(245, 112);
             this.jobCommentsTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.jobCommentsTextBox.Multiline = true;
             this.jobCommentsTextBox.Name = "jobCommentsTextBox";
@@ -751,40 +624,10 @@
             this.jobDetailsButton.Text = "Save Job Details";
             this.jobDetailsButton.UseVisualStyleBackColor = true;
             // 
-            // bhnPalletRetailCodeLabel
-            // 
-            this.bhnPalletRetailCodeLabel.AutoSize = true;
-            this.bhnPalletRetailCodeLabel.Location = new System.Drawing.Point(243, 480);
-            this.bhnPalletRetailCodeLabel.Name = "bhnPalletRetailCodeLabel";
-            this.bhnPalletRetailCodeLabel.Size = new System.Drawing.Size(147, 13);
-            this.bhnPalletRetailCodeLabel.TabIndex = 66;
-            this.bhnPalletRetailCodeLabel.Text = "Blackhawk Pallet Retail Code";
-            this.bhnPalletRetailCodeLabel.Visible = false;
-            // 
-            // bhnBoxRetailCodeLabel
-            // 
-            this.bhnBoxRetailCodeLabel.AutoSize = true;
-            this.bhnBoxRetailCodeLabel.Location = new System.Drawing.Point(243, 432);
-            this.bhnBoxRetailCodeLabel.Name = "bhnBoxRetailCodeLabel";
-            this.bhnBoxRetailCodeLabel.Size = new System.Drawing.Size(139, 13);
-            this.bhnBoxRetailCodeLabel.TabIndex = 64;
-            this.bhnBoxRetailCodeLabel.Text = "Blackhawk Box Retail Code";
-            this.bhnBoxRetailCodeLabel.Visible = false;
-            // 
-            // bhnPackRetailCodeLabel
-            // 
-            this.bhnPackRetailCodeLabel.AutoSize = true;
-            this.bhnPackRetailCodeLabel.Location = new System.Drawing.Point(462, 390);
-            this.bhnPackRetailCodeLabel.Name = "bhnPackRetailCodeLabel";
-            this.bhnPackRetailCodeLabel.Size = new System.Drawing.Size(146, 13);
-            this.bhnPackRetailCodeLabel.TabIndex = 62;
-            this.bhnPackRetailCodeLabel.Text = "Blackhawk Pack Retail Code";
-            this.bhnPackRetailCodeLabel.Visible = false;
-            // 
             // decimalCheckBox
             // 
             this.decimalCheckBox.AutoSize = true;
-            this.decimalCheckBox.Location = new System.Drawing.Point(374, 262);
+            this.decimalCheckBox.Location = new System.Drawing.Point(155, 447);
             this.decimalCheckBox.Name = "decimalCheckBox";
             this.decimalCheckBox.Size = new System.Drawing.Size(70, 17);
             this.decimalCheckBox.TabIndex = 59;
@@ -794,7 +637,7 @@
             // 
             // denominationNumericUpDown
             // 
-            this.denominationNumericUpDown.Location = new System.Drawing.Point(244, 261);
+            this.denominationNumericUpDown.Location = new System.Drawing.Point(25, 445);
             this.denominationNumericUpDown.Margin = new System.Windows.Forms.Padding(10);
             this.denominationNumericUpDown.Maximum = new decimal(new int[] {
             1000,
@@ -823,7 +666,7 @@
             // countryIncommRetailerLabel
             // 
             this.countryIncommRetailerLabel.AutoSize = true;
-            this.countryIncommRetailerLabel.Location = new System.Drawing.Point(243, 339);
+            this.countryIncommRetailerLabel.Location = new System.Drawing.Point(244, 241);
             this.countryIncommRetailerLabel.Name = "countryIncommRetailerLabel";
             this.countryIncommRetailerLabel.Size = new System.Drawing.Size(130, 13);
             this.countryIncommRetailerLabel.TabIndex = 39;
@@ -831,7 +674,7 @@
             // 
             // countryIncommRetailerTextBox
             // 
-            this.countryIncommRetailerTextBox.Location = new System.Drawing.Point(244, 353);
+            this.countryIncommRetailerTextBox.Location = new System.Drawing.Point(245, 255);
             this.countryIncommRetailerTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.countryIncommRetailerTextBox.Name = "countryIncommRetailerTextBox";
             this.countryIncommRetailerTextBox.Size = new System.Drawing.Size(200, 20);
@@ -842,7 +685,7 @@
             // denominationLabel
             // 
             this.denominationLabel.AutoSize = true;
-            this.denominationLabel.Location = new System.Drawing.Point(238, 247);
+            this.denominationLabel.Location = new System.Drawing.Point(23, 431);
             this.denominationLabel.Name = "denominationLabel";
             this.denominationLabel.Size = new System.Drawing.Size(72, 13);
             this.denominationLabel.TabIndex = 31;
@@ -851,7 +694,7 @@
             // intelJobTypeLabel
             // 
             this.intelJobTypeLabel.AutoSize = true;
-            this.intelJobTypeLabel.Location = new System.Drawing.Point(244, 12);
+            this.intelJobTypeLabel.Location = new System.Drawing.Point(244, 55);
             this.intelJobTypeLabel.Name = "intelJobTypeLabel";
             this.intelJobTypeLabel.Size = new System.Drawing.Size(74, 13);
             this.intelJobTypeLabel.TabIndex = 29;
@@ -863,10 +706,11 @@
             this.intelJobTypecomboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.intelJobTypecomboBox.FormattingEnabled = true;
             this.intelJobTypecomboBox.Items.AddRange(new object[] {
-            "Job",
-            "Type",
-            "List"});
-            this.intelJobTypecomboBox.Location = new System.Drawing.Point(245, 26);
+            "Bi-Fold",
+            "eCards",
+            "M6",
+            "NFR"});
+            this.intelJobTypecomboBox.Location = new System.Drawing.Point(245, 69);
             this.intelJobTypecomboBox.Margin = new System.Windows.Forms.Padding(10);
             this.intelJobTypecomboBox.Name = "intelJobTypecomboBox";
             this.intelJobTypecomboBox.Size = new System.Drawing.Size(199, 21);
@@ -876,7 +720,7 @@
             // alternativePartNumberLabel
             // 
             this.alternativePartNumberLabel.AutoSize = true;
-            this.alternativePartNumberLabel.Location = new System.Drawing.Point(244, 387);
+            this.alternativePartNumberLabel.Location = new System.Drawing.Point(245, 288);
             this.alternativePartNumberLabel.Name = "alternativePartNumberLabel";
             this.alternativePartNumberLabel.Size = new System.Drawing.Size(119, 13);
             this.alternativePartNumberLabel.TabIndex = 19;
@@ -885,7 +729,7 @@
             // 
             // alternativePartNumberTextBox
             // 
-            this.alternativePartNumberTextBox.Location = new System.Drawing.Point(244, 401);
+            this.alternativePartNumberTextBox.Location = new System.Drawing.Point(245, 302);
             this.alternativePartNumberTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.alternativePartNumberTextBox.Name = "alternativePartNumberTextBox";
             this.alternativePartNumberTextBox.Size = new System.Drawing.Size(200, 20);
@@ -897,7 +741,7 @@
             // currencyLabel
             // 
             this.currencyLabel.AutoSize = true;
-            this.currencyLabel.Location = new System.Drawing.Point(313, 246);
+            this.currencyLabel.Location = new System.Drawing.Point(94, 430);
             this.currencyLabel.Name = "currencyLabel";
             this.currencyLabel.Size = new System.Drawing.Size(49, 13);
             this.currencyLabel.TabIndex = 13;
@@ -912,7 +756,7 @@
             "GBP",
             "PLN",
             "HKD"});
-            this.currencyComboBox.Location = new System.Drawing.Point(314, 260);
+            this.currencyComboBox.Location = new System.Drawing.Point(95, 445);
             this.currencyComboBox.Margin = new System.Windows.Forms.Padding(10);
             this.currencyComboBox.Name = "currencyComboBox";
             this.currencyComboBox.Size = new System.Drawing.Size(55, 21);
@@ -941,9 +785,9 @@
             this.clientComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.clientComboBox.FormattingEnabled = true;
             this.clientComboBox.Items.AddRange(new object[] {
-            "Region",
-            "List"});
-            this.clientComboBox.Location = new System.Drawing.Point(24, 69);
+            "Intel",
+            "Microsoft"});
+            this.clientComboBox.Location = new System.Drawing.Point(24, 71);
             this.clientComboBox.Name = "clientComboBox";
             this.clientComboBox.Size = new System.Drawing.Size(200, 21);
             this.clientComboBox.TabIndex = 6;
@@ -962,10 +806,8 @@
             this.contractTypeComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.contractTypeComboBox.FormattingEnabled = true;
             this.contractTypeComboBox.Items.AddRange(new object[] {
-            "AOS",
-            "BlackHawk",
-            "EPay",
-            "Incomm"});
+            "M6 Posa",
+            "Envirocard"});
             this.contractTypeComboBox.Location = new System.Drawing.Point(24, 117);
             this.contractTypeComboBox.Margin = new System.Windows.Forms.Padding(10);
             this.contractTypeComboBox.Name = "contractTypeComboBox";
@@ -1202,7 +1044,7 @@
             // 
             // retailBarcodeTextBox
             // 
-            this.retailBarcodeTextBox.Location = new System.Drawing.Point(232, 454);
+            this.retailBarcodeTextBox.Location = new System.Drawing.Point(232, 455);
             this.retailBarcodeTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.retailBarcodeTextBox.Name = "retailBarcodeTextBox";
             this.retailBarcodeTextBox.ReadOnly = true;
@@ -1213,7 +1055,7 @@
             // 
             // partNumberTextBox
             // 
-            this.partNumberTextBox.Location = new System.Drawing.Point(232, 409);
+            this.partNumberTextBox.Location = new System.Drawing.Point(232, 410);
             this.partNumberTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.partNumberTextBox.Name = "partNumberTextBox";
             this.partNumberTextBox.ReadOnly = true;
@@ -1257,7 +1099,7 @@
             // 
             // erpMaterialCodeTextBox
             // 
-            this.erpMaterialCodeTextBox.Location = new System.Drawing.Point(232, 220);
+            this.erpMaterialCodeTextBox.Location = new System.Drawing.Point(232, 221);
             this.erpMaterialCodeTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.erpMaterialCodeTextBox.Name = "erpMaterialCodeTextBox";
             this.erpMaterialCodeTextBox.ReadOnly = true;
@@ -1268,7 +1110,7 @@
             // 
             // productTypeTextBox
             // 
-            this.productTypeTextBox.Location = new System.Drawing.Point(232, 174);
+            this.productTypeTextBox.Location = new System.Drawing.Point(232, 173);
             this.productTypeTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.productTypeTextBox.Name = "productTypeTextBox";
             this.productTypeTextBox.ReadOnly = true;
@@ -1389,7 +1231,7 @@
             // 
             // importXmlButton2
             // 
-            this.importXmlButton2.Location = new System.Drawing.Point(234, 78);
+            this.importXmlButton2.Location = new System.Drawing.Point(232, 78);
             this.importXmlButton2.Margin = new System.Windows.Forms.Padding(10);
             this.importXmlButton2.Name = "importXmlButton2";
             this.importXmlButton2.Size = new System.Drawing.Size(90, 23);
@@ -1466,9 +1308,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.palletQtyNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.boxQtyNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.packQtyNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnPalletRetailCodeNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnBoxRetailCodeNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bhnPackRetailCodeNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.denominationNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobQtyNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderIDNumericUpDown)).EndInit();
@@ -1494,8 +1333,6 @@
         private System.Windows.Forms.TextBox bomFileNameTextBox;
         private System.Windows.Forms.Label pkpnLabel;
         private System.Windows.Forms.TextBox pkpnTextBox;
-        private System.Windows.Forms.Label athenaSpecificationLabel;
-        private System.Windows.Forms.TextBox athenaSpecificationTextBox;
         private System.Windows.Forms.Label athenaActivationTypeIdLabel;
         private System.Windows.Forms.TextBox athenaActivationTypeIdTextBox;
         private System.Windows.Forms.Label incommProductDescriptionNabel;
@@ -1506,12 +1343,8 @@
         private System.Windows.Forms.Label faiEndLabel;
         private System.Windows.Forms.NumericUpDown faiStartNumericUpDown;
         private System.Windows.Forms.Label faiStartLabel;
-        private System.Windows.Forms.Label labelTemplateLabel;
-        private System.Windows.Forms.Label azTemplateLabel;
         private System.Windows.Forms.Label jobTypeLabel;
-        private System.Windows.Forms.ComboBox azTemplateComboBox;
         private System.Windows.Forms.ComboBox jobTypeComboBox;
-        private System.Windows.Forms.ComboBox labelTemplateComboBox;
         private System.Windows.Forms.NumericUpDown palletQtyNumericUpDown;
         private System.Windows.Forms.Label palletQtyLabel;
         private System.Windows.Forms.NumericUpDown boxQtyNumericUpDown;
@@ -1522,16 +1355,10 @@
         private System.Windows.Forms.TextBox skuDescriptionTextBox;
         private System.Windows.Forms.Label artworkPartNumberSkuLabel;
         private System.Windows.Forms.TextBox artworkPartNumberSkuTextBox;
-        private System.Windows.Forms.NumericUpDown bhnPalletRetailCodeNumericUpDown;
-        public System.Windows.Forms.NumericUpDown bhnBoxRetailCodeNumericUpDown;
-        private System.Windows.Forms.NumericUpDown bhnPackRetailCodeNumericUpDown;
         private System.Windows.Forms.Button generateXmlButton;
         private System.Windows.Forms.Label jobCommentsLabel;
         private System.Windows.Forms.TextBox jobCommentsTextBox;
         private System.Windows.Forms.Button jobDetailsButton;
-        private System.Windows.Forms.Label bhnPalletRetailCodeLabel;
-        private System.Windows.Forms.Label bhnBoxRetailCodeLabel;
-        private System.Windows.Forms.Label bhnPackRetailCodeLabel;
         private System.Windows.Forms.CheckBox decimalCheckBox;
         private System.Windows.Forms.NumericUpDown denominationNumericUpDown;
         private System.Windows.Forms.NumericUpDown jobQtyNumericUpDown;
