@@ -158,6 +158,7 @@
             this.jobNumberTextBox.TabIndex = 76;
             this.jobNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.jobNumberTextBox.WordWrap = false;
+            this.jobNumberTextBox.TextChanged += new System.EventHandler(this.jobNumberTextBox_TextChanged);
             // 
             // dueDateTextBox
             // 
@@ -169,6 +170,7 @@
             this.dueDateTextBox.TabIndex = 77;
             this.dueDateTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.dueDateTextBox.WordWrap = false;
+            this.dueDateTextBox.TextChanged += new System.EventHandler(this.dueDateTextBox_TextChanged);
             // 
             // purchaseOrderLineTextBox
             // 
@@ -180,6 +182,7 @@
             this.purchaseOrderLineTextBox.TabIndex = 79;
             this.purchaseOrderLineTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.purchaseOrderLineTextBox.WordWrap = false;
+            this.purchaseOrderLineTextBox.TextChanged += new System.EventHandler(this.purchaseOrderLineTextBox_TextChanged);
             // 
             // purchaseOrderNoTextBox
             // 
@@ -191,6 +194,7 @@
             this.purchaseOrderNoTextBox.TabIndex = 78;
             this.purchaseOrderNoTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.purchaseOrderNoTextBox.WordWrap = false;
+            this.purchaseOrderNoTextBox.TextChanged += new System.EventHandler(this.purchaseOrderNoTextBox_TextChanged);
             // 
             // ascmOrderIDTextBox
             // 
@@ -202,6 +206,7 @@
             this.ascmOrderIDTextBox.TabIndex = 83;
             this.ascmOrderIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ascmOrderIDTextBox.WordWrap = false;
+            this.ascmOrderIDTextBox.TextChanged += new System.EventHandler(this.ascmOrderIDTextBox_TextChanged);
             // 
             // customerAccountTextBox
             // 
@@ -213,6 +218,7 @@
             this.customerAccountTextBox.TabIndex = 82;
             this.customerAccountTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.customerAccountTextBox.WordWrap = false;
+            this.customerAccountTextBox.TextChanged += new System.EventHandler(this.customerAccountTextBox_TextChanged);
             // 
             // salesOrderNumberTextBox
             // 
@@ -224,6 +230,7 @@
             this.salesOrderNumberTextBox.TabIndex = 81;
             this.salesOrderNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.salesOrderNumberTextBox.WordWrap = false;
+            this.salesOrderNumberTextBox.TextChanged += new System.EventHandler(this.salesOrderNumberTextBox_TextChanged);
             // 
             // buildQuantityTextBox
             // 
@@ -235,6 +242,7 @@
             this.buildQuantityTextBox.TabIndex = 80;
             this.buildQuantityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.buildQuantityTextBox.WordWrap = false;
+            this.buildQuantityTextBox.TextChanged += new System.EventHandler(this.buildQuantityTextBox_TextChanged);
             // 
             // endCustomerTextBox
             // 
@@ -246,6 +254,7 @@
             this.endCustomerTextBox.TabIndex = 84;
             this.endCustomerTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.endCustomerTextBox.WordWrap = false;
+            this.endCustomerTextBox.TextChanged += new System.EventHandler(this.endCustomerTextBox_TextChanged);
             // 
             // retailBarcodeTypeTextBox
             // 
@@ -257,6 +266,7 @@
             this.retailBarcodeTypeTextBox.TabIndex = 93;
             this.retailBarcodeTypeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.retailBarcodeTypeTextBox.WordWrap = false;
+            this.retailBarcodeTypeTextBox.TextChanged += new System.EventHandler(this.retailBarcodeTypeTextBox_TextChanged);
             // 
             // retailBarcodeTextBox
             // 
@@ -268,6 +278,7 @@
             this.retailBarcodeTextBox.TabIndex = 92;
             this.retailBarcodeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.retailBarcodeTextBox.WordWrap = false;
+            this.retailBarcodeTextBox.TextChanged += new System.EventHandler(this.retailBarcodeTextBox_TextChanged);
             // 
             // partNumberTextBox
             // 
@@ -279,6 +290,7 @@
             this.partNumberTextBox.TabIndex = 91;
             this.partNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.partNumberTextBox.WordWrap = false;
+            this.partNumberTextBox.TextChanged += new System.EventHandler(this.partNumberTextBox_TextChanged);
             // 
             // integratorPartIDTextBox
             // 
@@ -290,6 +302,7 @@
             this.integratorPartIDTextBox.TabIndex = 90;
             this.integratorPartIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.integratorPartIDTextBox.WordWrap = false;
+            this.integratorPartIDTextBox.TextChanged += new System.EventHandler(this.integratorPartIDTextBox_TextChanged);
             // 
             // activationTypeTextBox
             // 
@@ -301,6 +314,7 @@
             this.activationTypeTextBox.TabIndex = 89;
             this.activationTypeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.activationTypeTextBox.WordWrap = false;
+            this.activationTypeTextBox.TextChanged += new System.EventHandler(this.activationTypeTextBox_TextChanged);
             // 
             // integratorIDTextBox
             // 
@@ -312,6 +326,7 @@
             this.integratorIDTextBox.TabIndex = 88;
             this.integratorIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.integratorIDTextBox.WordWrap = false;
+            this.integratorIDTextBox.TextChanged += new System.EventHandler(this.integratorIDTextBox_TextChanged);
             // 
             // erpMaterialCodeTextBox
             // 
@@ -323,6 +338,7 @@
             this.erpMaterialCodeTextBox.TabIndex = 87;
             this.erpMaterialCodeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.erpMaterialCodeTextBox.WordWrap = false;
+            this.erpMaterialCodeTextBox.TextChanged += new System.EventHandler(this.erpMaterialCodeTextBox_TextChanged);
             // 
             // productTypeTextBox
             // 
@@ -334,6 +350,7 @@
             this.productTypeTextBox.TabIndex = 86;
             this.productTypeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.productTypeTextBox.WordWrap = false;
+            this.productTypeTextBox.TextChanged += new System.EventHandler(this.productTypeTextBox_TextChanged);
             // 
             // activationSystemTextBox
             // 
@@ -345,6 +362,7 @@
             this.activationSystemTextBox.TabIndex = 85;
             this.activationSystemTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.activationSystemTextBox.WordWrap = false;
+            this.activationSystemTextBox.TextChanged += new System.EventHandler(this.activationSystemTextBox_TextChanged);
             // 
             // jobNumberLabel
             // 
@@ -354,6 +372,7 @@
             this.jobNumberLabel.Size = new System.Drawing.Size(64, 13);
             this.jobNumberLabel.TabIndex = 94;
             this.jobNumberLabel.Text = "Job Number";
+            this.jobNumberLabel.Click += new System.EventHandler(this.jobNumberLabel_Click);
             // 
             // dueDateLabel
             // 
@@ -363,6 +382,7 @@
             this.dueDateLabel.Size = new System.Drawing.Size(53, 13);
             this.dueDateLabel.TabIndex = 95;
             this.dueDateLabel.Text = "Due Date";
+            this.dueDateLabel.Click += new System.EventHandler(this.dueDateLabel_Click);
             // 
             // purchaseOrderNoLabel
             // 
@@ -372,6 +392,7 @@
             this.purchaseOrderNoLabel.Size = new System.Drawing.Size(150, 13);
             this.purchaseOrderNoLabel.TabIndex = 96;
             this.purchaseOrderNoLabel.Text = "Purchase MinervaJob Number";
+            this.purchaseOrderNoLabel.Click += new System.EventHandler(this.purchaseOrderNoLabel_Click);
             // 
             // purchaseOrderLineLabel
             // 
@@ -381,6 +402,7 @@
             this.purchaseOrderLineLabel.Size = new System.Drawing.Size(133, 13);
             this.purchaseOrderLineLabel.TabIndex = 97;
             this.purchaseOrderLineLabel.Text = "Purchase MinervaJob Line";
+            this.purchaseOrderLineLabel.Click += new System.EventHandler(this.purchaseOrderLineLabel_Click);
             // 
             // buildQuantityLabel
             // 
@@ -390,6 +412,7 @@
             this.buildQuantityLabel.Size = new System.Drawing.Size(72, 13);
             this.buildQuantityLabel.TabIndex = 98;
             this.buildQuantityLabel.Text = "Build Quantity";
+            this.buildQuantityLabel.Click += new System.EventHandler(this.buildQuantityLabel_Click);
             // 
             // salesOrderNumberLabel
             // 
@@ -399,6 +422,7 @@
             this.salesOrderNumberLabel.Size = new System.Drawing.Size(131, 13);
             this.salesOrderNumberLabel.TabIndex = 99;
             this.salesOrderNumberLabel.Text = "Sales MinervaJob Number";
+            this.salesOrderNumberLabel.Click += new System.EventHandler(this.salesOrderNumberLabel_Click);
             // 
             // customerAccountCodeLabel
             // 
@@ -408,6 +432,7 @@
             this.customerAccountCodeLabel.Size = new System.Drawing.Size(122, 13);
             this.customerAccountCodeLabel.TabIndex = 100;
             this.customerAccountCodeLabel.Text = "Customer Account Code";
+            this.customerAccountCodeLabel.Click += new System.EventHandler(this.customerAccountCodeLabel_Click);
             // 
             // ascmOrderIDLabel
             // 
@@ -417,6 +442,7 @@
             this.ascmOrderIDLabel.Size = new System.Drawing.Size(109, 13);
             this.ascmOrderIDLabel.TabIndex = 101;
             this.ascmOrderIDLabel.Text = "ASCM MinervaJob ID";
+            this.ascmOrderIDLabel.Click += new System.EventHandler(this.ascmOrderIDLabel_Click);
             // 
             // endCustomerLabel
             // 
@@ -426,6 +452,7 @@
             this.endCustomerLabel.Size = new System.Drawing.Size(73, 13);
             this.endCustomerLabel.TabIndex = 102;
             this.endCustomerLabel.Text = "End Customer";
+            this.endCustomerLabel.Click += new System.EventHandler(this.endCustomerLabel_Click);
             // 
             // activationSystemLabel
             // 
@@ -435,6 +462,7 @@
             this.activationSystemLabel.Size = new System.Drawing.Size(91, 13);
             this.activationSystemLabel.TabIndex = 94;
             this.activationSystemLabel.Text = "Activation System";
+            this.activationSystemLabel.Click += new System.EventHandler(this.activationSystemLabel_Click);
             // 
             // productTypeLabel
             // 
@@ -444,6 +472,7 @@
             this.productTypeLabel.Size = new System.Drawing.Size(71, 13);
             this.productTypeLabel.TabIndex = 95;
             this.productTypeLabel.Text = "Product Type";
+            this.productTypeLabel.Click += new System.EventHandler(this.productTypeLabel_Click);
             // 
             // erpMaterialCodeLabel
             // 
@@ -453,6 +482,7 @@
             this.erpMaterialCodeLabel.Size = new System.Drawing.Size(97, 13);
             this.erpMaterialCodeLabel.TabIndex = 96;
             this.erpMaterialCodeLabel.Text = "ERP Material Code";
+            this.erpMaterialCodeLabel.Click += new System.EventHandler(this.erpMaterialCodeLabel_Click);
             // 
             // IntegratorIDlabel
             // 
@@ -462,6 +492,7 @@
             this.IntegratorIDlabel.Size = new System.Drawing.Size(66, 13);
             this.IntegratorIDlabel.TabIndex = 97;
             this.IntegratorIDlabel.Text = "Integrator ID";
+            this.IntegratorIDlabel.Click += new System.EventHandler(this.IntegratorIDlabel_Click);
             // 
             // partNumberLabel
             // 
@@ -471,6 +502,7 @@
             this.partNumberLabel.Size = new System.Drawing.Size(66, 13);
             this.partNumberLabel.TabIndex = 98;
             this.partNumberLabel.Text = "Part Number";
+            this.partNumberLabel.Click += new System.EventHandler(this.partNumberLabel_Click);
             // 
             // activationTypeLabel
             // 
@@ -480,6 +512,7 @@
             this.activationTypeLabel.Size = new System.Drawing.Size(81, 13);
             this.activationTypeLabel.TabIndex = 99;
             this.activationTypeLabel.Text = "Activation Type";
+            this.activationTypeLabel.Click += new System.EventHandler(this.activationTypeLabel_Click);
             // 
             // integratorPartIDLabel
             // 
@@ -489,6 +522,7 @@
             this.integratorPartIDLabel.Size = new System.Drawing.Size(88, 13);
             this.integratorPartIDLabel.TabIndex = 100;
             this.integratorPartIDLabel.Text = "Integrator Part ID";
+            this.integratorPartIDLabel.Click += new System.EventHandler(this.integratorPartIDLabel_Click);
             // 
             // retailBarcodeLabel
             // 
@@ -498,6 +532,7 @@
             this.retailBarcodeLabel.Size = new System.Drawing.Size(77, 13);
             this.retailBarcodeLabel.TabIndex = 101;
             this.retailBarcodeLabel.Text = "Retail Barcode";
+            this.retailBarcodeLabel.Click += new System.EventHandler(this.retailBarcodeLabel_Click);
             // 
             // retailBarcodeTypeLabel
             // 
@@ -507,6 +542,7 @@
             this.retailBarcodeTypeLabel.Size = new System.Drawing.Size(104, 13);
             this.retailBarcodeTypeLabel.TabIndex = 102;
             this.retailBarcodeTypeLabel.Text = "Retail Barcode Type";
+            this.retailBarcodeTypeLabel.Click += new System.EventHandler(this.retailBarcodeTypeLabel_Click);
             // 
             // orderIDLabel
             // 
@@ -517,6 +553,7 @@
             this.orderIDLabel.Size = new System.Drawing.Size(79, 13);
             this.orderIDLabel.TabIndex = 104;
             this.orderIDLabel.Text = "MinervaJob No";
+            this.orderIDLabel.Click += new System.EventHandler(this.orderIDLabel_Click);
             // 
             // jobIDNumericUpDown
             // 
@@ -543,6 +580,7 @@
             this.minervaTotaljobsTextBox.TabIndex = 111;
             this.minervaTotaljobsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.minervaTotaljobsTextBox.WordWrap = false;
+            this.minervaTotaljobsTextBox.TextChanged += new System.EventHandler(this.minervaTotaljobsTextBox_TextChanged);
             // 
             // currentOrderTextBox
             // 
@@ -554,6 +592,7 @@
             this.currentOrderTextBox.TabIndex = 112;
             this.currentOrderTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.currentOrderTextBox.WordWrap = false;
+            this.currentOrderTextBox.TextChanged += new System.EventHandler(this.currentOrderTextBox_TextChanged);
             // 
             // totalOrdersSlash
             // 
@@ -564,6 +603,7 @@
             this.totalOrdersSlash.Size = new System.Drawing.Size(13, 20);
             this.totalOrdersSlash.TabIndex = 113;
             this.totalOrdersSlash.Text = "/";
+            this.totalOrdersSlash.Click += new System.EventHandler(this.totalOrdersSlash_Click);
             // 
             // totalOdersLabel
             // 
@@ -573,6 +613,7 @@
             this.totalOdersLabel.Size = new System.Drawing.Size(65, 13);
             this.totalOdersLabel.TabIndex = 114;
             this.totalOdersLabel.Text = "Total Orders";
+            this.totalOdersLabel.Click += new System.EventHandler(this.totalOdersLabel_Click);
             // 
             // ocrCodeLabel
             // 
@@ -582,6 +623,7 @@
             this.ocrCodeLabel.Size = new System.Drawing.Size(58, 13);
             this.ocrCodeLabel.TabIndex = 124;
             this.ocrCodeLabel.Text = "OCR Code";
+            this.ocrCodeLabel.Click += new System.EventHandler(this.ocrCodeLabel_Click);
             // 
             // ocrCodeTextBox
             // 
@@ -593,6 +635,7 @@
             this.ocrCodeTextBox.TabIndex = 123;
             this.ocrCodeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ocrCodeTextBox.WordWrap = false;
+            this.ocrCodeTextBox.TextChanged += new System.EventHandler(this.ocrCodeTextBox_TextChanged);
             // 
             // minervaIntegratorComboCox
             // 
@@ -630,6 +673,7 @@
             this.minervaRegionComboBox.Name = "minervaRegionComboBox";
             this.minervaRegionComboBox.Size = new System.Drawing.Size(200, 21);
             this.minervaRegionComboBox.TabIndex = 6;
+            this.minervaRegionComboBox.SelectedIndexChanged += new System.EventHandler(this.minervaRegionComboBox_SelectedIndexChanged);
             // 
             // minervaRegionLabel
             // 
@@ -663,6 +707,7 @@
             this.minervaCurrencyComboBox.Name = "minervaCurrencyComboBox";
             this.minervaCurrencyComboBox.Size = new System.Drawing.Size(200, 21);
             this.minervaCurrencyComboBox.TabIndex = 12;
+            this.minervaCurrencyComboBox.SelectedIndexChanged += new System.EventHandler(this.minervaCurrencyComboBox_SelectedIndexChanged);
             // 
             // minervaCurrencyLabel
             // 
@@ -682,6 +727,7 @@
             this.minervaProductDescriptionTextBox.TabIndex = 14;
             this.minervaProductDescriptionTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.minervaProductDescriptionTextBox.WordWrap = false;
+            this.minervaProductDescriptionTextBox.TextChanged += new System.EventHandler(this.minervaProductDescriptionTextBox_TextChanged);
             // 
             // minervaProductDescriptionLabel
             // 
@@ -701,6 +747,7 @@
             this.minervaRegionIntegratorIDTextBox.TabIndex = 18;
             this.minervaRegionIntegratorIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.minervaRegionIntegratorIDTextBox.WordWrap = false;
+            this.minervaRegionIntegratorIDTextBox.TextChanged += new System.EventHandler(this.minervaRegionIntegratorIDTextBox_TextChanged);
             // 
             // minervaRegionIntegratorIDLabel
             // 
@@ -724,6 +771,7 @@
             this.minervaJobTypeComboBox.Name = "minervaJobTypeComboBox";
             this.minervaJobTypeComboBox.Size = new System.Drawing.Size(200, 21);
             this.minervaJobTypeComboBox.TabIndex = 28;
+            this.minervaJobTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.minervaJobTypeComboBox_SelectedIndexChanged);
             // 
             // minervaJobTypeLabel
             // 
@@ -753,6 +801,7 @@
             this.minervaHumanReadableCheckBox.Text = "DOD Human Readable";
             this.minervaHumanReadableCheckBox.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.minervaHumanReadableCheckBox.UseVisualStyleBackColor = true;
+            this.minervaHumanReadableCheckBox.CheckedChanged += new System.EventHandler(this.minervaHumanReadableCheckBox_CheckedChanged);
             // 
             // minervaWtcCheckBox
             // 
@@ -775,6 +824,7 @@
             this.minervaWtcQuantityLabel.TabIndex = 35;
             this.minervaWtcQuantityLabel.Text = "Quantity";
             this.minervaWtcQuantityLabel.Visible = false;
+            this.minervaWtcQuantityLabel.Click += new System.EventHandler(this.minervaWtcQuantityLabel_Click);
             // 
             // minervaWtcEnvironmentComboBox
             // 
@@ -789,6 +839,7 @@
             this.minervaWtcEnvironmentComboBox.Size = new System.Drawing.Size(61, 21);
             this.minervaWtcEnvironmentComboBox.TabIndex = 36;
             this.minervaWtcEnvironmentComboBox.Visible = false;
+            this.minervaWtcEnvironmentComboBox.SelectedIndexChanged += new System.EventHandler(this.minervaWtcEnvironmentComboBox_SelectedIndexChanged);
             // 
             // minervaWtcEnvironmentLabel
             // 
@@ -799,6 +850,7 @@
             this.minervaWtcEnvironmentLabel.TabIndex = 37;
             this.minervaWtcEnvironmentLabel.Text = "Environment";
             this.minervaWtcEnvironmentLabel.Visible = false;
+            this.minervaWtcEnvironmentLabel.Click += new System.EventHandler(this.minervaWtcEnvironmentLabel_Click);
             // 
             // minervaCountryIncommRetailerTextBox
             // 
@@ -809,6 +861,7 @@
             this.minervaCountryIncommRetailerTextBox.TabIndex = 38;
             this.minervaCountryIncommRetailerTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.minervaCountryIncommRetailerTextBox.WordWrap = false;
+            this.minervaCountryIncommRetailerTextBox.TextChanged += new System.EventHandler(this.minervaCountryIncommRetailerTextBox_TextChanged);
             // 
             // minervaCountryIncommRetailerLabel
             // 
@@ -818,6 +871,7 @@
             this.minervaCountryIncommRetailerLabel.Size = new System.Drawing.Size(130, 13);
             this.minervaCountryIncommRetailerLabel.TabIndex = 39;
             this.minervaCountryIncommRetailerLabel.Text = "Country / Incomm Retailer";
+            this.minervaCountryIncommRetailerLabel.Click += new System.EventHandler(this.minervaCountryIncommRetailerLabel_Click);
             // 
             // minervaWtcDenomLabel
             // 
@@ -828,6 +882,7 @@
             this.minervaWtcDenomLabel.TabIndex = 41;
             this.minervaWtcDenomLabel.Text = "WTC Denomination";
             this.minervaWtcDenomLabel.Visible = false;
+            this.minervaWtcDenomLabel.Click += new System.EventHandler(this.minervaWtcDenomLabel_Click);
             // 
             // minervaPptCheckBox
             // 
@@ -850,6 +905,7 @@
             this.minervaPptQuantityLabel.TabIndex = 44;
             this.minervaPptQuantityLabel.Text = "Quantity";
             this.minervaPptQuantityLabel.Visible = false;
+            this.minervaPptQuantityLabel.Click += new System.EventHandler(this.minervaPptQuantityLabel_Click);
             // 
             // minervaPackQuantityLabel
             // 
@@ -859,6 +915,7 @@
             this.minervaPackQuantityLabel.Size = new System.Drawing.Size(74, 13);
             this.minervaPackQuantityLabel.TabIndex = 46;
             this.minervaPackQuantityLabel.Text = "Pack Quantity";
+            this.minervaPackQuantityLabel.Click += new System.EventHandler(this.minervaPackQuantityLabel_Click);
             // 
             // minervaBoxQuantityLabel
             // 
@@ -868,6 +925,7 @@
             this.minervaBoxQuantityLabel.Size = new System.Drawing.Size(98, 13);
             this.minervaBoxQuantityLabel.TabIndex = 48;
             this.minervaBoxQuantityLabel.Text = "Box Quantity / Size";
+            this.minervaBoxQuantityLabel.Click += new System.EventHandler(this.minervaBoxQuantityLabel_Click);
             // 
             // minervaPalletQuantityLabel
             // 
@@ -877,6 +935,7 @@
             this.minervaPalletQuantityLabel.Size = new System.Drawing.Size(75, 13);
             this.minervaPalletQuantityLabel.TabIndex = 50;
             this.minervaPalletQuantityLabel.Text = "Pallet Quantity";
+            this.minervaPalletQuantityLabel.Click += new System.EventHandler(this.minervaPalletQuantityLabel_Click);
             // 
             // minervaPalletQtyNumericUpDown
             // 
@@ -889,6 +948,7 @@
             this.minervaPalletQtyNumericUpDown.Name = "minervaPalletQtyNumericUpDown";
             this.minervaPalletQtyNumericUpDown.Size = new System.Drawing.Size(200, 20);
             this.minervaPalletQtyNumericUpDown.TabIndex = 54;
+            this.minervaPalletQtyNumericUpDown.ValueChanged += new System.EventHandler(this.minervaPalletQtyNumericUpDown_ValueChanged);
             // 
             // minervaPackQuantityComboBox
             // 
@@ -902,6 +962,7 @@
             this.minervaPackQuantityComboBox.Name = "minervaPackQuantityComboBox";
             this.minervaPackQuantityComboBox.Size = new System.Drawing.Size(200, 21);
             this.minervaPackQuantityComboBox.TabIndex = 55;
+            this.minervaPackQuantityComboBox.SelectedIndexChanged += new System.EventHandler(this.minervaPackQuantityComboBox_SelectedIndexChanged);
             // 
             // minervaBoxQuantityComboBox
             // 
@@ -914,6 +975,7 @@
             this.minervaBoxQuantityComboBox.Name = "minervaBoxQuantityComboBox";
             this.minervaBoxQuantityComboBox.Size = new System.Drawing.Size(200, 21);
             this.minervaBoxQuantityComboBox.TabIndex = 56;
+            this.minervaBoxQuantityComboBox.SelectedIndexChanged += new System.EventHandler(this.minervaBoxQuantityComboBox_SelectedIndexChanged);
             // 
             // minervaJobQtyNumericUpDown
             // 
@@ -927,6 +989,7 @@
             this.minervaJobQtyNumericUpDown.Name = "minervaJobQtyNumericUpDown";
             this.minervaJobQtyNumericUpDown.Size = new System.Drawing.Size(200, 20);
             this.minervaJobQtyNumericUpDown.TabIndex = 57;
+            this.minervaJobQtyNumericUpDown.ValueChanged += new System.EventHandler(this.minervaJobQtyNumericUpDown_ValueChanged);
             // 
             // minervaDenominationNumericUpDown
             // 
@@ -967,6 +1030,7 @@
             this.minervaPptQtyNumericUpDown.Size = new System.Drawing.Size(140, 20);
             this.minervaPptQtyNumericUpDown.TabIndex = 60;
             this.minervaPptQtyNumericUpDown.Visible = false;
+            this.minervaPptQtyNumericUpDown.ValueChanged += new System.EventHandler(this.minervaPptQtyNumericUpDown_ValueChanged);
             // 
             // minervaBhnPackRetailCodeLabel
             // 
@@ -977,6 +1041,7 @@
             this.minervaBhnPackRetailCodeLabel.TabIndex = 62;
             this.minervaBhnPackRetailCodeLabel.Text = "Blackhawk Pack Retail Code";
             this.minervaBhnPackRetailCodeLabel.Visible = false;
+            this.minervaBhnPackRetailCodeLabel.Click += new System.EventHandler(this.minervaBhnPackRetailCodeLabel_Click);
             // 
             // minervaBhnBoxRetailCodeLabel
             // 
@@ -987,6 +1052,7 @@
             this.minervaBhnBoxRetailCodeLabel.TabIndex = 64;
             this.minervaBhnBoxRetailCodeLabel.Text = "Blackhawk Box Retail Code";
             this.minervaBhnBoxRetailCodeLabel.Visible = false;
+            this.minervaBhnBoxRetailCodeLabel.Click += new System.EventHandler(this.minervaBhnBoxRetailCodeLabel_Click);
             // 
             // minervaBhnPalletRetailCodeLabel
             // 
@@ -997,6 +1063,7 @@
             this.minervaBhnPalletRetailCodeLabel.TabIndex = 66;
             this.minervaBhnPalletRetailCodeLabel.Text = "Blackhawk Pallet Retail Code";
             this.minervaBhnPalletRetailCodeLabel.Visible = false;
+            this.minervaBhnPalletRetailCodeLabel.Click += new System.EventHandler(this.minervaBhnPalletRetailCodeLabel_Click);
             // 
             // minervaWtcDenomNumericUpDown
             // 
@@ -1046,6 +1113,7 @@
             this.minervaSpecialInstructionsTextBox.Size = new System.Drawing.Size(200, 89);
             this.minervaSpecialInstructionsTextBox.TabIndex = 69;
             this.minervaSpecialInstructionsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.minervaSpecialInstructionsTextBox.TextChanged += new System.EventHandler(this.minervaSpecialInstructionsTextBox_TextChanged);
             // 
             // minervaSpecialInstructionsLabel
             // 
@@ -1069,6 +1137,7 @@
             this.minervaWtcQtyNumericUpDown.Size = new System.Drawing.Size(73, 20);
             this.minervaWtcQtyNumericUpDown.TabIndex = 75;
             this.minervaWtcQtyNumericUpDown.Visible = false;
+            this.minervaWtcQtyNumericUpDown.ValueChanged += new System.EventHandler(this.minervaWtcQtyNumericUpDown_ValueChanged);
             // 
             // minervaGenerateXmlButton
             // 
@@ -1093,6 +1162,7 @@
             this.minervaBhnPackRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
             this.minervaBhnPackRetailCodeNumericUpDown.TabIndex = 108;
             this.minervaBhnPackRetailCodeNumericUpDown.Visible = false;
+            this.minervaBhnPackRetailCodeNumericUpDown.ValueChanged += new System.EventHandler(this.minervaBhnPackRetailCodeNumericUpDown_ValueChanged);
             // 
             // minervaBhnBoxRetailCodeNumericUpDown
             // 
@@ -1106,6 +1176,7 @@
             this.minervaBhnBoxRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
             this.minervaBhnBoxRetailCodeNumericUpDown.TabIndex = 109;
             this.minervaBhnBoxRetailCodeNumericUpDown.Visible = false;
+            this.minervaBhnBoxRetailCodeNumericUpDown.ValueChanged += new System.EventHandler(this.minervaBhnBoxRetailCodeNumericUpDown_ValueChanged);
             // 
             // minervaBhnPalletRetailCodeNumericUpDown
             // 
@@ -1119,6 +1190,7 @@
             this.minervaBhnPalletRetailCodeNumericUpDown.Size = new System.Drawing.Size(200, 20);
             this.minervaBhnPalletRetailCodeNumericUpDown.TabIndex = 110;
             this.minervaBhnPalletRetailCodeNumericUpDown.Visible = false;
+            this.minervaBhnPalletRetailCodeNumericUpDown.ValueChanged += new System.EventHandler(this.minervaBhnPalletRetailCodeNumericUpDown_ValueChanged);
             // 
             // pictureBox1
             // 
@@ -1132,6 +1204,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(215, 197);
             this.pictureBox1.TabIndex = 116;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // minervaPanel
             // 
@@ -1190,6 +1263,7 @@
             this.minervaPanel.Name = "minervaPanel";
             this.minervaPanel.Size = new System.Drawing.Size(683, 524);
             this.minervaPanel.TabIndex = 117;
+            this.minervaPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.minervaPanel_Paint);
             // 
             // MinervaForm
             // 
