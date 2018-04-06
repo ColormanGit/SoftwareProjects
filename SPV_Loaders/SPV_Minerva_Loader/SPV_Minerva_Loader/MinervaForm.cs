@@ -674,5 +674,375 @@ namespace SPV_Minerva_Loader
                 }
             }
         }
+
+        private void ocrCodeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void totalOdersLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ocrCodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void totalOrdersSlash_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void currentOrderTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaTotaljobsTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void orderIDLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void retailBarcodeTypeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void endCustomerLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void retailBarcodeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ascmOrderIDLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void integratorPartIDLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerAccountCodeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void activationTypeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salesOrderNumberLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void partNumberLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buildQuantityLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void IntegratorIDlabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void purchaseOrderLineLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void erpMaterialCodeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void purchaseOrderNoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productTypeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dueDateLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void activationSystemLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void jobNumberLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void retailBarcodeTypeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void retailBarcodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void partNumberTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void integratorPartIDTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void activationTypeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void integratorIDTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void erpMaterialCodeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void productTypeTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void activationSystemTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void endCustomerTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ascmOrderIDTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void customerAccountTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void salesOrderNumberTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buildQuantityTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void purchaseOrderLineTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void purchaseOrderNoTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dueDateTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void jobNumberTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaJobTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaRegionComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaCurrencyComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaJobQtyNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaProductDescriptionTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaRegionIntegratorIDTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaWtcQtyNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaWtcEnvironmentComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaWtcQuantityLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaWtcEnvironmentLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaWtcDenomLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaPptQuantityLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaPptQtyNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaHumanReadableCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaSpecialInstructionsTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaPalletQtyNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaPalletQuantityLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaBoxQuantityComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaBoxQuantityLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaPackQuantityComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaPackQuantityLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaBhnPackRetailCodeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaBhnPackRetailCodeNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaBhnBoxRetailCodeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaBhnBoxRetailCodeNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaBhnPalletRetailCodeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaBhnPalletRetailCodeNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaCountryIncommRetailerTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minervaCountryIncommRetailerLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
