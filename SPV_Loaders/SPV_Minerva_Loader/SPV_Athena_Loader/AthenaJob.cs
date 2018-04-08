@@ -40,6 +40,7 @@ public class AthenaJob
     public string client { get; set; }
     public string contractType { get; set; }
     public string artworkPartNumber { get; set; }
+    public string skuDescription { get; set; }
     public string jobQty { get; set; }
     public string packQty { get; set; }
     public string boxQty { get; set; }
@@ -51,6 +52,7 @@ public class AthenaJob
     public string faiStart { get; set; }
     public string faiEnd { get; set; }
     public string intelJobType { get; set; }
+    public string jobComments { get; set; }
     public string country { get; set; }
     public string alternativePartNumber { get; set; }
     public string packagingGTIN { get; set; }

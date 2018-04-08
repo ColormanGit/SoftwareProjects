@@ -240,3 +240,4 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/SPV_Loaders/SPV_Minerva_Loader
