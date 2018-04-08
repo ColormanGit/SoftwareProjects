@@ -136,6 +136,7 @@ namespace SPV_Athena_Loader
                 fillGuiWithManualInput((int)jobIDNumericUpDown.Value - 1, jobsArray);
                 currentJobTextBox.Text = jobIDNumericUpDown.Value + "";
             }
+
         }
 
         // Populate GUI fields with input from a file
@@ -460,22 +461,22 @@ namespace SPV_Athena_Loader
                 jobs[index].contractType = "N/A";
             }
 
-            if (artworkPartNumberSkuTextBox.Text == null)
+            if (artworkPartNumberSkuTextBox.Text == "")
             {
                 jobs[index].artworkPartNumber = "N/A";
             }
             else
             {
-                artworkPartNumberSkuTextBox.Text = jobs[index].artworkPartNumber;
+                 jobs[index].artworkPartNumber = artworkPartNumberSkuTextBox.Text;
             }
 
-            if (skuDescriptionTextBox.Text == null)
+            if (skuDescriptionTextBox.Text == "")
             {
                 jobs[index].skuDescription = "N/A";
             }
             else
             {
-                skuDescriptionTextBox.Text = jobs[index].skuDescription;
+                jobs[index].skuDescription = skuDescriptionTextBox.Text;
             }
 
             if (jobQtyNumericUpDown.Value == 0)
@@ -529,7 +530,7 @@ namespace SPV_Athena_Loader
             }
             else
             {
-                palletQtyNumericUpDown.Value = Int32.Parse(jobs[index].palletQty);
+                jobs[index].palletQty = palletQtyNumericUpDown.Value.ToString();
             }
 
             if (jobTypeComboBox.SelectedItem != null)
@@ -541,13 +542,13 @@ namespace SPV_Athena_Loader
                 jobs[index].jobType = "N/A";
             }
 
-            if (activationTypeIdTextBox.Text == null)
+            if (activationTypeIdTextBox.Text == "")
             {
                 jobs[index].activationTypeID = "N/A";
             }
             else
             {
-                activationTypeIdTextBox.Text = jobs[index].activationTypeID;
+                jobs[index].activationTypeID = activationTypeIdTextBox.Text;
             }
 
             if (denominationNumericUpDown.Value == 0)
@@ -556,7 +557,7 @@ namespace SPV_Athena_Loader
             }
             else
             {
-                denominationNumericUpDown.Value = Int32.Parse(jobs[index].denomination);
+                jobs[index].denomination = denominationNumericUpDown.Value.ToString();
             }
 
             if (currencyComboBox.SelectedItem != null)
@@ -586,112 +587,112 @@ namespace SPV_Athena_Loader
                 jobs[index].intelJobType = "N/A";
             }
 
-            if (jobCommentsTextBox.Text == null)
+            if (jobCommentsTextBox.Text == "")
             {
                 jobs[index].jobComments = "N/A";
             }
             else
             {
-                jobCommentsTextBox.Text = jobs[index].jobComments;
+                jobs[index].jobComments = jobCommentsTextBox.Text;
             }
-
-            if (countryTextBox.Text == null)
+            
+            if (countryTextBox.Text == "")
             {
                 jobs[index].country = "N/A";
             }
             else
             {
-                countryTextBox.Text = jobs[index].country;
+                jobs[index].country = countryTextBox.Text;
             }
 
-            if (alternativePartNumberTextBox.Text == null)
+            if (alternativePartNumberTextBox.Text == "")
             {
                 jobs[index].alternativePartNumber = "N/A";
             }
             else
             {
-                alternativePartNumberTextBox.Text = jobs[index].alternativePartNumber;
+                jobs[index].alternativePartNumber = alternativePartNumberTextBox.Text;
             }
 
-            if (packagingGtinTextBox.Text == null)
+            if (packagingGtinTextBox.Text == "")
             {
                 jobs[index].packagingGTIN = "N/A";
             }
             else
             {
-                packagingGtinTextBox.Text = jobs[index].packagingGTIN;
+                jobs[index].packagingGTIN = packagingGtinTextBox.Text;
             }
 
-            if (incommProductDescriptionTextBox.Text == null)
+            if (incommProductDescriptionTextBox.Text == "")
             {
                 jobs[index].incommProductDescription = "N/A";
             }
             else
             {
-                incommProductDescriptionTextBox.Text = jobs[index].incommProductDescription;
+                jobs[index].incommProductDescription = incommProductDescriptionTextBox.Text;
             }
 
-            if (pkpnTextBox.Text == null)
+            if (pkpnTextBox.Text == "")
             {
                 jobs[index].pkpn = "N/A";
             }
             else
             {
-                pkpnTextBox.Text = jobs[index].pkpn;
+                jobs[index].pkpn = pkpnTextBox.Text;
             }
 
-            if (bomFileNameTextBox.Text == null)
+            if (bomFileNameTextBox.Text == "")
             {
                 jobs[index].bomFileName = "N/A";
             }
             else
             {
-                bomFileNameTextBox.Text = jobs[index].bomFileName;
+               jobs[index].bomFileName = bomFileNameTextBox.Text;
             }
 
-            if (bomComment1TextBox.Text == null)
+            if (bomComment1TextBox.Text == "")
             {
                 jobs[index].bomComment1 = "N/A";
             }
             else
             {
-                bomComment1TextBox.Text = jobs[index].bomComment1;
+                jobs[index].bomComment1 = bomComment1TextBox.Text;
             }
 
-            if (bomComment2TextBox.Text == null)
+            if (bomComment2TextBox.Text == "")
             {
                 jobs[index].bomComment2 = "N/A";
             }
             else
             {
-                bomComment2TextBox.Text = jobs[index].bomComment2;
+               jobs[index].bomComment2 = bomComment2TextBox.Text;
             }
 
-            if (bomComment3TextBox.Text == null)
+            if (bomComment3TextBox.Text == "")
             {
                 jobs[index].bomComment3 = "N/A";
             }
             else
             {
-                bomComment3TextBox.Text = jobs[index].bomComment3;
+                jobs[index].bomComment3 = bomComment3TextBox.Text;
             }
 
-            if (bomComment4TextBox.Text == null)
+            if (bomComment4TextBox.Text == "")
             {
                 jobs[index].bomComment4 = "N/A";
             }
             else
             {
-                bomComment4TextBox.Text = jobs[index].bomComment4;
+                jobs[index].bomComment4 = bomComment4TextBox.Text;
             }
 
-            if (bomComment5TextBox.Text == null)
+            if (bomComment5TextBox.Text == "")
             {
                 jobs[index].bomComment5 = "N/A";
             }
             else
             {
-                bomComment5TextBox.Text = jobs[index].bomComment5;
+                jobs[index].bomComment5 = bomComment5TextBox.Text;
             }
 
         }
@@ -755,6 +756,6 @@ namespace SPV_Athena_Loader
                 }
             }
         }
-        
+
     }
 }

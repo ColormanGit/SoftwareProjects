@@ -877,6 +877,7 @@
             this.jobIDNumericUpDown.Size = new System.Drawing.Size(200, 20);
             this.jobIDNumericUpDown.TabIndex = 163;
             this.jobIDNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jobIDNumericUpDown.ValueChanged += new System.EventHandler(this.jobIDNumericUpDown_ValueChanged);
             // 
             // orderIDLabel
             // 
