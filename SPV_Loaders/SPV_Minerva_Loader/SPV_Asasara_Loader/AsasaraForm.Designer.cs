@@ -92,6 +92,7 @@
             this.currentOrderTextBox = new System.Windows.Forms.TextBox();
             this.minervaTotaljobsTextBox = new System.Windows.Forms.TextBox();
             this.minervaPanel = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.minervaRegionIntegratorIDLabel = new System.Windows.Forms.Label();
             this.minervaProductDescriptionLabel = new System.Windows.Forms.Label();
             this.minervaProductDescriptionTextBox = new System.Windows.Forms.TextBox();
@@ -123,6 +124,7 @@
             this.retailBarcodeTypeTextBox = new System.Windows.Forms.TextBox();
             this.retailBarcodeTextBox = new System.Windows.Forms.TextBox();
             this.partNumberTextBox = new System.Windows.Forms.TextBox();
+            this.importExcelButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minervaBhnPalletRetailCodeNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minervaBhnBoxRetailCodeNumericUpDown)).BeginInit();
@@ -135,6 +137,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.minervaPalletQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobIDNumericUpDown)).BeginInit();
             this.minervaPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // integratorPartIDTextBox
@@ -827,6 +830,7 @@
             this.minervaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.minervaPanel.Controls.Add(this.dataGridView1);
             this.minervaPanel.Controls.Add(this.pictureBox1);
             this.minervaPanel.Controls.Add(this.minervaBhnPalletRetailCodeNumericUpDown);
             this.minervaPanel.Controls.Add(this.minervaBhnBoxRetailCodeNumericUpDown);
@@ -879,6 +883,14 @@
             this.minervaPanel.Name = "minervaPanel";
             this.minervaPanel.Size = new System.Drawing.Size(683, 524);
             this.minervaPanel.TabIndex = 168;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(236, -4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(447, 189);
+            this.dataGridView1.TabIndex = 117;
             // 
             // minervaRegionIntegratorIDLabel
             // 
@@ -1181,11 +1193,23 @@
             this.partNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.partNumberTextBox.WordWrap = false;
             // 
+            // importExcelButton
+            // 
+            this.importExcelButton.Location = new System.Drawing.Point(229, 4);
+            this.importExcelButton.Margin = new System.Windows.Forms.Padding(10);
+            this.importExcelButton.Name = "importExcelButton";
+            this.importExcelButton.Size = new System.Drawing.Size(90, 23);
+            this.importExcelButton.TabIndex = 171;
+            this.importExcelButton.Text = "Import Excel";
+            this.importExcelButton.UseVisualStyleBackColor = true;
+            this.importExcelButton.Click += new System.EventHandler(this.importExcelButton_Click);
+            // 
             // AsasaraForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1141, 538);
+            this.Controls.Add(this.importExcelButton);
             this.Controls.Add(this.integratorPartIDTextBox);
             this.Controls.Add(this.activationTypeTextBox);
             this.Controls.Add(this.integratorIDTextBox);
@@ -1247,6 +1271,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.jobIDNumericUpDown)).EndInit();
             this.minervaPanel.ResumeLayout(false);
             this.minervaPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1348,6 +1373,8 @@
         private System.Windows.Forms.TextBox retailBarcodeTypeTextBox;
         private System.Windows.Forms.TextBox retailBarcodeTextBox;
         private System.Windows.Forms.TextBox partNumberTextBox;
+        private System.Windows.Forms.Button importExcelButton;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

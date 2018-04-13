@@ -4,7 +4,8 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Xml;
-using System.Xml.Serialization;
+using System.Data.OleDb;
+using System.Data;
 
 namespace SPV_Asasara_Loader
 {
@@ -16,6 +17,97 @@ namespace SPV_Asasara_Loader
         {
             InitializeComponent();
         }
+
+
+        // Import Excel file
+        private void importExcelButton_Click(object sender, EventArgs e)
+        {
+            //// Create OpenFile Dialog object to allow the user select Excel file
+            //OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            //openFileDialog.InitialDirectory = @"C:\";
+            //openFileDialog.Title = "Browse Excel Files";
+
+            //openFileDialog.CheckFileExists = true;
+            //openFileDialog.CheckPathExists = true;
+
+            //openFileDialog.DefaultExt = "xls";
+            //openFileDialog.Filter = "Excel Worksheets| *.xls|Excel 2007 files| *.xlsx";
+            //openFileDialog.FilterIndex = 2;
+            //openFileDialog.RestoreDirectory = true;
+
+            //openFileDialog.ReadOnlyChecked = true;
+            //openFileDialog.ShowReadOnly = true;
+
+            //if (openFileDialog.ShowDialog() == DialogResult.OK)
+            //{
+            //    string file = openFileDialog.FileName;
+
+            //    try
+            //    {
+            //        string text = File.ReadAllText(file);
+            //        int size = text.Length;
+            //        Debug.WriteLine(text);
+            //    }
+            //    catch (IOException)
+            //    {
+            //    }
+            //}
+
+
+            string filePath = string.Empty;
+            string fileExt = string.Empty;
+            OpenFileDialog file = new OpenFileDialog();//open dialog to choose file
+            if (file.ShowDialog() == System.Windows.Forms.DialogResult.OK)//if there is a file choosen by the user
+            {
+                filePath = file.FileName;//get the path of the file
+                fileExt = Path.GetExtension(filePath);//get the file extension
+                if (fileExt.CompareTo(".xls") == 0 || fileExt.CompareTo(".xlsx") == 0)
+                {
+                    try
+                    {
+                        DataTable dtExcel = new DataTable();
+                        dtExcel = ReadExcel(filePath, fileExt);//read excel file
+                        dataGridView1.Visible = true;
+                        dataGridView1.DataSource = dtExcel;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message.ToString());
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please choose .xls or .xlsx file only.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);//custom messageBox to show error
+                }
+            }
+        }
+
+
+        public DataTable ReadExcel(string fileName, string fileExt)
+        {
+            string conn = string.Empty;
+            DataTable dtexcel = new DataTable();
+            if (fileExt.CompareTo(".xls") == 0)//compare the extension of the file
+                conn = @"provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + fileName + ";Extended Properties='Excel 8.0;HRD=Yes;IMEX=1';";//for below excel 2007
+            else
+                conn = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + fileName + ";Extended Properties='Excel 12.0;HDR=Yes;IMEX=1';";//for above excel 2007
+            using (OleDbConnection con = new OleDbConnection(conn))
+            {
+                try
+                {
+                    OleDbDataAdapter oleAdpt = new OleDbDataAdapter("select * from [OCS (Google_generates)$]", con);//here we read data from sheet1
+                    oleAdpt.Fill(dtexcel);//fill excel data into dataTable
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message.ToString());
+                }
+            }
+            return dtexcel;
+        }
+
+
 
         private void importXmlButton2_Click(object sender, EventArgs e)
         {
@@ -79,8 +171,6 @@ namespace SPV_Asasara_Loader
                 //currentOrderTextBox.Text = jobIDNumericUpDown.Value + "";
             }
         }
-
-
 
 
         // Change Active MinervaJob
