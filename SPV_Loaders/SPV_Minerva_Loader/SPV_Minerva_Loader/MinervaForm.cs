@@ -167,28 +167,28 @@ namespace SPV_Minerva_Loader
                     xmlReader = XmlReader.Create(xmlPath); // Create XmlReader with XML file path
                     xmlDoc = XDocument.Load(xmlReader); // Load XML file
 
-                    jobsArray = new MinervaJob[xmlDoc.Root.Elements().ElementAt(0).Elements().Count()];
-
-                    int numOfJobs = xmlDoc.Root.Elements().ElementAt(0).Elements().Count();
+                    int numOfJobs = xmlDoc.Root.Elements().Count();
+                    int numOfDetails = xmlDoc.Root.Elements().ElementAt(0).Elements().Count();
                     int numOfFieldsInJob = xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(0).Elements().Count();
 
-                    // Create orders from XML file
+                    jobsArray = new MinervaJob[numOfJobs];
+                    jobIDNumericUpDown.Maximum = numOfJobs;
+
                     for (int i = 0; i < numOfJobs; i++)
                     {
                         // Create and fill string array with values from XML file
-                        string[] values = new string[xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(0).Elements().Count()];
+                        string[] values = new string[numOfFieldsInJob];
                         for (int j = 0; j < numOfFieldsInJob; j++)
                         {
-                            if (xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(i).Elements().ElementAt(j).Elements().ElementAt(0).Value == "")
+                            if (xmlDoc.Root.Elements().ElementAt(i).Elements().ElementAt(0).Elements().ElementAt(j).Elements().ElementAt(0).Value == "")
                             {
                                 values[j] = "N/A";
                             }
                             else
                             {
-                                values[j] = xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(i).Elements().ElementAt(j).Elements().ElementAt(0).Value;
+                                values[j] = xmlDoc.Root.Elements().ElementAt(i).Elements().ElementAt(0).Elements().ElementAt(j).Elements().ElementAt(0).Value;
                             }
                         }
-                        jobIDNumericUpDown.Maximum = xmlDoc.Root.Elements().ElementAt(0).Elements().Count();
                         // Create new order and place it in array of orders
                         jobsArray[i] = new MinervaJob((i + 1) + "", values);
                     }
@@ -474,7 +474,7 @@ namespace SPV_Minerva_Loader
 
         // Update manual input in the MinervaJob object
         private void updateManualInputData(int index, MinervaJob[] jobs) {
-            if (minervaJobTypeComboBox.SelectedItem != null || minervaJobTypeComboBox.SelectedIndex == -1)
+            if (minervaJobTypeComboBox.SelectedItem != null)
             {
                 jobs[index].jobType = minervaJobTypeComboBox.SelectedItem.ToString();
             }
@@ -483,7 +483,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].jobType = "N/A";
             }
 
-            if (minervaIntegratorComboCox.SelectedItem != null || minervaIntegratorComboCox.SelectedIndex == -1)
+            if (minervaIntegratorComboCox.SelectedItem != null)
             {
                 jobs[index].integrator = minervaIntegratorComboCox.SelectedItem.ToString();
             }
@@ -492,7 +492,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].integrator = "N/A";
             }
 
-            if (minervaRegionComboBox.SelectedItem != null || minervaRegionComboBox.SelectedIndex == -1)
+            if (minervaRegionComboBox.SelectedItem != null)
             {
                 jobs[index].region = minervaRegionComboBox.SelectedItem.ToString();
             }
@@ -501,7 +501,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].region = "N/A";
             }
 
-            if (minervaCurrencyComboBox.SelectedItem != null || minervaCurrencyComboBox.SelectedIndex == -1)
+            if (minervaCurrencyComboBox.SelectedItem != null)
             {
                 jobs[index].currency = minervaCurrencyComboBox.SelectedItem.ToString();
             }
@@ -510,7 +510,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].currency = "N/A";
             }
             
-            if (minervaPackQuantityComboBox.SelectedItem != null || minervaPackQuantityComboBox.SelectedIndex == -1)
+            if (minervaPackQuantityComboBox.SelectedItem != null)
             {
                 jobs[index].packQuantity = minervaPackQuantityComboBox.SelectedItem.ToString();
             }
@@ -519,7 +519,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].packQuantity = "N/A";
             }
 
-            if (minervaBoxQuantityComboBox.SelectedItem != null || minervaBoxQuantityComboBox.SelectedIndex == -1)
+            if (minervaBoxQuantityComboBox.SelectedItem != null)
             {
                 jobs[index].boxQuantitySize = minervaBoxQuantityComboBox.SelectedItem.ToString();
             }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Data;
-using System.Data.OleDb;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -67,7 +65,7 @@ namespace SPV_Athena_Loader
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.InitialDirectory = ".";
             openFileDialog.Filter = "Xml files (*.xml)|*.xml";
-            openFileDialog.FilterIndex = 2;
+            openFileDialog.FilterIndex = 1;
             openFileDialog.RestoreDirectory = true;
 
             // Create Xdocument object and declare xmlReader
@@ -84,28 +82,27 @@ namespace SPV_Athena_Loader
                     xmlReader = XmlReader.Create(xmlPath); // Create XmlReader with XML file path
                     xmlDoc = XDocument.Load(xmlReader); // Load XML file
 
-                    jobsArray = new AthenaJob[xmlDoc.Root.Elements().ElementAt(0).Elements().Count()];
-
-                    int numOfJobs = xmlDoc.Root.Elements().ElementAt(0).Elements().Count();
+                    int numOfJobs = xmlDoc.Root.Elements().Count();
                     int numOfFieldsInJob = xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(0).Elements().Count();
 
-                    // Create orders from XML file
+                    jobsArray = new AthenaJob[numOfJobs];
+                    jobIDNumericUpDown.Maximum = numOfJobs;
+
                     for (int i = 0; i < numOfJobs; i++)
                     {
                         // Create and fill string array with values from XML file
-                        string[] values = new string[xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(0).Elements().Count()];
+                        string[] values = new string[numOfFieldsInJob];
                         for (int j = 0; j < numOfFieldsInJob; j++)
                         {
-                            if (xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(i).Elements().ElementAt(j).Elements().ElementAt(0).Value == "")
+                            if (xmlDoc.Root.Elements().ElementAt(i).Elements().ElementAt(0).Elements().ElementAt(j).Elements().ElementAt(0).Value == "")
                             {
                                 values[j] = "N/A";
                             }
                             else
                             {
-                                values[j] = xmlDoc.Root.Elements().ElementAt(0).Elements().ElementAt(i).Elements().ElementAt(j).Elements().ElementAt(0).Value;
+                                values[j] = xmlDoc.Root.Elements().ElementAt(i).Elements().ElementAt(0).Elements().ElementAt(j).Elements().ElementAt(0).Value;
                             }
                         }
-                        jobIDNumericUpDown.Maximum = xmlDoc.Root.Elements().ElementAt(0).Elements().Count();
                         // Create new order and place it in array of orders
                         jobsArray[i] = new AthenaJob((i + 1) + "", values);
                     }
@@ -127,6 +124,31 @@ namespace SPV_Athena_Loader
             }
         }
 
+        // Generate XML string fron an AthenaJob Object Array
+        public static string getXMLFromObject(object[] o)
+        {
+            StringWriter sw = new StringWriter();
+            XmlTextWriter tw = null;
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(o.GetType());
+                tw = new XmlTextWriter(sw);
+                serializer.Serialize(tw, o);
+            }
+            catch (Exception ex)
+            {
+            }
+            finally
+            {
+                sw.Close();
+                if (tw != null)
+                {
+                    tw.Close();
+                }
+            }
+            return sw.ToString();
+        }
+        
         // Change Active AthenaJob
         private void jobIDNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
@@ -705,32 +727,7 @@ namespace SPV_Athena_Loader
                 updateManualInputData((int)jobIDNumericUpDown.Value - 1, jobsArray);
             }
         }
-
-        // Generate XML string fron an AthenaJob Object Array
-        public static string getXMLFromObject(object[] o)
-        {
-            StringWriter sw = new StringWriter();
-            XmlTextWriter tw = null;
-            try
-            {
-                XmlSerializer serializer = new XmlSerializer(o.GetType());
-                tw = new XmlTextWriter(sw);
-                serializer.Serialize(tw, o);
-            }
-            catch (Exception ex)
-            {
-            }
-            finally
-            {
-                sw.Close();
-                if (tw != null)
-                {
-                    tw.Close();
-                }
-            }
-            return sw.ToString();
-        }
-
+        
         // Generate XML File
         private void generateXmlButton_Click(object sender, EventArgs e)
         {
@@ -828,5 +825,6 @@ namespace SPV_Athena_Loader
                 bomComment5TextBox.Enabled = false;
             }
         }
+
     }
 }
