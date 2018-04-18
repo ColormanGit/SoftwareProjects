@@ -83,7 +83,6 @@ namespace SPV_Asasara_Loader
             }
         }
 
-
         public DataTable ReadExcel(string fileName, string fileExt)
         {
             string conn = string.Empty;
@@ -94,9 +93,10 @@ namespace SPV_Asasara_Loader
                 conn = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + fileName + ";Extended Properties='Excel 12.0;HDR=Yes;IMEX=1';";//for above excel 2007
             using (OleDbConnection con = new OleDbConnection(conn))
             {
+
                 try
                 {
-                    OleDbDataAdapter oleAdpt = new OleDbDataAdapter("select * from [OCS (Google_generates)$]", con);//here we read data from sheet1
+                    OleDbDataAdapter oleAdpt = new OleDbDataAdapter("select * from [OCS (Google_generates)$]", con);//read data from sheet "OCS (Google_generates)"
                     oleAdpt.Fill(dtexcel);//fill excel data into dataTable
                 }
                 catch (Exception ex)
@@ -106,7 +106,6 @@ namespace SPV_Asasara_Loader
             }
             return dtexcel;
         }
-
 
 
         private void importXmlButton2_Click(object sender, EventArgs e)
@@ -190,23 +189,23 @@ namespace SPV_Asasara_Loader
 
             jobIDNumericUpDown.Value = Int32.Parse(jobs[index].autoInputArray[0]);
             jobNumberTextBox.Text = jobs[index].autoInputArray[1];
-            dueDateTextBox.Text = jobs[index].autoInputArray[2];
-            purchaseOrderNoTextBox.Text = jobs[index].autoInputArray[3];
-            purchaseOrderLineTextBox.Text = jobs[index].autoInputArray[4];
+            //dueDateTextBox.Text = jobs[index].autoInputArray[2];
+            //purchaseOrderNoTextBox.Text = jobs[index].autoInputArray[3];
+            //purchaseOrderLineTextBox.Text = jobs[index].autoInputArray[4];
             salesOrderNumberTextBox.Text = jobs[index].autoInputArray[5];
-            customerAccountTextBox.Text = jobs[index].autoInputArray[6];
+            //customerAccountTextBox.Text = jobs[index].autoInputArray[6];
             buildQuantityTextBox.Text = jobs[index].autoInputArray[7];
-            ascmOrderIDTextBox.Text = jobs[index].autoInputArray[8];
-            endCustomerTextBox.Text = jobs[index].autoInputArray[9];
-            activationSystemTextBox.Text = jobs[index].autoInputArray[10];
-            productTypeTextBox.Text = jobs[index].autoInputArray[11];
-            erpMaterialCodeTextBox.Text = jobs[index].autoInputArray[12];
-            integratorPartIDTextBox.Text = jobs[index].autoInputArray[13];
-            integratorIDTextBox.Text = jobs[index].autoInputArray[14];
-            activationTypeTextBox.Text = jobs[index].autoInputArray[15];
-            partNumberTextBox.Text = jobs[index].autoInputArray[16];
-            retailBarcodeTextBox.Text = jobs[index].autoInputArray[17];
-            retailBarcodeTypeTextBox.Text = jobs[index].autoInputArray[18];
+            //ascmOrderIDTextBox.Text = jobs[index].autoInputArray[8];
+            //endCustomerTextBox.Text = jobs[index].autoInputArray[9];
+            //activationSystemTextBox.Text = jobs[index].autoInputArray[10];
+            //productTypeTextBox.Text = jobs[index].autoInputArray[11];
+            //erpMaterialCodeTextBox.Text = jobs[index].autoInputArray[12];
+            //integratorPartIDTextBox.Text = jobs[index].autoInputArray[13];
+            //integratorIDTextBox.Text = jobs[index].autoInputArray[14];
+            //activationTypeTextBox.Text = jobs[index].autoInputArray[15];
+            //partNumberTextBox.Text = jobs[index].autoInputArray[16];
+            //retailBarcodeTextBox.Text = jobs[index].autoInputArray[17];
+            //retailBarcodeTypeTextBox.Text = jobs[index].autoInputArray[18];
 
         }
 

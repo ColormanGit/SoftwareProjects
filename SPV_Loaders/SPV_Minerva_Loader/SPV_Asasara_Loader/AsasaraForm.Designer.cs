@@ -29,20 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AsasaraForm));
-            this.integratorPartIDTextBox = new System.Windows.Forms.TextBox();
-            this.activationTypeTextBox = new System.Windows.Forms.TextBox();
-            this.integratorIDTextBox = new System.Windows.Forms.TextBox();
-            this.erpMaterialCodeTextBox = new System.Windows.Forms.TextBox();
-            this.productTypeTextBox = new System.Windows.Forms.TextBox();
-            this.activationSystemTextBox = new System.Windows.Forms.TextBox();
-            this.endCustomerTextBox = new System.Windows.Forms.TextBox();
-            this.ascmOrderIDTextBox = new System.Windows.Forms.TextBox();
-            this.customerAccountTextBox = new System.Windows.Forms.TextBox();
             this.salesOrderNumberTextBox = new System.Windows.Forms.TextBox();
             this.buildQuantityTextBox = new System.Windows.Forms.TextBox();
-            this.purchaseOrderLineTextBox = new System.Windows.Forms.TextBox();
-            this.purchaseOrderNoTextBox = new System.Windows.Forms.TextBox();
-            this.dueDateTextBox = new System.Windows.Forms.TextBox();
             this.jobNumberTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.minervaBhnPalletRetailCodeNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -51,7 +39,7 @@
             this.minervaWtcQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.minervaSpecialInstructionsLabel = new System.Windows.Forms.Label();
             this.minervaSpecialInstructionsTextBox = new System.Windows.Forms.TextBox();
-            this.minervaSaveOrderButton = new System.Windows.Forms.Button();
+            this.asasaraSaveOrderButton = new System.Windows.Forms.Button();
             this.minervaWtcDenomDecimalcheckBox = new System.Windows.Forms.CheckBox();
             this.minervaWtcDenomNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.minervaBhnPalletRetailCodeLabel = new System.Windows.Forms.Label();
@@ -59,7 +47,6 @@
             this.importXmlButton2 = new System.Windows.Forms.Button();
             this.minervaGenerateXmlButton = new System.Windows.Forms.Button();
             this.minervaBhnPackRetailCodeLabel = new System.Windows.Forms.Label();
-            this.endCustomerLabel = new System.Windows.Forms.Label();
             this.minervaPptQtyNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.minervaDenomDecimalCheckBox = new System.Windows.Forms.CheckBox();
             this.minervaDenominationNumericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -104,26 +91,9 @@
             this.minervaIntegratorLabel = new System.Windows.Forms.Label();
             this.minervaIntegratorComboCox = new System.Windows.Forms.ComboBox();
             this.ocrCodeLabel = new System.Windows.Forms.Label();
-            this.retailBarcodeTypeLabel = new System.Windows.Forms.Label();
-            this.retailBarcodeLabel = new System.Windows.Forms.Label();
-            this.ascmOrderIDLabel = new System.Windows.Forms.Label();
-            this.integratorPartIDLabel = new System.Windows.Forms.Label();
-            this.customerAccountCodeLabel = new System.Windows.Forms.Label();
-            this.activationTypeLabel = new System.Windows.Forms.Label();
             this.salesOrderNumberLabel = new System.Windows.Forms.Label();
-            this.partNumberLabel = new System.Windows.Forms.Label();
             this.buildQuantityLabel = new System.Windows.Forms.Label();
-            this.IntegratorIDlabel = new System.Windows.Forms.Label();
-            this.purchaseOrderLineLabel = new System.Windows.Forms.Label();
-            this.erpMaterialCodeLabel = new System.Windows.Forms.Label();
-            this.purchaseOrderNoLabel = new System.Windows.Forms.Label();
-            this.productTypeLabel = new System.Windows.Forms.Label();
-            this.dueDateLabel = new System.Windows.Forms.Label();
-            this.activationSystemLabel = new System.Windows.Forms.Label();
             this.jobNumberLabel = new System.Windows.Forms.Label();
-            this.retailBarcodeTypeTextBox = new System.Windows.Forms.TextBox();
-            this.retailBarcodeTextBox = new System.Windows.Forms.TextBox();
-            this.partNumberTextBox = new System.Windows.Forms.TextBox();
             this.importExcelButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minervaBhnPalletRetailCodeNumericUpDown)).BeginInit();
@@ -140,108 +110,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // integratorPartIDTextBox
-            // 
-            this.integratorPartIDTextBox.Location = new System.Drawing.Point(229, 268);
-            this.integratorPartIDTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.integratorPartIDTextBox.Name = "integratorPartIDTextBox";
-            this.integratorPartIDTextBox.ReadOnly = true;
-            this.integratorPartIDTextBox.Size = new System.Drawing.Size(200, 20);
-            this.integratorPartIDTextBox.TabIndex = 140;
-            this.integratorPartIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.integratorPartIDTextBox.WordWrap = false;
-            // 
-            // activationTypeTextBox
-            // 
-            this.activationTypeTextBox.Location = new System.Drawing.Point(229, 363);
-            this.activationTypeTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.activationTypeTextBox.Name = "activationTypeTextBox";
-            this.activationTypeTextBox.ReadOnly = true;
-            this.activationTypeTextBox.Size = new System.Drawing.Size(200, 20);
-            this.activationTypeTextBox.TabIndex = 139;
-            this.activationTypeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.activationTypeTextBox.WordWrap = false;
-            // 
-            // integratorIDTextBox
-            // 
-            this.integratorIDTextBox.Location = new System.Drawing.Point(229, 315);
-            this.integratorIDTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.integratorIDTextBox.Name = "integratorIDTextBox";
-            this.integratorIDTextBox.ReadOnly = true;
-            this.integratorIDTextBox.Size = new System.Drawing.Size(200, 20);
-            this.integratorIDTextBox.TabIndex = 138;
-            this.integratorIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.integratorIDTextBox.WordWrap = false;
-            // 
-            // erpMaterialCodeTextBox
-            // 
-            this.erpMaterialCodeTextBox.Location = new System.Drawing.Point(229, 219);
-            this.erpMaterialCodeTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.erpMaterialCodeTextBox.Name = "erpMaterialCodeTextBox";
-            this.erpMaterialCodeTextBox.ReadOnly = true;
-            this.erpMaterialCodeTextBox.Size = new System.Drawing.Size(200, 20);
-            this.erpMaterialCodeTextBox.TabIndex = 137;
-            this.erpMaterialCodeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.erpMaterialCodeTextBox.WordWrap = false;
-            // 
-            // productTypeTextBox
-            // 
-            this.productTypeTextBox.Location = new System.Drawing.Point(229, 173);
-            this.productTypeTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.productTypeTextBox.Name = "productTypeTextBox";
-            this.productTypeTextBox.ReadOnly = true;
-            this.productTypeTextBox.Size = new System.Drawing.Size(200, 20);
-            this.productTypeTextBox.TabIndex = 136;
-            this.productTypeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.productTypeTextBox.WordWrap = false;
-            // 
-            // activationSystemTextBox
-            // 
-            this.activationSystemTextBox.Location = new System.Drawing.Point(229, 126);
-            this.activationSystemTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.activationSystemTextBox.Name = "activationSystemTextBox";
-            this.activationSystemTextBox.ReadOnly = true;
-            this.activationSystemTextBox.Size = new System.Drawing.Size(200, 20);
-            this.activationSystemTextBox.TabIndex = 135;
-            this.activationSystemTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.activationSystemTextBox.WordWrap = false;
-            // 
-            // endCustomerTextBox
-            // 
-            this.endCustomerTextBox.Location = new System.Drawing.Point(9, 499);
-            this.endCustomerTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.endCustomerTextBox.Name = "endCustomerTextBox";
-            this.endCustomerTextBox.ReadOnly = true;
-            this.endCustomerTextBox.Size = new System.Drawing.Size(200, 20);
-            this.endCustomerTextBox.TabIndex = 134;
-            this.endCustomerTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.endCustomerTextBox.WordWrap = false;
-            // 
-            // ascmOrderIDTextBox
-            // 
-            this.ascmOrderIDTextBox.Location = new System.Drawing.Point(9, 454);
-            this.ascmOrderIDTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.ascmOrderIDTextBox.Name = "ascmOrderIDTextBox";
-            this.ascmOrderIDTextBox.ReadOnly = true;
-            this.ascmOrderIDTextBox.Size = new System.Drawing.Size(200, 20);
-            this.ascmOrderIDTextBox.TabIndex = 133;
-            this.ascmOrderIDTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ascmOrderIDTextBox.WordWrap = false;
-            // 
-            // customerAccountTextBox
-            // 
-            this.customerAccountTextBox.Location = new System.Drawing.Point(9, 363);
-            this.customerAccountTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.customerAccountTextBox.Name = "customerAccountTextBox";
-            this.customerAccountTextBox.ReadOnly = true;
-            this.customerAccountTextBox.Size = new System.Drawing.Size(200, 20);
-            this.customerAccountTextBox.TabIndex = 132;
-            this.customerAccountTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.customerAccountTextBox.WordWrap = false;
-            // 
             // salesOrderNumberTextBox
             // 
-            this.salesOrderNumberTextBox.Location = new System.Drawing.Point(9, 315);
+            this.salesOrderNumberTextBox.Location = new System.Drawing.Point(7, 175);
             this.salesOrderNumberTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.salesOrderNumberTextBox.Name = "salesOrderNumberTextBox";
             this.salesOrderNumberTextBox.ReadOnly = true;
@@ -252,7 +123,7 @@
             // 
             // buildQuantityTextBox
             // 
-            this.buildQuantityTextBox.Location = new System.Drawing.Point(9, 409);
+            this.buildQuantityTextBox.Location = new System.Drawing.Point(5, 222);
             this.buildQuantityTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.buildQuantityTextBox.Name = "buildQuantityTextBox";
             this.buildQuantityTextBox.ReadOnly = true;
@@ -260,39 +131,6 @@
             this.buildQuantityTextBox.TabIndex = 130;
             this.buildQuantityTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.buildQuantityTextBox.WordWrap = false;
-            // 
-            // purchaseOrderLineTextBox
-            // 
-            this.purchaseOrderLineTextBox.Location = new System.Drawing.Point(9, 268);
-            this.purchaseOrderLineTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.purchaseOrderLineTextBox.Name = "purchaseOrderLineTextBox";
-            this.purchaseOrderLineTextBox.ReadOnly = true;
-            this.purchaseOrderLineTextBox.Size = new System.Drawing.Size(200, 20);
-            this.purchaseOrderLineTextBox.TabIndex = 129;
-            this.purchaseOrderLineTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.purchaseOrderLineTextBox.WordWrap = false;
-            // 
-            // purchaseOrderNoTextBox
-            // 
-            this.purchaseOrderNoTextBox.Location = new System.Drawing.Point(9, 220);
-            this.purchaseOrderNoTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.purchaseOrderNoTextBox.Name = "purchaseOrderNoTextBox";
-            this.purchaseOrderNoTextBox.ReadOnly = true;
-            this.purchaseOrderNoTextBox.Size = new System.Drawing.Size(200, 20);
-            this.purchaseOrderNoTextBox.TabIndex = 128;
-            this.purchaseOrderNoTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.purchaseOrderNoTextBox.WordWrap = false;
-            // 
-            // dueDateTextBox
-            // 
-            this.dueDateTextBox.Location = new System.Drawing.Point(9, 172);
-            this.dueDateTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.dueDateTextBox.Name = "dueDateTextBox";
-            this.dueDateTextBox.ReadOnly = true;
-            this.dueDateTextBox.Size = new System.Drawing.Size(200, 20);
-            this.dueDateTextBox.TabIndex = 127;
-            this.dueDateTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.dueDateTextBox.WordWrap = false;
             // 
             // jobNumberTextBox
             // 
@@ -390,15 +228,15 @@
             this.minervaSpecialInstructionsTextBox.TabIndex = 69;
             this.minervaSpecialInstructionsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // minervaSaveOrderButton
+            // asasaraSaveOrderButton
             // 
-            this.minervaSaveOrderButton.Location = new System.Drawing.Point(104, 49);
-            this.minervaSaveOrderButton.Margin = new System.Windows.Forms.Padding(10);
-            this.minervaSaveOrderButton.Name = "minervaSaveOrderButton";
-            this.minervaSaveOrderButton.Size = new System.Drawing.Size(105, 23);
-            this.minervaSaveOrderButton.TabIndex = 106;
-            this.minervaSaveOrderButton.Text = "Save MinervaJob Details";
-            this.minervaSaveOrderButton.UseVisualStyleBackColor = true;
+            this.asasaraSaveOrderButton.Location = new System.Drawing.Point(104, 49);
+            this.asasaraSaveOrderButton.Margin = new System.Windows.Forms.Padding(10);
+            this.asasaraSaveOrderButton.Name = "asasaraSaveOrderButton";
+            this.asasaraSaveOrderButton.Size = new System.Drawing.Size(105, 23);
+            this.asasaraSaveOrderButton.TabIndex = 106;
+            this.asasaraSaveOrderButton.Text = "Save AsasaraJob Details";
+            this.asasaraSaveOrderButton.UseVisualStyleBackColor = true;
             // 
             // minervaWtcDenomDecimalcheckBox
             // 
@@ -476,15 +314,6 @@
             this.minervaBhnPackRetailCodeLabel.TabIndex = 62;
             this.minervaBhnPackRetailCodeLabel.Text = "Blackhawk Pack Retail Code";
             this.minervaBhnPackRetailCodeLabel.Visible = false;
-            // 
-            // endCustomerLabel
-            // 
-            this.endCustomerLabel.AutoSize = true;
-            this.endCustomerLabel.Location = new System.Drawing.Point(8, 486);
-            this.endCustomerLabel.Name = "endCustomerLabel";
-            this.endCustomerLabel.Size = new System.Drawing.Size(73, 13);
-            this.endCustomerLabel.TabIndex = 160;
-            this.endCustomerLabel.Text = "End Customer";
             // 
             // minervaPptQtyNumericUpDown
             // 
@@ -760,9 +589,9 @@
             this.orderIDLabel.Location = new System.Drawing.Point(8, 63);
             this.orderIDLabel.Margin = new System.Windows.Forms.Padding(10);
             this.orderIDLabel.Name = "orderIDLabel";
-            this.orderIDLabel.Size = new System.Drawing.Size(79, 13);
+            this.orderIDLabel.Size = new System.Drawing.Size(82, 13);
             this.orderIDLabel.TabIndex = 162;
-            this.orderIDLabel.Text = "MinervaJob No";
+            this.orderIDLabel.Text = "Asasara Job No";
             // 
             // minervaDenominationLabel
             // 
@@ -830,7 +659,6 @@
             this.minervaPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.minervaPanel.Controls.Add(this.dataGridView1);
             this.minervaPanel.Controls.Add(this.pictureBox1);
             this.minervaPanel.Controls.Add(this.minervaBhnPalletRetailCodeNumericUpDown);
             this.minervaPanel.Controls.Add(this.minervaBhnBoxRetailCodeNumericUpDown);
@@ -839,7 +667,7 @@
             this.minervaPanel.Controls.Add(this.minervaWtcQtyNumericUpDown);
             this.minervaPanel.Controls.Add(this.minervaSpecialInstructionsLabel);
             this.minervaPanel.Controls.Add(this.minervaSpecialInstructionsTextBox);
-            this.minervaPanel.Controls.Add(this.minervaSaveOrderButton);
+            this.minervaPanel.Controls.Add(this.asasaraSaveOrderButton);
             this.minervaPanel.Controls.Add(this.minervaWtcDenomDecimalcheckBox);
             this.minervaPanel.Controls.Add(this.minervaWtcDenomNumericUpDown);
             this.minervaPanel.Controls.Add(this.minervaBhnPalletRetailCodeLabel);
@@ -887,7 +715,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(236, -4);
+            this.dataGridView1.Location = new System.Drawing.Point(-1, 343);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(447, 189);
             this.dataGridView1.TabIndex = 117;
@@ -1007,149 +835,23 @@
             this.ocrCodeLabel.TabIndex = 170;
             this.ocrCodeLabel.Text = "OCR Code";
             // 
-            // retailBarcodeTypeLabel
-            // 
-            this.retailBarcodeTypeLabel.AutoSize = true;
-            this.retailBarcodeTypeLabel.Location = new System.Drawing.Point(228, 484);
-            this.retailBarcodeTypeLabel.Name = "retailBarcodeTypeLabel";
-            this.retailBarcodeTypeLabel.Size = new System.Drawing.Size(104, 13);
-            this.retailBarcodeTypeLabel.TabIndex = 161;
-            this.retailBarcodeTypeLabel.Text = "Retail Barcode Type";
-            // 
-            // retailBarcodeLabel
-            // 
-            this.retailBarcodeLabel.AutoSize = true;
-            this.retailBarcodeLabel.Location = new System.Drawing.Point(228, 440);
-            this.retailBarcodeLabel.Name = "retailBarcodeLabel";
-            this.retailBarcodeLabel.Size = new System.Drawing.Size(77, 13);
-            this.retailBarcodeLabel.TabIndex = 159;
-            this.retailBarcodeLabel.Text = "Retail Barcode";
-            // 
-            // ascmOrderIDLabel
-            // 
-            this.ascmOrderIDLabel.AutoSize = true;
-            this.ascmOrderIDLabel.Location = new System.Drawing.Point(8, 440);
-            this.ascmOrderIDLabel.Name = "ascmOrderIDLabel";
-            this.ascmOrderIDLabel.Size = new System.Drawing.Size(109, 13);
-            this.ascmOrderIDLabel.TabIndex = 158;
-            this.ascmOrderIDLabel.Text = "ASCM MinervaJob ID";
-            // 
-            // integratorPartIDLabel
-            // 
-            this.integratorPartIDLabel.AutoSize = true;
-            this.integratorPartIDLabel.Location = new System.Drawing.Point(228, 253);
-            this.integratorPartIDLabel.Name = "integratorPartIDLabel";
-            this.integratorPartIDLabel.Size = new System.Drawing.Size(88, 13);
-            this.integratorPartIDLabel.TabIndex = 156;
-            this.integratorPartIDLabel.Text = "Integrator Part ID";
-            // 
-            // customerAccountCodeLabel
-            // 
-            this.customerAccountCodeLabel.AutoSize = true;
-            this.customerAccountCodeLabel.Location = new System.Drawing.Point(8, 347);
-            this.customerAccountCodeLabel.Name = "customerAccountCodeLabel";
-            this.customerAccountCodeLabel.Size = new System.Drawing.Size(122, 13);
-            this.customerAccountCodeLabel.TabIndex = 157;
-            this.customerAccountCodeLabel.Text = "Customer Account Code";
-            // 
-            // activationTypeLabel
-            // 
-            this.activationTypeLabel.AutoSize = true;
-            this.activationTypeLabel.Location = new System.Drawing.Point(228, 348);
-            this.activationTypeLabel.Name = "activationTypeLabel";
-            this.activationTypeLabel.Size = new System.Drawing.Size(81, 13);
-            this.activationTypeLabel.TabIndex = 155;
-            this.activationTypeLabel.Text = "Activation Type";
-            // 
             // salesOrderNumberLabel
             // 
             this.salesOrderNumberLabel.AutoSize = true;
-            this.salesOrderNumberLabel.Location = new System.Drawing.Point(8, 300);
+            this.salesOrderNumberLabel.Location = new System.Drawing.Point(6, 160);
             this.salesOrderNumberLabel.Name = "salesOrderNumberLabel";
-            this.salesOrderNumberLabel.Size = new System.Drawing.Size(131, 13);
+            this.salesOrderNumberLabel.Size = new System.Drawing.Size(73, 13);
             this.salesOrderNumberLabel.TabIndex = 154;
-            this.salesOrderNumberLabel.Text = "Sales MinervaJob Number";
-            // 
-            // partNumberLabel
-            // 
-            this.partNumberLabel.AutoSize = true;
-            this.partNumberLabel.Location = new System.Drawing.Point(228, 394);
-            this.partNumberLabel.Name = "partNumberLabel";
-            this.partNumberLabel.Size = new System.Drawing.Size(66, 13);
-            this.partNumberLabel.TabIndex = 153;
-            this.partNumberLabel.Text = "Part Number";
+            this.salesOrderNumberLabel.Text = "Order Number";
             // 
             // buildQuantityLabel
             // 
             this.buildQuantityLabel.AutoSize = true;
-            this.buildQuantityLabel.Location = new System.Drawing.Point(8, 394);
+            this.buildQuantityLabel.Location = new System.Drawing.Point(4, 207);
             this.buildQuantityLabel.Name = "buildQuantityLabel";
-            this.buildQuantityLabel.Size = new System.Drawing.Size(72, 13);
+            this.buildQuantityLabel.Size = new System.Drawing.Size(66, 13);
             this.buildQuantityLabel.TabIndex = 152;
-            this.buildQuantityLabel.Text = "Build Quantity";
-            // 
-            // IntegratorIDlabel
-            // 
-            this.IntegratorIDlabel.AutoSize = true;
-            this.IntegratorIDlabel.Location = new System.Drawing.Point(228, 302);
-            this.IntegratorIDlabel.Name = "IntegratorIDlabel";
-            this.IntegratorIDlabel.Size = new System.Drawing.Size(66, 13);
-            this.IntegratorIDlabel.TabIndex = 150;
-            this.IntegratorIDlabel.Text = "Integrator ID";
-            // 
-            // purchaseOrderLineLabel
-            // 
-            this.purchaseOrderLineLabel.AutoSize = true;
-            this.purchaseOrderLineLabel.Location = new System.Drawing.Point(8, 255);
-            this.purchaseOrderLineLabel.Name = "purchaseOrderLineLabel";
-            this.purchaseOrderLineLabel.Size = new System.Drawing.Size(133, 13);
-            this.purchaseOrderLineLabel.TabIndex = 151;
-            this.purchaseOrderLineLabel.Text = "Purchase MinervaJob Line";
-            // 
-            // erpMaterialCodeLabel
-            // 
-            this.erpMaterialCodeLabel.AutoSize = true;
-            this.erpMaterialCodeLabel.Location = new System.Drawing.Point(228, 206);
-            this.erpMaterialCodeLabel.Name = "erpMaterialCodeLabel";
-            this.erpMaterialCodeLabel.Size = new System.Drawing.Size(97, 13);
-            this.erpMaterialCodeLabel.TabIndex = 148;
-            this.erpMaterialCodeLabel.Text = "ERP Material Code";
-            // 
-            // purchaseOrderNoLabel
-            // 
-            this.purchaseOrderNoLabel.AutoSize = true;
-            this.purchaseOrderNoLabel.Location = new System.Drawing.Point(8, 206);
-            this.purchaseOrderNoLabel.Name = "purchaseOrderNoLabel";
-            this.purchaseOrderNoLabel.Size = new System.Drawing.Size(150, 13);
-            this.purchaseOrderNoLabel.TabIndex = 149;
-            this.purchaseOrderNoLabel.Text = "Purchase MinervaJob Number";
-            // 
-            // productTypeLabel
-            // 
-            this.productTypeLabel.AutoSize = true;
-            this.productTypeLabel.Location = new System.Drawing.Point(228, 158);
-            this.productTypeLabel.Name = "productTypeLabel";
-            this.productTypeLabel.Size = new System.Drawing.Size(71, 13);
-            this.productTypeLabel.TabIndex = 147;
-            this.productTypeLabel.Text = "Product Type";
-            // 
-            // dueDateLabel
-            // 
-            this.dueDateLabel.AutoSize = true;
-            this.dueDateLabel.Location = new System.Drawing.Point(8, 158);
-            this.dueDateLabel.Name = "dueDateLabel";
-            this.dueDateLabel.Size = new System.Drawing.Size(53, 13);
-            this.dueDateLabel.TabIndex = 146;
-            this.dueDateLabel.Text = "Due Date";
-            // 
-            // activationSystemLabel
-            // 
-            this.activationSystemLabel.AutoSize = true;
-            this.activationSystemLabel.Location = new System.Drawing.Point(228, 112);
-            this.activationSystemLabel.Name = "activationSystemLabel";
-            this.activationSystemLabel.Size = new System.Drawing.Size(91, 13);
-            this.activationSystemLabel.TabIndex = 145;
-            this.activationSystemLabel.Text = "Activation System";
+            this.buildQuantityLabel.Text = "Job Quantity";
             // 
             // jobNumberLabel
             // 
@@ -1159,39 +861,6 @@
             this.jobNumberLabel.Size = new System.Drawing.Size(64, 13);
             this.jobNumberLabel.TabIndex = 144;
             this.jobNumberLabel.Text = "Job Number";
-            // 
-            // retailBarcodeTypeTextBox
-            // 
-            this.retailBarcodeTypeTextBox.Location = new System.Drawing.Point(229, 499);
-            this.retailBarcodeTypeTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.retailBarcodeTypeTextBox.Name = "retailBarcodeTypeTextBox";
-            this.retailBarcodeTypeTextBox.ReadOnly = true;
-            this.retailBarcodeTypeTextBox.Size = new System.Drawing.Size(200, 20);
-            this.retailBarcodeTypeTextBox.TabIndex = 143;
-            this.retailBarcodeTypeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.retailBarcodeTypeTextBox.WordWrap = false;
-            // 
-            // retailBarcodeTextBox
-            // 
-            this.retailBarcodeTextBox.Location = new System.Drawing.Point(229, 453);
-            this.retailBarcodeTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.retailBarcodeTextBox.Name = "retailBarcodeTextBox";
-            this.retailBarcodeTextBox.ReadOnly = true;
-            this.retailBarcodeTextBox.Size = new System.Drawing.Size(200, 20);
-            this.retailBarcodeTextBox.TabIndex = 142;
-            this.retailBarcodeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.retailBarcodeTextBox.WordWrap = false;
-            // 
-            // partNumberTextBox
-            // 
-            this.partNumberTextBox.Location = new System.Drawing.Point(229, 408);
-            this.partNumberTextBox.Margin = new System.Windows.Forms.Padding(10);
-            this.partNumberTextBox.Name = "partNumberTextBox";
-            this.partNumberTextBox.ReadOnly = true;
-            this.partNumberTextBox.Size = new System.Drawing.Size(200, 20);
-            this.partNumberTextBox.TabIndex = 141;
-            this.partNumberTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.partNumberTextBox.WordWrap = false;
             // 
             // importExcelButton
             // 
@@ -1209,24 +878,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1141, 538);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.importExcelButton);
-            this.Controls.Add(this.integratorPartIDTextBox);
-            this.Controls.Add(this.activationTypeTextBox);
-            this.Controls.Add(this.integratorIDTextBox);
-            this.Controls.Add(this.erpMaterialCodeTextBox);
-            this.Controls.Add(this.productTypeTextBox);
-            this.Controls.Add(this.activationSystemTextBox);
-            this.Controls.Add(this.endCustomerTextBox);
-            this.Controls.Add(this.ascmOrderIDTextBox);
-            this.Controls.Add(this.customerAccountTextBox);
             this.Controls.Add(this.salesOrderNumberTextBox);
             this.Controls.Add(this.buildQuantityTextBox);
-            this.Controls.Add(this.purchaseOrderLineTextBox);
-            this.Controls.Add(this.purchaseOrderNoTextBox);
-            this.Controls.Add(this.dueDateTextBox);
             this.Controls.Add(this.jobNumberTextBox);
             this.Controls.Add(this.importXmlButton2);
-            this.Controls.Add(this.endCustomerLabel);
             this.Controls.Add(this.jobIDNumericUpDown);
             this.Controls.Add(this.orderIDLabel);
             this.Controls.Add(this.totalOdersLabel);
@@ -1236,26 +893,9 @@
             this.Controls.Add(this.minervaTotaljobsTextBox);
             this.Controls.Add(this.minervaPanel);
             this.Controls.Add(this.ocrCodeLabel);
-            this.Controls.Add(this.retailBarcodeTypeLabel);
-            this.Controls.Add(this.retailBarcodeLabel);
-            this.Controls.Add(this.ascmOrderIDLabel);
-            this.Controls.Add(this.integratorPartIDLabel);
-            this.Controls.Add(this.customerAccountCodeLabel);
-            this.Controls.Add(this.activationTypeLabel);
             this.Controls.Add(this.salesOrderNumberLabel);
-            this.Controls.Add(this.partNumberLabel);
             this.Controls.Add(this.buildQuantityLabel);
-            this.Controls.Add(this.IntegratorIDlabel);
-            this.Controls.Add(this.purchaseOrderLineLabel);
-            this.Controls.Add(this.erpMaterialCodeLabel);
-            this.Controls.Add(this.purchaseOrderNoLabel);
-            this.Controls.Add(this.productTypeLabel);
-            this.Controls.Add(this.dueDateLabel);
-            this.Controls.Add(this.activationSystemLabel);
             this.Controls.Add(this.jobNumberLabel);
-            this.Controls.Add(this.retailBarcodeTypeTextBox);
-            this.Controls.Add(this.retailBarcodeTextBox);
-            this.Controls.Add(this.partNumberTextBox);
             this.Name = "AsasaraForm";
             this.Text = "AsasaraForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1278,21 +918,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox integratorPartIDTextBox;
-        private System.Windows.Forms.TextBox activationTypeTextBox;
-        private System.Windows.Forms.TextBox integratorIDTextBox;
-        private System.Windows.Forms.TextBox erpMaterialCodeTextBox;
-        private System.Windows.Forms.TextBox productTypeTextBox;
-        private System.Windows.Forms.TextBox activationSystemTextBox;
-        private System.Windows.Forms.TextBox endCustomerTextBox;
-        private System.Windows.Forms.TextBox ascmOrderIDTextBox;
-        private System.Windows.Forms.TextBox customerAccountTextBox;
         private System.Windows.Forms.TextBox salesOrderNumberTextBox;
         private System.Windows.Forms.TextBox buildQuantityTextBox;
-        private System.Windows.Forms.TextBox purchaseOrderLineTextBox;
-        private System.Windows.Forms.TextBox purchaseOrderNoTextBox;
-        private System.Windows.Forms.TextBox dueDateTextBox;
         private System.Windows.Forms.TextBox jobNumberTextBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.NumericUpDown minervaBhnPalletRetailCodeNumericUpDown;
@@ -1301,7 +928,7 @@
         private System.Windows.Forms.NumericUpDown minervaWtcQtyNumericUpDown;
         private System.Windows.Forms.Label minervaSpecialInstructionsLabel;
         private System.Windows.Forms.TextBox minervaSpecialInstructionsTextBox;
-        private System.Windows.Forms.Button minervaSaveOrderButton;
+        private System.Windows.Forms.Button asasaraSaveOrderButton;
         private System.Windows.Forms.CheckBox minervaWtcDenomDecimalcheckBox;
         private System.Windows.Forms.NumericUpDown minervaWtcDenomNumericUpDown;
         private System.Windows.Forms.Label minervaBhnPalletRetailCodeLabel;
@@ -1309,7 +936,6 @@
         private System.Windows.Forms.Button importXmlButton2;
         private System.Windows.Forms.Button minervaGenerateXmlButton;
         private System.Windows.Forms.Label minervaBhnPackRetailCodeLabel;
-        private System.Windows.Forms.Label endCustomerLabel;
         private System.Windows.Forms.NumericUpDown minervaPptQtyNumericUpDown;
         private System.Windows.Forms.CheckBox minervaDenomDecimalCheckBox;
         private System.Windows.Forms.NumericUpDown minervaDenominationNumericUpDown;
@@ -1353,26 +979,9 @@
         private System.Windows.Forms.Label minervaIntegratorLabel;
         private System.Windows.Forms.ComboBox minervaIntegratorComboCox;
         private System.Windows.Forms.Label ocrCodeLabel;
-        private System.Windows.Forms.Label retailBarcodeTypeLabel;
-        private System.Windows.Forms.Label retailBarcodeLabel;
-        private System.Windows.Forms.Label ascmOrderIDLabel;
-        private System.Windows.Forms.Label integratorPartIDLabel;
-        private System.Windows.Forms.Label customerAccountCodeLabel;
-        private System.Windows.Forms.Label activationTypeLabel;
         private System.Windows.Forms.Label salesOrderNumberLabel;
-        private System.Windows.Forms.Label partNumberLabel;
         private System.Windows.Forms.Label buildQuantityLabel;
-        private System.Windows.Forms.Label IntegratorIDlabel;
-        private System.Windows.Forms.Label purchaseOrderLineLabel;
-        private System.Windows.Forms.Label erpMaterialCodeLabel;
-        private System.Windows.Forms.Label purchaseOrderNoLabel;
-        private System.Windows.Forms.Label productTypeLabel;
-        private System.Windows.Forms.Label dueDateLabel;
-        private System.Windows.Forms.Label activationSystemLabel;
         private System.Windows.Forms.Label jobNumberLabel;
-        private System.Windows.Forms.TextBox retailBarcodeTypeTextBox;
-        private System.Windows.Forms.TextBox retailBarcodeTextBox;
-        private System.Windows.Forms.TextBox partNumberTextBox;
         private System.Windows.Forms.Button importExcelButton;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
