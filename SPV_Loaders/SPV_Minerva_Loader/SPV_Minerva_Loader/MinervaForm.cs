@@ -201,7 +201,10 @@ namespace SPV_Minerva_Loader
                 // Initiate GUI and order elements for first order
                 fillGuiWithAutoInput(0, jobsArray);
                 fillGuiWithManualInput(0, jobsArray);
-                updateManualInputData(0, jobsArray);
+                for (int i = 0; i < jobsArray.Length; i++)
+                {
+                    updateManualInputData(0, jobsArray);
+                }
                 minervaTotaljobsTextBox.Text = jobIDNumericUpDown.Maximum + "";
                 currentOrderTextBox.Text = jobIDNumericUpDown.Value + "";
             }
@@ -471,7 +474,7 @@ namespace SPV_Minerva_Loader
 
         // Update manual input in the MinervaJob object
         private void updateManualInputData(int index, MinervaJob[] jobs) {
-            if (minervaJobTypeComboBox.SelectedItem != null)
+            if (minervaJobTypeComboBox.SelectedItem != null || minervaJobTypeComboBox.SelectedIndex == -1)
             {
                 jobs[index].jobType = minervaJobTypeComboBox.SelectedItem.ToString();
             }
@@ -480,7 +483,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].jobType = "N/A";
             }
 
-            if (minervaIntegratorComboCox.SelectedItem != null)
+            if (minervaIntegratorComboCox.SelectedItem != null || minervaIntegratorComboCox.SelectedIndex == -1)
             {
                 jobs[index].integrator = minervaIntegratorComboCox.SelectedItem.ToString();
             }
@@ -489,7 +492,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].integrator = "N/A";
             }
 
-            if (minervaRegionComboBox.SelectedItem != null)
+            if (minervaRegionComboBox.SelectedItem != null || minervaRegionComboBox.SelectedIndex == -1)
             {
                 jobs[index].region = minervaRegionComboBox.SelectedItem.ToString();
             }
@@ -498,7 +501,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].region = "N/A";
             }
 
-            if (minervaCurrencyComboBox.SelectedItem != null)
+            if (minervaCurrencyComboBox.SelectedItem != null || minervaCurrencyComboBox.SelectedIndex == -1)
             {
                 jobs[index].currency = minervaCurrencyComboBox.SelectedItem.ToString();
             }
@@ -507,7 +510,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].currency = "N/A";
             }
             
-            if (minervaPackQuantityComboBox.SelectedItem != null)
+            if (minervaPackQuantityComboBox.SelectedItem != null || minervaPackQuantityComboBox.SelectedIndex == -1)
             {
                 jobs[index].packQuantity = minervaPackQuantityComboBox.SelectedItem.ToString();
             }
@@ -516,7 +519,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].packQuantity = "N/A";
             }
 
-            if (minervaBoxQuantityComboBox.SelectedItem != null)
+            if (minervaBoxQuantityComboBox.SelectedItem != null || minervaBoxQuantityComboBox.SelectedIndex == -1)
             {
                 jobs[index].boxQuantitySize = minervaBoxQuantityComboBox.SelectedItem.ToString();
             }
@@ -525,7 +528,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].boxQuantitySize =  "N/A";
             }
 
-            if (jobs[index].productDescription != null)
+            if (jobs[index].productDescription != "")
             {
                 jobs[index].productDescription = minervaProductDescriptionTextBox.Text;
             }
@@ -534,7 +537,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].productDescription = "N/A";
             }
 
-            if (jobs[index].regionIntegratorID != null)
+            if (jobs[index].regionIntegratorID != "")
             {
                 jobs[index].regionIntegratorID = minervaRegionIntegratorIDTextBox.Text;
             }
@@ -543,7 +546,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].regionIntegratorID = "N/A";
             }
 
-            if (jobs[index].countryIncommRetailer != null)
+            if (jobs[index].countryIncommRetailer != "")
             {
                 jobs[index].countryIncommRetailer = minervaCountryIncommRetailerTextBox.Text;
             }
@@ -552,7 +555,7 @@ namespace SPV_Minerva_Loader
                 jobs[index].countryIncommRetailer = "N/A";
             }
 
-            if (jobs[index].specialInstructions != null)
+            if (jobs[index].specialInstructions != "")
             {
                 jobs[index].specialInstructions = minervaSpecialInstructionsTextBox.Text;
             }
@@ -569,12 +572,12 @@ namespace SPV_Minerva_Loader
                 }
                 else
                 {
-                    jobs[index].denomination = minervaDenominationNumericUpDown.Value + "";
+                    jobs[index].denomination = minervaDenominationNumericUpDown.Value.ToString();
                 }
             }
             else
             {
-                jobs[index].denomination = minervaDenominationNumericUpDown.Value + "";
+                jobs[index].denomination = minervaDenominationNumericUpDown.Value.ToString();
             }
 
             if (minervaDenomDecimalCheckBox.Checked)
@@ -605,14 +608,14 @@ namespace SPV_Minerva_Loader
             }
 
             jobs[index].dodHumanReadable = minervaHumanReadableCheckBox.Checked ? true : false;
-            jobs[index].jobQuantity = minervaJobQtyNumericUpDown.Value + "";
-            jobs[index].palletQuantity = minervaPalletQtyNumericUpDown.Value + "";
-            jobs[index].pptQuanity = minervaPptQtyNumericUpDown.Value + "";
-            jobs[index].wtcQuantity = minervaWtcQtyNumericUpDown.Value + "";
-            jobs[index].wtcDenomination = minervaWtcDenomNumericUpDown.Value + "";
-            jobs[index].bhnPackRetailCode = minervaBhnPackRetailCodeNumericUpDown.Value + "";
-            jobs[index].bhnBoxRetailCode = minervaBhnBoxRetailCodeNumericUpDown.Value + "";
-            jobs[index].bhnPalletRetailCode = minervaBhnPalletRetailCodeNumericUpDown.Value + "";
+            jobs[index].jobQuantity = minervaJobQtyNumericUpDown.Value.ToString();
+            jobs[index].palletQuantity = minervaPalletQtyNumericUpDown.Value.ToString();
+            jobs[index].pptQuanity = minervaPptQtyNumericUpDown.Value.ToString();
+            jobs[index].wtcQuantity = minervaWtcQtyNumericUpDown.Value.ToString();
+            jobs[index].wtcDenomination = minervaWtcDenomNumericUpDown.Value.ToString();
+            jobs[index].bhnPackRetailCode = minervaBhnPackRetailCodeNumericUpDown.Value.ToString();
+            jobs[index].bhnBoxRetailCode = minervaBhnBoxRetailCodeNumericUpDown.Value.ToString();
+            jobs[index].bhnPalletRetailCode = minervaBhnPalletRetailCodeNumericUpDown.Value.ToString();
         }
 
         // Save manual input in order object button
@@ -625,7 +628,7 @@ namespace SPV_Minerva_Loader
         }
 
         // Generate XML string fron an MinervaJob Object Array
-        public static string getXMLFromObject(object[] o)
+        private string getXMLFromObject(object[] o)
         {
             StringWriter sw = new StringWriter();
             XmlTextWriter tw = null;
@@ -673,376 +676,6 @@ namespace SPV_Minerva_Loader
                     }
                 }
             }
-        }
-
-        private void ocrCodeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void totalOdersLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ocrCodeTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void totalOrdersSlash_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void currentOrderTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaTotaljobsTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void orderIDLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void retailBarcodeTypeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void endCustomerLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void retailBarcodeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ascmOrderIDLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void integratorPartIDLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void customerAccountCodeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void activationTypeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void salesOrderNumberLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void partNumberLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buildQuantityLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void IntegratorIDlabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void purchaseOrderLineLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void erpMaterialCodeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void purchaseOrderNoLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void productTypeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dueDateLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void activationSystemLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void jobNumberLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void retailBarcodeTypeTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void retailBarcodeTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void partNumberTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void integratorPartIDTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void activationTypeTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void integratorIDTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void erpMaterialCodeTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void productTypeTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void activationSystemTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void endCustomerTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ascmOrderIDTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void customerAccountTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void salesOrderNumberTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buildQuantityTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void purchaseOrderLineTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void purchaseOrderNoTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dueDateTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void jobNumberTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaJobTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaRegionComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaCurrencyComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaJobQtyNumericUpDown_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaProductDescriptionTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaRegionIntegratorIDTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaWtcQtyNumericUpDown_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaWtcEnvironmentComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaWtcQuantityLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaWtcEnvironmentLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaWtcDenomLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaPptQuantityLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaPptQtyNumericUpDown_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaHumanReadableCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaSpecialInstructionsTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaPalletQtyNumericUpDown_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaPalletQuantityLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaBoxQuantityComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaBoxQuantityLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaPackQuantityComboBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaPackQuantityLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaBhnPackRetailCodeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaBhnPackRetailCodeNumericUpDown_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaBhnBoxRetailCodeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaBhnBoxRetailCodeNumericUpDown_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaBhnPalletRetailCodeLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaBhnPalletRetailCodeNumericUpDown_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaCountryIncommRetailerTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void minervaCountryIncommRetailerLabel_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

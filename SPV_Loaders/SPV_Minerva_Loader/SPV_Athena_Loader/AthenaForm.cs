@@ -757,5 +757,76 @@ namespace SPV_Athena_Loader
             }
         }
 
+        // Enable/Disable Envirocard fields
+        private void contractTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            if (contractTypeComboBox.SelectedIndex == 1)
+            {
+                pkpnLabel.Enabled = true;
+                pkpnTextBox.Enabled = true;
+                bomFileNameLabel.Enabled = true;
+                bomFileNameTextBox.Enabled = true;
+                bomComment1Label.Enabled = true;
+                bomComment1TextBox.Enabled = true;
+                bomComment2Label.Enabled = true;
+                bomComment2TextBox.Enabled = true;
+                bomComment3Label.Enabled = true;
+                bomComment3TextBox.Enabled = true;
+                bomComment4Label.Enabled = true;
+                bomComment4TextBox.Enabled = true;
+                bomComment5Label.Enabled = true;
+                bomComment5TextBox.Enabled = true;
+
+
+                pkpnLabel.Visible = true;
+                pkpnTextBox.Visible = true;
+                bomFileNameLabel.Visible = true;
+                bomFileNameTextBox.Visible = true;
+                bomComment1Label.Visible = true;
+                bomComment1TextBox.Visible = true;
+                bomComment2Label.Visible = true;
+                bomComment2TextBox.Visible = true;
+                bomComment3Label.Visible = true;
+                bomComment3TextBox.Visible = true;
+                bomComment4Label.Visible = true;
+                bomComment4TextBox.Visible = true;
+                bomComment5Label.Visible = true;
+                bomComment5TextBox.Visible = true;
+            }
+            else
+            {
+
+                pkpnLabel.Visible = false;
+                pkpnTextBox.Visible = false;
+                bomFileNameLabel.Visible = false;
+                bomFileNameTextBox.Visible = false;
+                bomComment1Label.Visible = false;
+                bomComment1TextBox.Visible = false;
+                bomComment2Label.Visible = false;
+                bomComment2TextBox.Visible = false;
+                bomComment3Label.Visible = false;
+                bomComment3TextBox.Visible = false;
+                bomComment4Label.Visible = false;
+                bomComment4TextBox.Visible = false;
+                bomComment5Label.Visible = false;
+                bomComment5TextBox.Visible = false;
+
+                pkpnLabel.Enabled = false;
+                pkpnTextBox.Enabled = false;
+                bomFileNameLabel.Enabled = false;
+                bomFileNameTextBox.Enabled = false;
+                bomComment1Label.Enabled = false;
+                bomComment1TextBox.Enabled = false;
+                bomComment2Label.Enabled = false;
+                bomComment2TextBox.Enabled = false;
+                bomComment3Label.Enabled = false;
+                bomComment3TextBox.Enabled = false;
+                bomComment4Label.Enabled = false;
+                bomComment4TextBox.Enabled = false;
+                bomComment5Label.Enabled = false;
+                bomComment5TextBox.Enabled = false;
+            }
+        }
     }
 }

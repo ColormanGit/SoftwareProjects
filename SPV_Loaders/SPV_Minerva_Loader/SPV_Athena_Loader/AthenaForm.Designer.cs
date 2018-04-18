@@ -832,11 +832,12 @@
             this.contractTypeComboBox.Name = "contractTypeComboBox";
             this.contractTypeComboBox.Size = new System.Drawing.Size(200, 21);
             this.contractTypeComboBox.TabIndex = 4;
+            this.contractTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.contractTypeComboBox_SelectedIndexChanged);
             // 
             // totalJobsLabel
             // 
             this.totalJobsLabel.AutoSize = true;
-            this.totalJobsLabel.Location = new System.Drawing.Point(472, 8);
+            this.totalJobsLabel.Location = new System.Drawing.Point(467, 8);
             this.totalJobsLabel.Name = "totalJobsLabel";
             this.totalJobsLabel.Size = new System.Drawing.Size(56, 13);
             this.totalJobsLabel.TabIndex = 167;
@@ -848,18 +849,18 @@
             this.currentJobTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.currentJobTextBox.Name = "currentJobTextBox";
             this.currentJobTextBox.ReadOnly = true;
-            this.currentJobTextBox.Size = new System.Drawing.Size(40, 20);
+            this.currentJobTextBox.Size = new System.Drawing.Size(30, 20);
             this.currentJobTextBox.TabIndex = 165;
             this.currentJobTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.currentJobTextBox.WordWrap = false;
             // 
             // totalJobsTextBox
             // 
-            this.totalJobsTextBox.Location = new System.Drawing.Point(511, 24);
+            this.totalJobsTextBox.Location = new System.Drawing.Point(508, 24);
             this.totalJobsTextBox.Margin = new System.Windows.Forms.Padding(10);
             this.totalJobsTextBox.Name = "totalJobsTextBox";
             this.totalJobsTextBox.ReadOnly = true;
-            this.totalJobsTextBox.Size = new System.Drawing.Size(40, 20);
+            this.totalJobsTextBox.Size = new System.Drawing.Size(30, 20);
             this.totalJobsTextBox.TabIndex = 164;
             this.totalJobsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.totalJobsTextBox.WordWrap = false;
@@ -1264,7 +1265,7 @@
             // 
             this.totalJobsSlash.AutoSize = true;
             this.totalJobsSlash.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.totalJobsSlash.Location = new System.Drawing.Point(495, 24);
+            this.totalJobsSlash.Location = new System.Drawing.Point(488, 24);
             this.totalJobsSlash.Name = "totalJobsSlash";
             this.totalJobsSlash.Size = new System.Drawing.Size(13, 20);
             this.totalJobsSlash.TabIndex = 166;
@@ -1286,9 +1287,11 @@
             this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(12, 477);
+            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView.Location = new System.Drawing.Point(2, 491);
+            this.dataGridView.Margin = new System.Windows.Forms.Padding(10);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(860, 156);
+            this.dataGridView.Size = new System.Drawing.Size(1097, 156);
             this.dataGridView.TabIndex = 170;
             // 
             // AthenaForm
@@ -1297,6 +1300,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.CausesValidation = false;
             this.ClientSize = new System.Drawing.Size(1101, 649);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.importExcelButton);
