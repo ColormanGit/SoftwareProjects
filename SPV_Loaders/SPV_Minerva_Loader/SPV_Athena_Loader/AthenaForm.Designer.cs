@@ -130,13 +130,11 @@
             this.importXmlButton = new System.Windows.Forms.Button();
             this.totalJobsSlash = new System.Windows.Forms.Label();
             this.importExcelButton = new System.Windows.Forms.Button();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.athenaPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.palletQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.denominationNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobQtyNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobIDNumericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // athenaPanel
@@ -1282,18 +1280,6 @@
             this.importExcelButton.UseVisualStyleBackColor = true;
             this.importExcelButton.Click += new System.EventHandler(this.importExcelButton_Click);
             // 
-            // dataGridView
-            // 
-            this.dataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView.Location = new System.Drawing.Point(2, 491);
-            this.dataGridView.Margin = new System.Windows.Forms.Padding(10);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(1097, 156);
-            this.dataGridView.TabIndex = 170;
-            // 
             // AthenaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1302,8 +1288,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.CausesValidation = false;
-            this.ClientSize = new System.Drawing.Size(1101, 649);
-            this.Controls.Add(this.dataGridView);
+            this.ClientSize = new System.Drawing.Size(1101, 474);
             this.Controls.Add(this.importExcelButton);
             this.Controls.Add(this.totalJobsLabel);
             this.Controls.Add(this.totalJobsSlash);
@@ -1358,7 +1343,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.denominationNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobQtyNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobIDNumericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1468,7 +1452,6 @@
         private System.Windows.Forms.Label faiEndlabel;
         private System.Windows.Forms.ComboBox faiStartComboBox;
         private System.Windows.Forms.Button importExcelButton;
-        private System.Windows.Forms.DataGridView dataGridView;
     }
 }
 

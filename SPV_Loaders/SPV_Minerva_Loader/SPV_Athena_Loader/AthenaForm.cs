@@ -121,6 +121,7 @@ namespace SPV_Athena_Loader
                 }
                 totalJobsTextBox.Text = jobIDNumericUpDown.Maximum + "";
                 currentJobTextBox.Text = jobIDNumericUpDown.Value + "";
+                checkCustomer(customerAccountTextBox);
             }
         }
 
@@ -157,6 +158,7 @@ namespace SPV_Athena_Loader
                 fillGuiWithAutoInput((int)jobIDNumericUpDown.Value - 1, jobsArray);
                 fillGuiWithManualInput((int)jobIDNumericUpDown.Value - 1, jobsArray);
                 currentJobTextBox.Text = jobIDNumericUpDown.Value + "";
+                checkCustomer(customerAccountTextBox);
             }
 
         }
@@ -826,5 +828,32 @@ namespace SPV_Athena_Loader
             }
         }
 
+        private void checkCustomer(TextBox customerAccountCode)
+        {
+            switch (customerAccountCode.Text)
+            {
+                case "1700":
+                    clientComboBox.SelectedItem = "Microsoft";
+                    clientComboBox.Enabled = false;
+                    contractTypeComboBox.SelectedItem = "Envirocard";
+                    contractTypeComboBox.Enabled = false;
+                    jobQtyNumericUpDown.Value = Int32.Parse(buildQuantityTextBox.Text) + 2;
+                    jobQtyNumericUpDown.Enabled = false;
+                    faiStartComboBox.SelectedItem = "1";
+                    faiStartComboBox.Enabled = false;
+                    faiEndComboBox.SelectedItem = "1";
+                    faiEndComboBox.Enabled = false;
+                    packQtyComboBox.SelectedItem = "10";
+                    packQtyComboBox.Enabled = false;
+                    boxQtyComboBox.SelectedItem = "100";
+                    boxQtyComboBox.Enabled = false;
+                    jobTypeComboBox.SelectedIndex = 0;
+                    jobTypeComboBox.Enabled = false;
+
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }
